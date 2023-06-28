@@ -1,0 +1,810 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "EclFresnel TW",
+  "shortName": "EclFresnelTW",
+  "categories": ["Dimmer", "Color Changer", "Strobe"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2019-07-11",
+    "lastModifyDate": "2020-10-02"
+  },
+  "links": {
+    "manual": [
+      "https://support.musiclights.it/ajx.php?usst=1&docs=40250&ID_USER=&__hstc=244193946.e16abf153ec8d615036d5b7bf9d2c4ed.1687974078207.1687974078207.1687974078207.1&__hssc=244193946.1.1687974078207&__hsfp=1912911101",
+      "https://support.musiclights.it/ajx.php?usst=1&docs=26917&ID_USER=&__hstc=244193946.e16abf153ec8d615036d5b7bf9d2c4ed.1687974078207.1687974078207.1687974078207.1&__hssc=244193946.1.1687974078207&__hsfp=1912911101"
+    ],
+    "productPage": [
+      "https://www.prolights.it/en/product/ECLFRESNELTW"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=A6dIDfuSULY"
+    ]
+  },
+  "physical": {
+    "dimensions": [283, 440, 343],
+    "weight": 7.5,
+    "power": 260,
+    "DMXconnector": "5-pin",
+    "lens": {
+      "degreesMinMax": [17, 91]
+    }
+  },
+  "availableChannels": {
+    "Red": {
+      "fineChannelAliases": ["Red fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Orange": {
+      "fineChannelAliases": ["Orange fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Lime": {
+      "fineChannelAliases": ["Lime fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Lime"
+      }
+    },
+    "Blue": {
+      "fineChannelAliases": ["Blue fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Green": {
+      "fineChannelAliases": ["Green fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Royal Blue": {
+      "fineChannelAliases": ["Royal Blue fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Indigo"
+      }
+    },
+    "Dimmer": {
+      "fineChannelAliases": ["Dimmer fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Dimmer Speed Mode": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 51],
+          "type": "Generic",
+          "comment": "From menu"
+        },
+        {
+          "dmxRange": [52, 101],
+          "type": "Generic",
+          "comment": "Mode off"
+        },
+        {
+          "dmxRange": [102, 152],
+          "type": "Generic",
+          "comment": "Mode1 (fast)"
+        },
+        {
+          "dmxRange": [153, 203],
+          "type": "Generic",
+          "comment": "Mode2 (medium)"
+        },
+        {
+          "dmxRange": [204, 255],
+          "type": "Generic",
+          "comment": "Mode3 (slow)"
+        }
+      ]
+    },
+    "Color Macro": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 2],
+          "type": "Generic",
+          "comment": "No Function"
+        },
+        {
+          "dmxRange": [3, 5],
+          "type": "Generic",
+          "comment": "Amber Shift on"
+        },
+        {
+          "dmxRange": [6, 255],
+          "type": "Generic",
+          "comment": "Color Macro"
+        }
+      ]
+    },
+    "Color Picker": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "ColorPreset",
+          "comment": "No Function",
+          "colors": ["#ffffff"]
+        },
+        {
+          "dmxRange": [1, 3],
+          "type": "ColorPreset",
+          "comment": "3200K",
+          "colors": ["#ffffd3"]
+        },
+        {
+          "dmxRange": [4, 7],
+          "type": "ColorPreset",
+          "comment": "71",
+          "colors": ["#408fb5"]
+        },
+        {
+          "dmxRange": [8, 11],
+          "type": "ColorPreset",
+          "comment": "97",
+          "colors": ["#dddddd"]
+        },
+        {
+          "dmxRange": [12, 15],
+          "type": "ColorPreset",
+          "comment": "100",
+          "colors": ["#a6ff43"]
+        },
+        {
+          "dmxRange": [16, 19],
+          "type": "ColorPreset",
+          "comment": "101",
+          "colors": ["#c5ff20"]
+        },
+        {
+          "dmxRange": [20, 23],
+          "type": "ColorPreset",
+          "comment": "102",
+          "colors": ["#daff66"]
+        },
+        {
+          "dmxRange": [24, 27],
+          "type": "ColorPreset",
+          "comment": "103",
+          "colors": ["#9ab8ff"]
+        },
+        {
+          "dmxRange": [28, 31],
+          "type": "ColorPreset",
+          "comment": "104",
+          "colors": ["#f3ff26"]
+        },
+        {
+          "dmxRange": [32, 35],
+          "type": "ColorPreset",
+          "comment": "105",
+          "colors": ["#ef9135"]
+        },
+        {
+          "dmxRange": [36, 39],
+          "type": "ColorPreset",
+          "comment": "106",
+          "colors": ["#ff2104"]
+        },
+        {
+          "dmxRange": [40, 43],
+          "type": "ColorPreset",
+          "comment": "107",
+          "colors": ["#a979ff"]
+        },
+        {
+          "dmxRange": [44, 47],
+          "type": "ColorPreset",
+          "comment": "110",
+          "colors": ["#7b5fff"]
+        },
+        {
+          "dmxRange": [48, 51],
+          "type": "ColorPreset",
+          "comment": "111",
+          "colors": ["#9147ff"]
+        },
+        {
+          "dmxRange": [52, 55],
+          "type": "ColorPreset",
+          "comment": "113",
+          "colors": ["#ff1e80"]
+        },
+        {
+          "dmxRange": [56, 59],
+          "type": "ColorPreset",
+          "comment": "115",
+          "colors": ["#175fff"]
+        },
+        {
+          "dmxRange": [60, 63],
+          "type": "ColorPreset",
+          "comment": "116",
+          "colors": ["#3f8da0"]
+        },
+        {
+          "dmxRange": [64, 67],
+          "type": "ColorPreset",
+          "comment": "117",
+          "colors": ["#3660ff"]
+        },
+        {
+          "dmxRange": [68, 71],
+          "type": "ColorPreset",
+          "comment": "118",
+          "colors": ["#1333ff"]
+        },
+        {
+          "dmxRange": [72, 75],
+          "type": "ColorPreset",
+          "comment": "119",
+          "colors": ["#2b66aa"]
+        },
+        {
+          "dmxRange": [76, 79],
+          "type": "ColorPreset",
+          "comment": "120",
+          "colors": ["#1103ff"]
+        },
+        {
+          "dmxRange": [80, 83],
+          "type": "ColorPreset",
+          "comment": "121",
+          "colors": ["#61ff6e"]
+        },
+        {
+          "dmxRange": [84, 87],
+          "type": "ColorPreset",
+          "comment": "122",
+          "colors": ["#48ff90"]
+        },
+        {
+          "dmxRange": [88, 91],
+          "type": "ColorPreset",
+          "comment": "124",
+          "colors": ["#17ff9d"]
+        },
+        {
+          "dmxRange": [92, 95],
+          "type": "ColorPreset",
+          "comment": "126",
+          "colors": ["#672386"]
+        },
+        {
+          "dmxRange": [96, 99],
+          "type": "ColorPreset",
+          "comment": "128",
+          "colors": ["#8313ff"]
+        },
+        {
+          "dmxRange": [100, 103],
+          "type": "ColorPreset",
+          "comment": "130",
+          "colors": ["#ffffff"]
+        },
+        {
+          "dmxRange": [104, 107],
+          "type": "ColorPreset",
+          "comment": "132",
+          "colors": ["#4091d4"]
+        },
+        {
+          "dmxRange": [108, 111],
+          "type": "ColorPreset",
+          "comment": "134",
+          "colors": ["#ffba6e"]
+        },
+        {
+          "dmxRange": [112, 115],
+          "type": "ColorPreset",
+          "comment": "135",
+          "colors": ["#ff4d00"]
+        },
+        {
+          "dmxRange": [116, 119],
+          "type": "ColorPreset",
+          "comment": "136",
+          "colors": ["#4b4eff"]
+        },
+        {
+          "dmxRange": [120, 123],
+          "type": "ColorPreset",
+          "comment": "137",
+          "colors": ["#2e32ff"]
+        },
+        {
+          "dmxRange": [124, 127],
+          "type": "ColorPreset",
+          "comment": "138",
+          "colors": ["#8fffe7"]
+        },
+        {
+          "dmxRange": [128, 131],
+          "type": "ColorPreset",
+          "comment": "139",
+          "colors": ["#336c42"]
+        },
+        {
+          "dmxRange": [132, 135],
+          "type": "ColorPreset",
+          "comment": "141",
+          "colors": ["#4ca8da"]
+        },
+        {
+          "dmxRange": [136, 139],
+          "type": "ColorPreset",
+          "comment": "144",
+          "colors": ["#1d42ff"]
+        },
+        {
+          "dmxRange": [140, 143],
+          "type": "ColorPreset",
+          "comment": "147",
+          "colors": ["#ffd1ad"]
+        },
+        {
+          "dmxRange": [144, 147],
+          "type": "ColorPreset",
+          "comment": "151",
+          "colors": ["#9d96ff"]
+        },
+        {
+          "dmxRange": [148, 151],
+          "type": "ColorPreset",
+          "comment": "152",
+          "colors": ["#9c9fff"]
+        },
+        {
+          "dmxRange": [152, 155],
+          "type": "ColorPreset",
+          "comment": "156",
+          "colors": ["#e0e0ff"]
+        },
+        {
+          "dmxRange": [156, 159],
+          "type": "ColorPreset",
+          "comment": "157",
+          "colors": ["#f577ff"]
+        },
+        {
+          "dmxRange": [160, 163],
+          "type": "ColorPreset",
+          "comment": "159",
+          "colors": ["#7898ff"]
+        },
+        {
+          "dmxRange": [164, 167],
+          "type": "ColorPreset",
+          "comment": "161",
+          "colors": ["#1c2dff"]
+        },
+        {
+          "dmxRange": [168, 171],
+          "type": "ColorPreset",
+          "comment": "164",
+          "colors": ["#ff3916"]
+        },
+        {
+          "dmxRange": [172, 175],
+          "type": "ColorPreset",
+          "comment": "165",
+          "colors": ["#1729ff"]
+        },
+        {
+          "dmxRange": [176, 179],
+          "type": "ColorPreset",
+          "comment": "166",
+          "colors": ["#ed6c6f"]
+        },
+        {
+          "dmxRange": [180, 183],
+          "type": "ColorPreset",
+          "comment": "170",
+          "colors": ["#433aff"]
+        },
+        {
+          "dmxRange": [184, 187],
+          "type": "ColorPreset",
+          "comment": "174",
+          "colors": ["#263bff"]
+        },
+        {
+          "dmxRange": [188, 191],
+          "type": "ColorPreset",
+          "comment": "179",
+          "colors": ["#f2a53b"]
+        },
+        {
+          "dmxRange": [192, 195],
+          "type": "ColorPreset",
+          "comment": "180",
+          "colors": ["#1c0bff"]
+        },
+        {
+          "dmxRange": [196, 199],
+          "type": "ColorPreset",
+          "comment": "181",
+          "colors": ["#332743"]
+        },
+        {
+          "dmxRange": [200, 203],
+          "type": "ColorPreset",
+          "comment": "182",
+          "colors": ["#ff2606"]
+        },
+        {
+          "dmxRange": [204, 207],
+          "type": "ColorPreset",
+          "comment": "195",
+          "colors": ["#1107ff"]
+        },
+        {
+          "dmxRange": [208, 211],
+          "type": "ColorPreset",
+          "comment": "197",
+          "colors": ["#181aff"]
+        },
+        {
+          "dmxRange": [212, 215],
+          "type": "ColorPreset",
+          "comment": "198",
+          "colors": ["#1407ff"]
+        },
+        {
+          "dmxRange": [216, 219],
+          "type": "ColorPreset",
+          "comment": "200",
+          "colors": ["#313eff"]
+        },
+        {
+          "dmxRange": [220, 223],
+          "type": "ColorPreset",
+          "comment": "201",
+          "colors": ["#647bff"]
+        },
+        {
+          "dmxRange": [224, 227],
+          "type": "ColorPreset",
+          "comment": "202",
+          "colors": ["#9bb2ff"]
+        },
+        {
+          "dmxRange": [228, 231],
+          "type": "ColorPreset",
+          "comment": "203",
+          "colors": ["#c3d3ff"]
+        },
+        {
+          "dmxRange": [232, 235],
+          "type": "ColorPreset",
+          "comment": "204",
+          "colors": ["#ffbf4d"]
+        },
+        {
+          "dmxRange": [236, 239],
+          "type": "ColorPreset",
+          "comment": "205",
+          "colors": ["#ffdf8b"]
+        },
+        {
+          "dmxRange": [240, 243],
+          "type": "ColorPreset",
+          "comment": "206",
+          "colors": ["#ffeeb7"]
+        },
+        {
+          "dmxRange": [244, 247],
+          "type": "ColorPreset",
+          "comment": "702",
+          "colors": ["#4c59ff"]
+        },
+        {
+          "dmxRange": [248, 251],
+          "type": "ColorPreset",
+          "comment": "730",
+          "colors": ["#5188ff"]
+        },
+        {
+          "dmxRange": [252, 255],
+          "type": "ColorPreset",
+          "comment": "777",
+          "colors": ["#e78933"]
+        }
+      ]
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [11, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        }
+      ]
+    },
+    "Hue": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Generic",
+          "comment": "0"
+        },
+        {
+          "dmxRange": [1, 255],
+          "type": "Generic",
+          "comment": "-25...+25"
+        }
+      ]
+    },
+    "Hue2": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 126],
+          "type": "Generic",
+          "comment": "-25...0"
+        },
+        {
+          "dmxRange": [127, 127],
+          "type": "Generic",
+          "comment": "Off"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Generic",
+          "comment": "0...+25"
+        }
+      ]
+    },
+    "CCT": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 253],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "2800K",
+          "colorTemperatureEnd": "10000K"
+        },
+        {
+          "dmxRange": [254, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "10000K"
+        }
+      ]
+    },
+    "Crossfade": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "CCT … Color Mix"
+      }
+    },
+    "CTO on Colors": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "CCT … Color Mix"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "1ch",
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "2ch",
+      "channels": [
+        "Dimmer",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "5ch 1",
+      "channels": [
+        "Dimmer",
+        "CCT",
+        "Hue",
+        "Color Macro",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "5ch 2",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "CCT",
+        "Color Macro",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "7ch 1",
+      "channels": [
+        "Red",
+        "Orange",
+        "Green",
+        "Royal Blue",
+        "Blue",
+        "Lime",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "7ch 2",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Orange",
+        "Green",
+        "Royal Blue",
+        "Blue",
+        "Lime"
+      ]
+    },
+    {
+      "name": "8ch",
+      "channels": [
+        "Color Picker",
+        "Dimmer",
+        "Red",
+        "Orange",
+        "Green",
+        "Royal Blue",
+        "Blue",
+        "Lime"
+      ]
+    },
+    {
+      "name": "9ch",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Orange",
+        "Green",
+        "Royal Blue",
+        "Blue",
+        "Lime",
+        "Strobe",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "11ch",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "CCT",
+        "Hue2",
+        "Crossfade",
+        "Red",
+        "Orange",
+        "Green",
+        "Royal Blue",
+        "Blue",
+        "Lime"
+      ]
+    },
+    {
+      "name": "12ch",
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Orange",
+        "Green",
+        "Royal Blue",
+        "Blue",
+        "Lime",
+        "CCT",
+        "Hue",
+        "Color Macro",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "13ch",
+      "channels": [
+        "Red",
+        "Red fine",
+        "Orange",
+        "Orange fine",
+        "Green",
+        "Green fine",
+        "Royal Blue",
+        "Royal Blue fine",
+        "Blue",
+        "Blue fine",
+        "Lime",
+        "Lime fine",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "16ch",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Red",
+        "Red fine",
+        "Orange",
+        "Orange fine",
+        "Green",
+        "Green fine",
+        "Royal Blue",
+        "Royal Blue fine",
+        "Blue",
+        "Blue fine",
+        "Lime",
+        "Lime fine",
+        "Strobe",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "19ch",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Red",
+        "Red fine",
+        "Orange",
+        "Orange fine",
+        "Green",
+        "Green fine",
+        "Royal Blue",
+        "Royal Blue fine",
+        "Blue",
+        "Blue fine",
+        "Lime",
+        "Lime fine",
+        "Strobe",
+        "CCT",
+        "Hue",
+        "Color Macro",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "21ch",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "CCT",
+        "Hue2",
+        "Crossfade",
+        "Red",
+        "Red fine",
+        "Orange",
+        "Orange fine",
+        "Green",
+        "Green fine",
+        "Royal Blue",
+        "Royal Blue fine",
+        "Blue",
+        "Blue fine",
+        "Lime",
+        "Lime fine",
+        "Color Macro",
+        "CTO on Colors",
+        "Dimmer Speed Mode"
+      ]
+    }
+  ]
+}
