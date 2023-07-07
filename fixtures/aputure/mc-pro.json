@@ -1,42 +1,39 @@
 {
   "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
-  "name": "Nova P600c",
+  "name": "MC PRO",
   "categories": ["Dimmer", "Color Changer", "Strobe"],
   "meta": {
     "authors": ["Dyami Caliri"],
-    "createDate": "2023-07-06",
-    "lastModifyDate": "2023-07-06"
+    "createDate": "2023-07-07",
+    "lastModifyDate": "2023-07-07"
   },
   "links": {
     "manual": [
-      "https://www.aputure.com/wp-content/uploads/2021/09/Nova-P600c-User-Manual-English.pdf"
+      "https://www.aputure.com/wp-content/uploads/2023/04/MC-Pro-Product-Manual-V1.1.pdf"
     ],
     "productPage": [
-      "https://www.aputure.com/products/nova-p600c/"
+      "https://www.aputure.com/products/mc-pro/"
     ],
     "other": [
-      "https://www.aputure.com/wp-content/uploads/2022/06/Nova-P600c-DMX-Profile-Specification-V1.1.1.pdf"
+      "https://www.aputure.com/wp-content/uploads/2023/04/MC-Pro-DMX-Profile-Specification-V1.0.pdf"
     ]
   },
   "physical": {
-    "dimensions": [80, 48, 18],
+    "dimensions": [10.8, 7, 2.5],
     "weight": 13.7,
-    "power": 600,
-    "DMXconnector": "5-pin",
+    "power": 5,
     "bulb": {
       "type": "LED"
     }
   },
   "availableChannels": {
     "Intensity": {
-      "fineChannelAliases": ["Intensity fine"],
       "defaultValue": 0,
       "capability": {
         "type": "Intensity"
       }
     },
     "Color Temperature": {
-      "fineChannelAliases": ["Color Temperature fine"],
       "capability": {
         "type": "ColorTemperature",
         "colorTemperatureStart": "2000K",
@@ -44,12 +41,19 @@
       }
     },
     "HSI Base CCT": {
-      "fineChannelAliases": ["HSI Base CCT fine"],
-      "capability": {
-        "type": "ColorTemperature",
-        "colorTemperatureStart": "2000K",
-        "colorTemperatureEnd": "10000K"
-      }
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "ColorTemperature",
+          "colorTemperature": "3200K"
+        },
+        {
+          "dmxRange": [11, 255],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "2000K",
+          "colorTemperatureEnd": "10000K"
+        }
+      ]
     },
     "CCT": {
       "defaultValue": 0,
@@ -101,45 +105,7 @@
         }
       ]
     },
-    "Green-Magenta Point 16bit": {
-      "name": "Green-Magenta Point",
-      "fineChannelAliases": ["Green-Magenta Point 16bit fine"],
-      "defaultValue": 0,
-      "capabilities": [
-        {
-          "dmxRange": [0, 4587],
-          "type": "Generic",
-          "comment": "Neutral"
-        },
-        {
-          "dmxRange": [4588, 9830],
-          "type": "Generic",
-          "comment": "Full minus green"
-        },
-        {
-          "dmxRange": [9831, 30145],
-          "type": "Generic",
-          "comment": "-99%…-1%"
-        },
-        {
-          "dmxRange": [30146, 39976],
-          "type": "Generic",
-          "comment": "Neutral"
-        },
-        {
-          "dmxRange": [39977, 60292],
-          "type": "Generic",
-          "comment": "1%…99%"
-        },
-        {
-          "dmxRange": [60293, 65535],
-          "type": "Generic",
-          "comment": "Full plus green"
-        }
-      ]
-    },
     "Cross Fade to Color": {
-      "fineChannelAliases": ["Cross Fade to Color fine"],
       "defaultValue": 0,
       "capability": {
         "type": "Generic",
@@ -147,7 +113,6 @@
       }
     },
     "Red": {
-      "fineChannelAliases": ["Red fine"],
       "defaultValue": 0,
       "capability": {
         "type": "ColorIntensity",
@@ -155,7 +120,6 @@
       }
     },
     "Green": {
-      "fineChannelAliases": ["Green fine"],
       "defaultValue": 0,
       "capability": {
         "type": "ColorIntensity",
@@ -163,7 +127,6 @@
       }
     },
     "Blue": {
-      "fineChannelAliases": ["Blue fine"],
       "defaultValue": 0,
       "capability": {
         "type": "ColorIntensity",
@@ -171,7 +134,6 @@
       }
     },
     "Hue": {
-      "fineChannelAliases": ["Hue fine"],
       "defaultValue": 0,
       "capability": {
         "type": "Generic",
@@ -179,7 +141,6 @@
       }
     },
     "Saturation": {
-      "fineChannelAliases": ["Saturation fine"],
       "defaultValue": 0,
       "capability": {
         "type": "Generic",
@@ -2351,14 +2312,12 @@
       }
     },
     "X": {
-      "fineChannelAliases": ["X fine"],
       "capability": {
         "type": "Generic",
         "comment": "0 … 0.8"
       }
     },
     "Y": {
-      "fineChannelAliases": ["Y fine"],
       "capability": {
         "type": "Generic",
         "comment": "0 … 0.8"
@@ -2367,7 +2326,7 @@
   },
   "modes": [
     {
-      "name": "P01: CCT & RGB 8bit",
+      "name": "P01: CCT & RGB",
       "shortName": "P01",
       "channels": [
         "Intensity",
@@ -2381,7 +2340,7 @@
       ]
     },
     {
-      "name": "P02: CCT 8bit",
+      "name": "P02: CCT",
       "shortName": "P02",
       "channels": [
         "Intensity",
@@ -2391,7 +2350,7 @@
       ]
     },
     {
-      "name": "P03: CCT & HSI 8bit",
+      "name": "P03: CCT & HSI",
       "shortName": "P03",
       "channels": [
         "Intensity",
@@ -2400,12 +2359,11 @@
         "Cross Fade to Color",
         "Hue",
         "Saturation",
-        "HSI Base CCT",
         "Strobe"
       ]
     },
     {
-      "name": "P04: RGB 8bit",
+      "name": "P04: RGB",
       "shortName": "P04",
       "channels": [
         "Intensity",
@@ -2416,7 +2374,7 @@
       ]
     },
     {
-      "name": "P05: HSI 8bit",
+      "name": "P05: HSI",
       "shortName": "P05",
       "channels": [
         "Intensity",
@@ -2427,7 +2385,7 @@
       ]
     },
     {
-      "name": "P06: Gel 8bit",
+      "name": "P06: Gel",
       "shortName": "P06",
       "channels": [
         "Intensity",
@@ -2439,123 +2397,12 @@
       ]
     },
     {
-      "name": "P07: XY 8bit",
+      "name": "P07: XY",
       "shortName": "P07",
       "channels": [
         "Intensity",
         "X",
         "Y",
-        "Strobe"
-      ]
-    },
-    {
-      "name": "P15: CCT & RGB 16bit",
-      "shortName": "P15",
-      "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Color Temperature",
-        "Color Temperature fine",
-        "Green-Magenta Point 16bit",
-        "Green-Magenta Point 16bit fine",
-        "Cross Fade to Color",
-        "Cross Fade to Color fine",
-        "Red",
-        "Red fine",
-        "Green",
-        "Green fine",
-        "Blue",
-        "Blue fine",
-        "Strobe"
-      ]
-    },
-    {
-      "name": "P16: CCT 16bit",
-      "shortName": "P16",
-      "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Color Temperature",
-        "Color Temperature fine",
-        "Green-Magenta Point 16bit",
-        "Green-Magenta Point 16bit fine",
-        "Strobe"
-      ]
-    },
-    {
-      "name": "P17: CCT & HSI 16bit",
-      "shortName": "P17",
-      "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Color Temperature",
-        "Color Temperature fine",
-        "Green-Magenta Point 16bit",
-        "Green-Magenta Point 16bit fine",
-        "Cross Fade to Color",
-        "Cross Fade to Color fine",
-        "Hue",
-        "Hue fine",
-        "Saturation",
-        "Saturation fine",
-        "HSI Base CCT",
-        "HSI Base CCT fine",
-        "Strobe"
-      ]
-    },
-    {
-      "name": "P18: RGB 16bit",
-      "shortName": "P18",
-      "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Red",
-        "Red fine",
-        "Green",
-        "Green fine",
-        "Blue",
-        "Blue fine",
-        "Strobe"
-      ]
-    },
-    {
-      "name": "P19: HSI 16bit",
-      "shortName": "P19",
-      "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Hue",
-        "Hue fine",
-        "Saturation",
-        "Saturation fine",
-        "HSI Base CCT",
-        "HSI Base CCT fine",
-        "Strobe"
-      ]
-    },
-    {
-      "name": "P20: Gel 16bit",
-      "shortName": "P20",
-      "channels": [
-        "Intensity",
-        "Intensity fine",
-        "CCT",
-        "Gel Brand",
-        "Gel Category",
-        "Gel",
-        "Strobe"
-      ]
-    },
-    {
-      "name": "P21: XY 16bit",
-      "shortName": "P21",
-      "channels": [
-        "Intensity",
-        "Intensity fine",
-        "X",
-        "X fine",
-        "Y",
-        "Y fine",
         "Strobe"
       ]
     }
