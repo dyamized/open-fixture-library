@@ -27,22 +27,123 @@
       "type": "LED"
     }
   },
-  "availableChannels": {
-    "Intensity": {
-      "fineChannelAliases": ["Intensity fine"],
+  "matrix": {
+    "pixelCount": [2, 2, 1],
+    "pixelGroups": {
+      "Master": "all"
+    }
+  },
+  "templateChannels": {
+    "Intensity $pixelKey": {
+      "fineChannelAliases": ["Intensity $pixelKey fine"],
       "defaultValue": 0,
       "capability": {
         "type": "Intensity"
       }
     },
-    "Color Temperature": {
-      "fineChannelAliases": ["Color Temperature fine"],
+    "Color Temperature $pixelKey": {
+      "fineChannelAliases": ["Color Temperature $pixelKey fine"],
       "capability": {
         "type": "ColorTemperature",
         "colorTemperatureStart": "2000K",
         "colorTemperatureEnd": "10000K"
       }
     },
+    "Cross Fade to Color $pixelKey": {
+      "fineChannelAliases": ["Cross Fade to Color $pixelKey fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "White … RGBW/HSI color"
+      }
+    },
+    "Red $pixelKey": {
+      "fineChannelAliases": ["Red $pixelKey fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green $pixelKey": {
+      "fineChannelAliases": ["Green $pixelKey fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue $pixelKey": {
+      "fineChannelAliases": ["Blue $pixelKey fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Hue $pixelKey": {
+      "fineChannelAliases": ["Hue $pixelKey fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…360°"
+      }
+    },
+    "Saturation $pixelKey": {
+      "fineChannelAliases": ["Saturation $pixelKey fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…100%"
+      }
+    },
+    "X $pixelKey": {
+      "fineChannelAliases": ["X $pixelKey fine"],
+      "capability": {
+        "type": "Generic",
+        "comment": "0 … 0.8"
+      }
+    },
+    "Y $pixelKey": {
+      "fineChannelAliases": ["Y $pixelKey fine"],
+      "capability": {
+        "type": "Generic",
+        "comment": "0 … 0.8"
+      }
+    },
+    "G/M $pixelKey": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Generic",
+          "comment": "0.0…1.0"
+        },
+        {
+          "dmxRange": [128, 255],
+          "type": "Generic",
+          "comment": "0.0…-1.0"
+        }
+      ]
+    },
+    "Green/Mag $pixelKey": {
+      "defaultValue": 0,
+      "fineChannelAliases": ["Green/Mag $pixelKey fine"],
+      "capabilities": [
+        {
+          "dmxRange": [0, 32767],
+          "type": "Generic",
+          "comment": "0.0…1.0"
+        },
+        {
+          "dmxRange": [32768, 65535],
+          "type": "Generic",
+          "comment": "0.0…-1.0"
+        }
+      ]
+    }
+  },
+  "availableChannels": {
     "HSI Base CCT": {
       "fineChannelAliases": ["HSI Base CCT fine"],
       "capability": {
@@ -137,54 +238,6 @@
           "comment": "Full plus green"
         }
       ]
-    },
-    "Cross Fade to Color": {
-      "fineChannelAliases": ["Cross Fade to Color fine"],
-      "defaultValue": 0,
-      "capability": {
-        "type": "Generic",
-        "comment": "White … RGBW/HSI color"
-      }
-    },
-    "Red": {
-      "fineChannelAliases": ["Red fine"],
-      "defaultValue": 0,
-      "capability": {
-        "type": "ColorIntensity",
-        "color": "Red"
-      }
-    },
-    "Green": {
-      "fineChannelAliases": ["Green fine"],
-      "defaultValue": 0,
-      "capability": {
-        "type": "ColorIntensity",
-        "color": "Green"
-      }
-    },
-    "Blue": {
-      "fineChannelAliases": ["Blue fine"],
-      "defaultValue": 0,
-      "capability": {
-        "type": "ColorIntensity",
-        "color": "Blue"
-      }
-    },
-    "Hue": {
-      "fineChannelAliases": ["Hue fine"],
-      "defaultValue": 0,
-      "capability": {
-        "type": "Generic",
-        "comment": "0…360°"
-      }
-    },
-    "Saturation": {
-      "fineChannelAliases": ["Saturation fine"],
-      "defaultValue": 0,
-      "capability": {
-        "type": "Generic",
-        "comment": "0…100%"
-      }
     },
     "Strobe": {
       "defaultValue": 0,
@@ -2349,20 +2402,6 @@
       "capability": {
         "type": "NoFunction"
       }
-    },
-    "X": {
-      "fineChannelAliases": ["X fine"],
-      "capability": {
-        "type": "Generic",
-        "comment": "0 … 0.8"
-      }
-    },
-    "Y": {
-      "fineChannelAliases": ["Y fine"],
-      "capability": {
-        "type": "Generic",
-        "comment": "0 … 0.8"
-      }
     }
   },
   "modes": [
@@ -2370,13 +2409,13 @@
       "name": "P01: CCT & RGB 8bit",
       "shortName": "P01",
       "channels": [
-        "Intensity",
-        "Color Temperature",
+        "Intensity Master",
+        "Color Temperature Master",
         "Green-Magenta Point",
-        "Cross Fade to Color",
-        "Red",
-        "Green",
-        "Blue",
+        "Cross Fade to Color Master",
+        "Red Master",
+        "Green Master",
+        "Blue Master",
         "Strobe"
       ]
     },
@@ -2384,8 +2423,8 @@
       "name": "P02: CCT 8bit",
       "shortName": "P02",
       "channels": [
-        "Intensity",
-        "Color Temperature",
+        "Intensity Master",
+        "Color Temperature Master",
         "Green-Magenta Point",
         "Strobe"
       ]
@@ -2394,12 +2433,12 @@
       "name": "P03: CCT & HSI 8bit",
       "shortName": "P03",
       "channels": [
-        "Intensity",
-        "Color Temperature",
+        "Intensity Master",
+        "Color Temperature Master",
         "Green-Magenta Point",
-        "Cross Fade to Color",
-        "Hue",
-        "Saturation",
+        "Cross Fade to Color Master",
+        "Hue Master",
+        "Saturation Master",
         "HSI Base CCT",
         "Strobe"
       ]
@@ -2408,10 +2447,10 @@
       "name": "P04: RGB 8bit",
       "shortName": "P04",
       "channels": [
-        "Intensity",
-        "Red",
-        "Green",
-        "Blue",
+        "Intensity Master",
+        "Red Master",
+        "Green Master",
+        "Blue Master",
         "Strobe"
       ]
     },
@@ -2419,9 +2458,9 @@
       "name": "P05: HSI 8bit",
       "shortName": "P05",
       "channels": [
-        "Intensity",
-        "Hue",
-        "Saturation",
+        "Intensity Master",
+        "Hue Master",
+        "Saturation Master",
         "HSI Base CCT",
         "Strobe"
       ]
@@ -2430,7 +2469,7 @@
       "name": "P06: Gel 8bit",
       "shortName": "P06",
       "channels": [
-        "Intensity",
+        "Intensity Master",
         "CCT",
         "Gel Brand",
         "Gel Category",
@@ -2442,30 +2481,83 @@
       "name": "P07: XY 8bit",
       "shortName": "P07",
       "channels": [
-        "Intensity",
-        "X",
-        "Y",
+        "Intensity Master",
+        "X Master",
+        "Y Master",
         "Strobe"
+      ]
+    },
+    {
+      "name": "P11: Light Engine CCT & RGB 8bit",
+      "shortName": "P11",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": "eachPixelABC",
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Intensity $pixelKey",
+            "Color Temperature $pixelKey",
+            "G/M $pixelKey",
+            "Cross Fade to Color $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "P12: Light Engine HSI 8bit",
+      "shortName": "P12",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": "eachPixelABC",
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Intensity $pixelKey",
+            "Hue $pixelKey",
+            "Saturation $pixelKey",
+            "Color Temperature $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "P13: Light Engine XY 8bit",
+      "shortName": "P13",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": "eachPixelABC",
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Intensity $pixelKey",
+            "X $pixelKey",
+            "Y $pixelKey"
+          ]
+        }
       ]
     },
     {
       "name": "P15: CCT & RGB 16bit",
       "shortName": "P15",
       "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Color Temperature",
-        "Color Temperature fine",
+        "Intensity Master",
+        "Intensity Master fine",
+        "Color Temperature Master",
+        "Color Temperature Master fine",
         "Green-Magenta Point 16bit",
         "Green-Magenta Point 16bit fine",
-        "Cross Fade to Color",
-        "Cross Fade to Color fine",
-        "Red",
-        "Red fine",
-        "Green",
-        "Green fine",
-        "Blue",
-        "Blue fine",
+        "Cross Fade to Color Master",
+        "Cross Fade to Color Master fine",
+        "Red Master",
+        "Red Master fine",
+        "Green Master",
+        "Green Master fine",
+        "Blue Master",
+        "Blue Master fine",
         "Strobe"
       ]
     },
@@ -2473,10 +2565,10 @@
       "name": "P16: CCT 16bit",
       "shortName": "P16",
       "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Color Temperature",
-        "Color Temperature fine",
+        "Intensity Master",
+        "Intensity Master fine",
+        "Color Temperature Master",
+        "Color Temperature Master fine",
         "Green-Magenta Point 16bit",
         "Green-Magenta Point 16bit fine",
         "Strobe"
@@ -2486,18 +2578,18 @@
       "name": "P17: CCT & HSI 16bit",
       "shortName": "P17",
       "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Color Temperature",
-        "Color Temperature fine",
+        "Intensity Master",
+        "Intensity Master fine",
+        "Color Temperature Master",
+        "Color Temperature Master fine",
         "Green-Magenta Point 16bit",
         "Green-Magenta Point 16bit fine",
-        "Cross Fade to Color",
-        "Cross Fade to Color fine",
-        "Hue",
-        "Hue fine",
-        "Saturation",
-        "Saturation fine",
+        "Cross Fade to Color Master",
+        "Cross Fade to Color Master fine",
+        "Hue Master",
+        "Hue Master fine",
+        "Saturation Master",
+        "Saturation Master fine",
         "HSI Base CCT",
         "HSI Base CCT fine",
         "Strobe"
@@ -2507,14 +2599,14 @@
       "name": "P18: RGB 16bit",
       "shortName": "P18",
       "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Red",
-        "Red fine",
-        "Green",
-        "Green fine",
-        "Blue",
-        "Blue fine",
+        "Intensity Master",
+        "Intensity Master fine",
+        "Red Master",
+        "Red Master fine",
+        "Green Master",
+        "Green Master fine",
+        "Blue Master",
+        "Blue Master fine",
         "Strobe"
       ]
     },
@@ -2522,12 +2614,12 @@
       "name": "P19: HSI 16bit",
       "shortName": "P19",
       "channels": [
-        "Intensity",
-        "Intensity fine",
-        "Hue",
-        "Hue fine",
-        "Saturation",
-        "Saturation fine",
+        "Intensity Master",
+        "Intensity Master fine",
+        "Hue Master",
+        "Hue Master fine",
+        "Saturation Master",
+        "Saturation Master fine",
         "HSI Base CCT",
         "HSI Base CCT fine",
         "Strobe"
@@ -2537,8 +2629,8 @@
       "name": "P20: Gel 16bit",
       "shortName": "P20",
       "channels": [
-        "Intensity",
-        "Intensity fine",
+        "Intensity Master",
+        "Intensity Master fine",
         "CCT",
         "Gel Brand",
         "Gel Category",
@@ -2550,13 +2642,80 @@
       "name": "P21: XY 16bit",
       "shortName": "P21",
       "channels": [
-        "Intensity",
-        "Intensity fine",
-        "X",
-        "X fine",
-        "Y",
-        "Y fine",
+        "Intensity Master",
+        "Intensity Master fine",
+        "X Master",
+        "X Master fine",
+        "Y Master",
+        "Y Master fine",
         "Strobe"
+      ]
+    },
+    {
+      "name": "P25: Light Engine CCT & RGB 16bit",
+      "shortName": "P25",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": "eachPixelABC",
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Intensity $pixelKey",
+            "Intensity $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Color Temperature $pixelKey fine",
+            "Green/Mag $pixelKey",
+            "Green/Mag $pixelKey fine",
+            "Cross Fade to Color $pixelKey",
+            "Cross Fade to Color $pixelKey fine",
+            "Red $pixelKey",
+            "Red $pixelKey fine",
+            "Green $pixelKey",
+            "Green $pixelKey fine",
+            "Blue $pixelKey",
+            "Blue $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "P26: Light Engine HSI 16bit",
+      "shortName": "P26",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": "eachPixelABC",
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Intensity $pixelKey",
+            "Intensity $pixelKey fine",
+            "Hue $pixelKey",
+            "Hue $pixelKey fine",
+            "Saturation $pixelKey",
+            "Saturation $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Color Temperature $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "P27: Light Engine XY 16bit",
+      "shortName": "P27",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": "eachPixelABC",
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Intensity $pixelKey",
+            "Intensity $pixelKey fine",
+            "X $pixelKey",
+            "X $pixelKey fine",
+            "Y $pixelKey",
+            "Y $pixelKey fine"
+          ]
+        }
       ]
     }
   ]
