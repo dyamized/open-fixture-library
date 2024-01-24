@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "SL1 SWITCH",
+  "categories": ["Dimmer"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2024-01-24",
+    "lastModifyDate": "2024-01-24"
+  },
+  "links": {
+    "manual": [
+      "https://us.rosco.com/sites/default/files/content/resource/2019-06/SWITCH%20Data%20Sheet.pdf"
+    ],
+    "productPage": [
+      "https://us.rosco.com/en/product/dmg-sl1-switch"
+    ]
+  },
+  "physical": {
+    "dimensions": [1130, 200, 20],
+    "weight": 3.4,
+    "power": 170,
+    "DMXconnector": "5-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Intensity": {
+      "fineChannelAliases": ["Intensity fine"],
+      "dmxValueResolution": "8bit",
+      "defaultValue": 0,
+      "highlightValue": 255,
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Color Temperature": {
+      "capability": {
+        "type": "ColorTemperature",
+        "colorTemperatureStart": "3000K",
+        "colorTemperatureEnd": "5600K"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "1: White 8-bit",
+      "shortName": "Intensity + CCT",
+      "channels": [
+        "Intensity",
+        "Color Temperature"
+      ]
+    }
+  ]
+}
