@@ -34,7 +34,7 @@
       "capability": {
         "type": "ColorTemperature",
         "colorTemperatureStart": "2700K",
-        "colorTemperatureEnd": "6500K"
+        "colorTemperatureEnd": "7500K"
       }
     },
     "Effects": {
