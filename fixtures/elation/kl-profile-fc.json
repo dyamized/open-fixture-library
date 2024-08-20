@@ -1,0 +1,534 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "KL Profile FC",
+  "categories": ["Other", "Color Changer"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2024-08-10",
+    "lastModifyDate": "2024-08-10"
+  },
+  "links": {
+    "productPage": [
+      "https://www.elationlighting.com/kl-profile-fc"
+    ],
+    "manual": [
+      "https://d295jznhem2tn9.cloudfront.net/ItemRelatedFiles/12954/Elation%20KL%20Profile%20FC%20-%20DMX%20Traits.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [701, 390, 345],
+    "weight": 15.9,
+    "power": 358,
+    "DMXconnector": "5-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "fineChannelAliases": ["Dimmer fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Gobo Index and Rotation": {
+      "fineChannelAliases": ["Gobo Index and Rotation fine"],
+      "dmxValueResolution": "8bit",
+      "capabilities": [
+        {
+          "dmxRange": [0, 127],
+          "type": "Maintenance",
+          "comment": "Indexing"
+        },
+        {
+          "dmxRange": [128, 189],
+          "type": "Maintenance",
+          "comment": "CW fast to slow"
+        },
+        {
+          "dmxRange": [190, 193],
+          "type": "Maintenance",
+          "comment": "stop"
+        },
+        {
+          "dmxRange": [194, 255],
+          "type": "Maintenance",
+          "comment": "CCW slow to fast"
+        }
+      ]
+    },
+    "Red": {
+      "fineChannelAliases": ["Red fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "fineChannelAliases": ["Green fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "fineChannelAliases": ["Blue fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Mint": {
+      "fineChannelAliases": ["Mint fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Lime"
+      }
+    },
+    "Amber": {
+      "fineChannelAliases": ["Amber fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Cyan": {
+      "fineChannelAliases": ["Cyan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Cyan"
+      }
+    },
+    "Magenta": {
+      "fineChannelAliases": ["Magenta fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Magenta"
+      }
+    },
+    "Yellow": {
+      "fineChannelAliases": ["Yellow fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Yellow"
+      }
+    },
+    "CTO": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 23],
+          "type": "ColorTemperature",
+          "colorTemperature": "2400K"
+        },
+        {
+          "dmxRange": [24, 85],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "2400K",
+          "colorTemperatureEnd": "8500K"
+        },
+        {
+          "dmxRange": [86, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "8500K"
+        }
+      ]
+    },
+    "Color Wheel": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Generic",
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [1, 53],
+          "type": "Generic",
+          "comment": "Virtual Swatch Book"
+        },
+        {
+          "dmxRange": [54, 179],
+          "type": "Generic",
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [180, 201],
+          "type": "Maintenance",
+          "comment": "CW fast to slow"
+        },
+        {
+          "dmxRange": [202, 207],
+          "type": "Maintenance",
+          "comment": "stop"
+        },
+        {
+          "dmxRange": [208, 229],
+          "type": "Maintenance",
+          "comment": "CCW slow to fast"
+        },
+        {
+          "dmxRange": [230, 234],
+          "type": "Generic",
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [235, 239],
+          "type": "Maintenance",
+          "comment": "Random: fast"
+        },
+        {
+          "dmxRange": [240, 244],
+          "type": "Maintenance",
+          "comment": "Random: medium"
+        },
+        {
+          "dmxRange": [245, 249],
+          "type": "Maintenance",
+          "comment": "Random: slow"
+        },
+        {
+          "dmxRange": [250, 255],
+          "type": "Generic",
+          "comment": "Open"
+        }
+      ]
+    },
+    "Green-Magenta Point": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [1, 127],
+          "type": "Generic",
+          "comment": "-100%…-1%"
+        },
+        {
+          "dmxRange": [128, 128],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [129, 255],
+          "type": "Generic",
+          "comment": "1%…100%"
+        }
+      ]
+    },
+    "CCT Cross Fade": {
+      "capability": {
+        "type": "Generic",
+        "comment": "CCT … Color"
+      }
+    },
+    "Shutter / Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 31],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [32, 63],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [64, 95],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [96, 127],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [128, 159],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse"
+        },
+        {
+          "dmxRange": [160, 191],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [192, 223],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "randomTiming": true,
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [224, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Dimmer Control": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 20],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Standard"
+        },
+        {
+          "dmxRange": [21, 40],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Stage"
+        },
+        {
+          "dmxRange": [41, 60],
+          "type": "Maintenance",
+          "comment": "Dim Mode: TV"
+        },
+        {
+          "dmxRange": [61, 80],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Architectural"
+        },
+        {
+          "dmxRange": [81, 100],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Theater"
+        },
+        {
+          "dmxRange": [101, 120],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Stage 2"
+        },
+        {
+          "dmxRange": [121, 141],
+          "type": "Maintenance",
+          "comment": "Dimmer Delay 0s…10s"
+        },
+        {
+          "dmxRange": [142, 255],
+          "type": "Maintenance",
+          "comment": "Idle"
+        }
+      ]
+    },
+    "Control": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 39],
+          "type": "Maintenance",
+          "comment": "Idle"
+        },
+        {
+          "dmxRange": [40, 44],
+          "type": "Maintenance",
+          "comment": "Fan Mode: Studio"
+        },
+        {
+          "dmxRange": [45, 49],
+          "type": "Maintenance",
+          "comment": "Fan Mode: Mute"
+        },
+        {
+          "dmxRange": [50, 59],
+          "type": "Maintenance",
+          "comment": "Fan Mode: Low"
+        },
+        {
+          "dmxRange": [60, 69],
+          "type": "Maintenance",
+          "comment": "Fan Mode: High"
+        },
+        {
+          "dmxRange": [70, 79],
+          "type": "Maintenance",
+          "comment": "Fan Mode: Auto"
+        },
+        {
+          "dmxRange": [80, 84],
+          "type": "Maintenance",
+          "comment": "Reset"
+        },
+        {
+          "dmxRange": [85, 99],
+          "type": "Maintenance",
+          "comment": "Idle"
+        },
+        {
+          "dmxRange": [100, 168],
+          "type": "Generic",
+          "comment": "Refresh Rate 900…25000"
+        },
+        {
+          "dmxRange": [169, 200],
+          "type": "Maintenance",
+          "comment": "Idle"
+        },
+        {
+          "dmxRange": [201, 210],
+          "type": "Maintenance",
+          "comment": "Dimmer Curve: Linear"
+        },
+        {
+          "dmxRange": [211, 220],
+          "type": "Maintenance",
+          "comment": "Dimmer Curve: Square"
+        },
+        {
+          "dmxRange": [221, 230],
+          "type": "Maintenance",
+          "comment": "Dimmer Curve: Inv. Square"
+        },
+        {
+          "dmxRange": [231, 240],
+          "type": "Maintenance",
+          "comment": "Dimmer Curve: S-Curve"
+        },
+        {
+          "dmxRange": [241, 255],
+          "type": "Maintenance",
+          "comment": "Idle"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "Comp",
+      "channels": [
+        "CTO",
+        "Gobo Index and Rotation",
+        "Gobo Index and Rotation fine",
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    },
+    {
+      "name": "Std",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Mint",
+        "Amber",
+        "CTO",
+        "Color Wheel",
+        "Gobo Index and Rotation",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    },
+    {
+      "name": "Ext",
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "Mint",
+        "Mint fine",
+        "Amber",
+        "Amber fine",
+        "CTO",
+        "Color Wheel",
+        "Green-Magenta Point",
+        "CCT Cross Fade",
+        "Gobo Index and Rotation",
+        "Gobo Index and Rotation fine",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Dimmer Control",
+        "Control"
+      ]
+    },
+    {
+      "name": "CMY",
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO",
+        "Color Wheel",
+        "Gobo Index and Rotation",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Control"
+      ]
+    },
+    {
+      "name": "CMY Ext",
+      "channels": [
+        "Cyan",
+        "Cyan fine",
+        "Magenta",
+        "Magenta fine",
+        "Yellow",
+        "Yellow fine",
+        "CTO",
+        "Color Wheel",
+        "Green-Magenta Point",
+        "CCT Cross Fade",
+        "Gobo Index and Rotation",
+        "Gobo Index and Rotation fine",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Dimmer Control",
+        "Control"
+      ]
+    },
+    {
+      "name": "RGB",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "CTO",
+        "Color Wheel",
+        "Gobo Index and Rotation",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Control"
+      ]
+    },
+    {
+      "name": "RGB Ext",
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "CTO",
+        "Color Wheel",
+        "Green-Magenta Point",
+        "CCT Cross Fade",
+        "Gobo Index and Rotation",
+        "Gobo Index and Rotation fine",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Dimmer Control",
+        "Control"
+      ]
+    }
+  ]
+}

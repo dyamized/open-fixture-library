@@ -1,0 +1,675 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "KL CYC S",
+  "categories": ["Other", "Color Changer"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2024-08-10",
+    "lastModifyDate": "2024-08-10"
+  },
+  "links": {
+    "productPage": [
+      "https://www.elationlighting.com/kl-cyc-s"
+    ],
+    "manual": [
+      "https://d295jznhem2tn9.cloudfront.net/ItemRelatedFiles/13611/ELATION%20KL%20CYC%20S%20-%20DMX%20Traits.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [207, 505, 85],
+    "weight": 3.5,
+    "power": 100,
+    "DMXconnector": "5-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "fineChannelAliases": ["Dimmer fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Red": {
+      "fineChannelAliases": ["Red fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "fineChannelAliases": ["Green fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "fineChannelAliases": ["Blue fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Mint": {
+      "fineChannelAliases": ["Mint fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Lime"
+      }
+    },
+    "Amber": {
+      "fineChannelAliases": ["Amber fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Red 2": {
+      "fineChannelAliases": ["Red 2 fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green 2": {
+      "fineChannelAliases": ["Green 2 fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue 2": {
+      "fineChannelAliases": ["Blue 2 fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Mint 2": {
+      "fineChannelAliases": ["Mint 2 fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Lime"
+      }
+    },
+    "Amber 2": {
+      "fineChannelAliases": ["Amber 2 fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Cyan": {
+      "fineChannelAliases": ["Cyan fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Cyan"
+      }
+    },
+    "Magenta": {
+      "fineChannelAliases": ["Magenta fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Magenta"
+      }
+    },
+    "Yellow": {
+      "fineChannelAliases": ["Yellow fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Yellow"
+      }
+    },
+    "CCT": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 23],
+          "type": "ColorTemperature",
+          "colorTemperature": "2400K"
+        },
+        {
+          "dmxRange": [24, 85],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "2400K",
+          "colorTemperatureEnd": "8500K"
+        },
+        {
+          "dmxRange": [86, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "8500K"
+        }
+      ]
+    },
+    "CCT 2": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 23],
+          "type": "ColorTemperature",
+          "colorTemperature": "2400K"
+        },
+        {
+          "dmxRange": [24, 85],
+          "type": "ColorTemperature",
+          "colorTemperatureStart": "2400K",
+          "colorTemperatureEnd": "8500K"
+        },
+        {
+          "dmxRange": [86, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "8500K"
+        }
+      ]
+    },
+    "Green-Magenta Point": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [1, 127],
+          "type": "Generic",
+          "comment": "-100%…-1%"
+        },
+        {
+          "dmxRange": [128, 128],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [129, 255],
+          "type": "Generic",
+          "comment": "1%…100%"
+        }
+      ]
+    },
+    "Green-Magenta Point 2": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [1, 127],
+          "type": "Generic",
+          "comment": "-100%…-1%"
+        },
+        {
+          "dmxRange": [128, 128],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [129, 255],
+          "type": "Generic",
+          "comment": "1%…100%"
+        }
+      ]
+    },
+    "CCT Cross Fade": {
+      "capability": {
+        "type": "Generic",
+        "comment": "CCT … Color"
+      }
+    },
+    "Shutter / Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 31],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Closed"
+        },
+        {
+          "dmxRange": [32, 63],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [64, 95],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [96, 127],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [128, 159],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse"
+        },
+        {
+          "dmxRange": [160, 191],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [192, 223],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "randomTiming": true,
+          "speedStart": "slow",
+          "speedEnd": "fast"
+        },
+        {
+          "dmxRange": [224, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        }
+      ]
+    },
+    "Hue": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Saturation": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Color / Scroll / Slots": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "Maintenance",
+          "comment": "Open"
+        },
+        {
+          "dmxRange": [1, 179],
+          "type": "Generic",
+          "comment": "Gel Selection"
+        },
+        {
+          "dmxRange": [180, 201],
+          "type": "Maintenance",
+          "comment": "Scroll Clockwise Fast…Slow"
+        },
+        {
+          "dmxRange": [202, 207],
+          "type": "Maintenance",
+          "comment": "Scroll Stop"
+        },
+        {
+          "dmxRange": [208, 229],
+          "type": "Maintenance",
+          "comment": "Scroll Clockwise Slow…Fast"
+        },
+        {
+          "dmxRange": [230, 234],
+          "type": "Maintenance",
+          "comment": "Scroll Open"
+        },
+        {
+          "dmxRange": [235, 239],
+          "type": "Maintenance",
+          "comment": "Slots: Fast"
+        },
+        {
+          "dmxRange": [240, 244],
+          "type": "Maintenance",
+          "comment": "Slots: Medium"
+        },
+        {
+          "dmxRange": [245, 249],
+          "type": "Maintenance",
+          "comment": "Slots: Slow"
+        },
+        {
+          "dmxRange": [250, 255],
+          "type": "Maintenance",
+          "comment": "Slots: Open"
+        }
+      ]
+    },
+    "EdgeLight Level": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "Maintenance",
+          "comment": "Off"
+        },
+        {
+          "dmxRange": [11, 20],
+          "type": "Maintenance",
+          "comment": "Default"
+        },
+        {
+          "dmxRange": [21, 255],
+          "type": "Generic",
+          "comment": "Intensity Min…Max"
+        }
+      ]
+    },
+    "Dimmer Control": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 20],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Standard"
+        },
+        {
+          "dmxRange": [21, 40],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Stage"
+        },
+        {
+          "dmxRange": [41, 60],
+          "type": "Maintenance",
+          "comment": "Dim Mode: TV"
+        },
+        {
+          "dmxRange": [61, 80],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Architectural"
+        },
+        {
+          "dmxRange": [81, 100],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Theater"
+        },
+        {
+          "dmxRange": [101, 120],
+          "type": "Maintenance",
+          "comment": "Dim Mode: Stage 2"
+        },
+        {
+          "dmxRange": [121, 141],
+          "type": "Maintenance",
+          "comment": "Dimmer Delay 0s…10s"
+        },
+        {
+          "dmxRange": [142, 255],
+          "type": "Maintenance",
+          "comment": "Idle"
+        }
+      ]
+    },
+    "Control": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 69],
+          "type": "Maintenance",
+          "comment": "Idle"
+        },
+        {
+          "dmxRange": [70, 74],
+          "type": "Maintenance",
+          "comment": "EdgeLight: Disabled"
+        },
+        {
+          "dmxRange": [75, 79],
+          "type": "Maintenance",
+          "comment": "EdgeLight: Always ON"
+        },
+        {
+          "dmxRange": [80, 84],
+          "type": "Maintenance",
+          "comment": "EdgeLight: DMX"
+        },
+        {
+          "dmxRange": [85, 94],
+          "type": "Maintenance",
+          "comment": "EdgeLight: Red"
+        },
+        {
+          "dmxRange": [95, 99],
+          "type": "Maintenance",
+          "comment": "EdgeLight: Blue"
+        },
+        {
+          "dmxRange": [100, 168],
+          "type": "Generic",
+          "comment": "Refresh Rate 900…25000"
+        },
+        {
+          "dmxRange": [169, 200],
+          "type": "Maintenance",
+          "comment": "Idle"
+        },
+        {
+          "dmxRange": [201, 210],
+          "type": "Maintenance",
+          "comment": "Dimmer Curve: Linear"
+        },
+        {
+          "dmxRange": [211, 220],
+          "type": "Maintenance",
+          "comment": "Dimmer Curve: Square"
+        },
+        {
+          "dmxRange": [221, 230],
+          "type": "Maintenance",
+          "comment": "Dimmer Curve: Inv. Square"
+        },
+        {
+          "dmxRange": [231, 240],
+          "type": "Maintenance",
+          "comment": "Dimmer Curve: S-Curve"
+        },
+        {
+          "dmxRange": [241, 255],
+          "type": "Maintenance",
+          "comment": "Idle"
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "4-channel RGB",
+      "shortName": "4ch RGB",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4-channel CCT",
+      "shortName": "4ch CCT",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "CCT",
+        "Green-Magenta Point"
+      ]
+    },
+    {
+      "name": "4-channel HSI",
+      "shortName": "4ch HSI",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Hue",
+        "Saturation"
+      ]
+    },
+    {
+      "name": "12-channel HSI EXT",
+      "shortName": "12ch HSI EXT",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter / Strobe",
+        "Hue",
+        "Saturation",
+        "CCT",
+        "CCT Cross Fade",
+        "Color / Scroll / Slots",
+        "Green-Magenta Point",
+        "EdgeLight Level",
+        "Dimmer Control",
+        "Control"
+      ]
+    },
+    {
+      "name": "11-channel CMY",
+      "shortName": "11ch CMY",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter / Strobe",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CCT",
+        "CCT Cross Fade",
+        "Color / Scroll / Slots",
+        "EdgeLight Level",
+        "Control"
+      ]
+    },
+    {
+      "name": "16-channel CMY EXT",
+      "shortName": "16ch CMY EXT",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter / Strobe",
+        "Cyan",
+        "Cyan fine",
+        "Magenta",
+        "Magenta fine",
+        "Yellow",
+        "Yellow fine",
+        "CCT",
+        "CCT Cross Fade",
+        "Color / Scroll / Slots",
+        "Green-Magenta Point",
+        "EdgeLight Level",
+        "Dimmer Control",
+        "Control"
+      ]
+    },
+    {
+      "name": "13-channel STD",
+      "shortName": "13ch STD",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter / Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "Mint",
+        "Amber",
+        "CCT",
+        "CCT Cross Fade",
+        "Color / Scroll / Slots",
+        "EdgeLight Level",
+        "Control"
+      ]
+    },
+    {
+      "name": "20-channel EXT",
+      "shortName": "20ch EXT",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter / Strobe",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "Mint",
+        "Mint fine",
+        "Amber",
+        "Amber fine",
+        "CCT",
+        "CCT Cross Fade",
+        "Color / Scroll / Slots",
+        "Green-Magenta Point",
+        "EdgeLight Level",
+        "Dimmer Control",
+        "Control"
+      ]
+    },
+    {
+      "name": "19-channel STD 2 Zone",
+      "shortName": "19ch STD 2 Zone",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter / Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "Mint",
+        "Amber",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Mint 2",
+        "Amber 2",
+        "CCT",
+        "CCT 2",
+        "CCT Cross Fade",
+        "Color / Scroll / Slots",
+        "EdgeLight Level",
+        "Control"
+      ]
+    },
+    {
+      "name": "32-channel EXT 2 Zone",
+      "shortName": "32ch EXT 2 Zone",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter / Strobe",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "Mint",
+        "Mint fine",
+        "Amber",
+        "Amber fine",
+        "Red 2",
+        "Red 2 fine",
+        "Green 2",
+        "Green 2 fine",
+        "Blue 2",
+        "Blue 2 fine",
+        "Mint 2",
+        "Mint 2 fine",
+        "Amber 2",
+        "Amber 2 fine",
+        "CCT",
+        "CCT 2",
+        "CCT Cross Fade",
+        "Color / Scroll / Slots",
+        "Green-Magenta Point",
+        "Green-Magenta Point 2",
+        "EdgeLight Level",
+        "Dimmer Control",
+        "Control"
+      ]
+    }
+  ]
+}
