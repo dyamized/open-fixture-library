@@ -1,0 +1,363 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "Infinibar PB12",
+  "categories": ["Dimmer", "Color Changer", "Effect"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2024-10-01",
+    "lastModifyDate": "2024-10-01"
+  },
+  "links": {
+    "manual": [
+      "https://docs.aputure.com/hubfs/Knowledge%20Base/Aputure/Infinibar/All%20Files/INFINIBAR-Product-Manual-V1.0.pdf"
+    ],
+    "productPage": [
+      "https://www.aputure.com/products/infinibar-pb6/"
+    ],
+    "video": [
+      "https://www.youtube.com/watch?v=YCLVWOjL2Tg"
+    ],
+    "other": [
+      "https://docs.aputure.com/hubfs/Knowledge%20Base/Aputure/Infinibar/All%20Files/INFINIBAR-DMX-Profile-Specification-V1.0.pdf"
+    ]
+  },
+  "physical": {
+    "dimensions": [1204, 45, 43],
+    "weight": 1.96,
+    "power": 40,
+    "DMXconnector": "5-pin",
+    "bulb": {
+      "type": "LED"
+    }
+  },
+  "availableChannels": {
+    "Intensity": {
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "CCT": {
+      "capability": {
+        "type": "ColorTemperature",
+        "colorTemperatureStart": "2000K",
+        "colorTemperatureEnd": "10000K"
+      }
+    },
+    "CCT <-> RGB": {
+      "capability": {
+        "type": "Generic",
+        "comment": "crossfade to color"
+      }
+    },
+    "Red": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Green/Magenta Point": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [11, 20],
+          "type": "Generic",
+          "comment": "Full minus green"
+        },
+        {
+          "dmxRange": [21, 119],
+          "type": "Generic",
+          "comment": "-99%…-1%"
+        },
+        {
+          "dmxRange": [120, 145],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [146, 244],
+          "type": "Generic",
+          "comment": "1%…99%"
+        },
+        {
+          "dmxRange": [245, 255],
+          "type": "Generic",
+          "comment": "Full plus green"
+        }
+      ]
+    },
+    "Strobe": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 19],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [20, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "speedStart": "1Hz",
+          "speedEnd": "25Hz"
+        }
+      ]
+    },
+    "Hue": {
+      "capability": {
+        "type": "Generic",
+        "comment": "1° … 360°"
+      }
+    },
+    "Saturation": {
+      "capability": {
+        "type": "Intensity",
+        "brightnessStart": "0%",
+        "brightnessEnd": "100%"
+      }
+    },
+    "CCT <-> HSI": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Cross Fade To Color"
+      }
+    },
+    "X": {
+      "capability": {
+        "type": "Generic",
+        "comment": "0 … 0.8"
+      }
+    },
+    "Y": {
+      "capability": {
+        "type": "Generic",
+        "comment": "0 … 0.8"
+      }
+    },
+    "Effect": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "Generic",
+          "comment": "Club Lights"
+        },
+        {
+          "dmxRange": [10, 19],
+          "type": "Generic",
+          "comment": "Paperazzi"
+        },
+        {
+          "dmxRange": [20, 29],
+          "type": "Generic",
+          "comment": "Lightning"
+        },
+        {
+          "dmxRange": [30, 39],
+          "type": "Generic",
+          "comment": "TV"
+        },
+        {
+          "dmxRange": [40, 49],
+          "type": "Generic",
+          "comment": "Candle"
+        },
+        {
+          "dmxRange": [50, 59],
+          "type": "Generic",
+          "comment": "Fire"
+        },
+        {
+          "dmxRange": [60, 69],
+          "type": "Generic",
+          "comment": "Strobe"
+        },
+        {
+          "dmxRange": [70, 79],
+          "type": "Generic",
+          "comment": "Explosion"
+        },
+        {
+          "dmxRange": [80, 89],
+          "type": "Generic",
+          "comment": "Faulty Bulb"
+        },
+        {
+          "dmxRange": [90, 99],
+          "type": "Generic",
+          "comment": "Pulsing"
+        },
+        {
+          "dmxRange": [100, 109],
+          "type": "Generic",
+          "comment": "Welding"
+        },
+        {
+          "dmxRange": [110, 119],
+          "type": "Generic",
+          "comment": "Cop Car"
+        },
+        {
+          "dmxRange": [120, 129],
+          "type": "Generic",
+          "comment": "Color Chase"
+        },
+        {
+          "dmxRange": [130, 139],
+          "type": "Generic",
+          "comment": "Party Lights"
+        },
+        {
+          "dmxRange": [140, 149],
+          "type": "Generic",
+          "comment": "Fireworks"
+        },
+        {
+          "dmxRange": [150, 255],
+          "type": "Generic",
+          "comment": "Backup"
+        }
+      ]
+    },
+    "Effect Parameter 1": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Dependent on Effect"
+      }
+    },
+    "Effect Parameter 2": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Dependent on Effect"
+      }
+    },
+    "Effect Parameter 3": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Dependent on Effect"
+      }
+    },
+    "Effect Parameter 4": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Dependent on Effect"
+      }
+    },
+    "Effect Parameter 5": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Dependent on Effect"
+      }
+    },
+    "Effect Parameter 6": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Dependent on Effect"
+      }
+    },
+    "Effect Parameter 7": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Dependent on Effect"
+      }
+    },
+    "Effect Parameter 8": {
+      "capability": {
+        "type": "Generic",
+        "comment": "Dependent on Effect"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "CCT&RGB",
+      "channels": [
+        "Intensity",
+        "CCT",
+        "Green/Magenta Point",
+        "CCT <-> RGB",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "CCT",
+      "channels": [
+        "Intensity",
+        "CCT",
+        "Green/Magenta Point",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "CCT&HSI",
+      "channels": [
+        "Intensity",
+        "CCT",
+        "Green/Magenta Point",
+        "CCT <-> HSI",
+        "Hue",
+        "Saturation",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "RGB",
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "HSI",
+      "channels": [
+        "Intensity",
+        "Hue",
+        "Saturation",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "X-Y",
+      "channels": [
+        "Intensity",
+        "X",
+        "Y",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Effect",
+      "channels": [
+        "Intensity",
+        "Effect",
+        "Effect Parameter 1",
+        "Effect Parameter 2",
+        "Effect Parameter 3",
+        "Effect Parameter 4",
+        "Effect Parameter 5",
+        "Effect Parameter 6",
+        "Effect Parameter 7",
+        "Effect Parameter 8"
+      ]
+    }
+  ]
+}
