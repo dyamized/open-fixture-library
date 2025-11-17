@@ -1,0 +1,2766 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "LiteDimmer Spectrum DC200",
+  "categories": ["Dimmer"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2025-11-17",
+    "lastModifyDate": "2025-11-17"
+  },
+  "comment": "LiteGear control device.",
+  "availableChannels": {
+    "Intensity": {
+      "fineChannelAliases": ["Intensity fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Color Temperature": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "ColorTemperature",
+          "colorTemperature": "2000K"
+        },
+        {
+          "dmxRange": [1, 1],
+          "type": "ColorTemperature",
+          "colorTemperature": "2010K"
+        },
+        {
+          "dmxRange": [2, 2],
+          "type": "ColorTemperature",
+          "colorTemperature": "2020K"
+        },
+        {
+          "dmxRange": [3, 3],
+          "type": "ColorTemperature",
+          "colorTemperature": "2030K"
+        },
+        {
+          "dmxRange": [4, 4],
+          "type": "ColorTemperature",
+          "colorTemperature": "2040K"
+        },
+        {
+          "dmxRange": [5, 5],
+          "type": "ColorTemperature",
+          "colorTemperature": "2050K"
+        },
+        {
+          "dmxRange": [6, 6],
+          "type": "ColorTemperature",
+          "colorTemperature": "2060K"
+        },
+        {
+          "dmxRange": [7, 7],
+          "type": "ColorTemperature",
+          "colorTemperature": "2070K"
+        },
+        {
+          "dmxRange": [8, 8],
+          "type": "ColorTemperature",
+          "colorTemperature": "2080K"
+        },
+        {
+          "dmxRange": [9, 9],
+          "type": "ColorTemperature",
+          "colorTemperature": "2090K"
+        },
+        {
+          "dmxRange": [10, 10],
+          "type": "ColorTemperature",
+          "colorTemperature": "2100K"
+        },
+        {
+          "dmxRange": [11, 11],
+          "type": "ColorTemperature",
+          "colorTemperature": "2110K"
+        },
+        {
+          "dmxRange": [12, 12],
+          "type": "ColorTemperature",
+          "colorTemperature": "2120K"
+        },
+        {
+          "dmxRange": [13, 13],
+          "type": "ColorTemperature",
+          "colorTemperature": "2130K"
+        },
+        {
+          "dmxRange": [14, 14],
+          "type": "ColorTemperature",
+          "colorTemperature": "2140K"
+        },
+        {
+          "dmxRange": [15, 15],
+          "type": "ColorTemperature",
+          "colorTemperature": "2150K"
+        },
+        {
+          "dmxRange": [16, 16],
+          "type": "ColorTemperature",
+          "colorTemperature": "2160K"
+        },
+        {
+          "dmxRange": [17, 17],
+          "type": "ColorTemperature",
+          "colorTemperature": "2170K"
+        },
+        {
+          "dmxRange": [18, 18],
+          "type": "ColorTemperature",
+          "colorTemperature": "2180K"
+        },
+        {
+          "dmxRange": [19, 19],
+          "type": "ColorTemperature",
+          "colorTemperature": "2190K"
+        },
+        {
+          "dmxRange": [20, 20],
+          "type": "ColorTemperature",
+          "colorTemperature": "2200K"
+        },
+        {
+          "dmxRange": [21, 21],
+          "type": "ColorTemperature",
+          "colorTemperature": "2210K"
+        },
+        {
+          "dmxRange": [22, 22],
+          "type": "ColorTemperature",
+          "colorTemperature": "2220K"
+        },
+        {
+          "dmxRange": [23, 23],
+          "type": "ColorTemperature",
+          "colorTemperature": "2230K"
+        },
+        {
+          "dmxRange": [24, 24],
+          "type": "ColorTemperature",
+          "colorTemperature": "2240K"
+        },
+        {
+          "dmxRange": [25, 25],
+          "type": "ColorTemperature",
+          "colorTemperature": "2250K"
+        },
+        {
+          "dmxRange": [26, 26],
+          "type": "ColorTemperature",
+          "colorTemperature": "2260K"
+        },
+        {
+          "dmxRange": [27, 27],
+          "type": "ColorTemperature",
+          "colorTemperature": "2270K"
+        },
+        {
+          "dmxRange": [28, 28],
+          "type": "ColorTemperature",
+          "colorTemperature": "2280K"
+        },
+        {
+          "dmxRange": [29, 29],
+          "type": "ColorTemperature",
+          "colorTemperature": "2290K"
+        },
+        {
+          "dmxRange": [30, 30],
+          "type": "ColorTemperature",
+          "colorTemperature": "2300K"
+        },
+        {
+          "dmxRange": [31, 31],
+          "type": "ColorTemperature",
+          "colorTemperature": "2310K"
+        },
+        {
+          "dmxRange": [32, 32],
+          "type": "ColorTemperature",
+          "colorTemperature": "2320K"
+        },
+        {
+          "dmxRange": [33, 33],
+          "type": "ColorTemperature",
+          "colorTemperature": "2330K"
+        },
+        {
+          "dmxRange": [34, 34],
+          "type": "ColorTemperature",
+          "colorTemperature": "2340K"
+        },
+        {
+          "dmxRange": [35, 35],
+          "type": "ColorTemperature",
+          "colorTemperature": "2350K"
+        },
+        {
+          "dmxRange": [36, 36],
+          "type": "ColorTemperature",
+          "colorTemperature": "2360K"
+        },
+        {
+          "dmxRange": [37, 37],
+          "type": "ColorTemperature",
+          "colorTemperature": "2370K"
+        },
+        {
+          "dmxRange": [38, 38],
+          "type": "ColorTemperature",
+          "colorTemperature": "2380K"
+        },
+        {
+          "dmxRange": [39, 39],
+          "type": "ColorTemperature",
+          "colorTemperature": "2390K"
+        },
+        {
+          "dmxRange": [40, 40],
+          "type": "ColorTemperature",
+          "colorTemperature": "2400K"
+        },
+        {
+          "dmxRange": [41, 41],
+          "type": "ColorTemperature",
+          "colorTemperature": "2410K"
+        },
+        {
+          "dmxRange": [42, 42],
+          "type": "ColorTemperature",
+          "colorTemperature": "2420K"
+        },
+        {
+          "dmxRange": [43, 43],
+          "type": "ColorTemperature",
+          "colorTemperature": "2430K"
+        },
+        {
+          "dmxRange": [44, 44],
+          "type": "ColorTemperature",
+          "colorTemperature": "2440K"
+        },
+        {
+          "dmxRange": [45, 45],
+          "type": "ColorTemperature",
+          "colorTemperature": "2450K"
+        },
+        {
+          "dmxRange": [46, 46],
+          "type": "ColorTemperature",
+          "colorTemperature": "2460K"
+        },
+        {
+          "dmxRange": [47, 47],
+          "type": "ColorTemperature",
+          "colorTemperature": "2470K"
+        },
+        {
+          "dmxRange": [48, 48],
+          "type": "ColorTemperature",
+          "colorTemperature": "2480K"
+        },
+        {
+          "dmxRange": [49, 49],
+          "type": "ColorTemperature",
+          "colorTemperature": "2490K"
+        },
+        {
+          "dmxRange": [50, 50],
+          "type": "ColorTemperature",
+          "colorTemperature": "2500K"
+        },
+        {
+          "dmxRange": [51, 51],
+          "type": "ColorTemperature",
+          "colorTemperature": "2510K"
+        },
+        {
+          "dmxRange": [52, 52],
+          "type": "ColorTemperature",
+          "colorTemperature": "2520K"
+        },
+        {
+          "dmxRange": [53, 53],
+          "type": "ColorTemperature",
+          "colorTemperature": "2530K"
+        },
+        {
+          "dmxRange": [54, 54],
+          "type": "ColorTemperature",
+          "colorTemperature": "2540K"
+        },
+        {
+          "dmxRange": [55, 55],
+          "type": "ColorTemperature",
+          "colorTemperature": "2550K"
+        },
+        {
+          "dmxRange": [56, 56],
+          "type": "ColorTemperature",
+          "colorTemperature": "2560K"
+        },
+        {
+          "dmxRange": [57, 57],
+          "type": "ColorTemperature",
+          "colorTemperature": "2570K"
+        },
+        {
+          "dmxRange": [58, 58],
+          "type": "ColorTemperature",
+          "colorTemperature": "2580K"
+        },
+        {
+          "dmxRange": [59, 59],
+          "type": "ColorTemperature",
+          "colorTemperature": "2590K"
+        },
+        {
+          "dmxRange": [60, 60],
+          "type": "ColorTemperature",
+          "colorTemperature": "2600K"
+        },
+        {
+          "dmxRange": [61, 61],
+          "type": "ColorTemperature",
+          "colorTemperature": "2625K"
+        },
+        {
+          "dmxRange": [62, 62],
+          "type": "ColorTemperature",
+          "colorTemperature": "2650K"
+        },
+        {
+          "dmxRange": [63, 63],
+          "type": "ColorTemperature",
+          "colorTemperature": "2675K"
+        },
+        {
+          "dmxRange": [64, 64],
+          "type": "ColorTemperature",
+          "colorTemperature": "2700K"
+        },
+        {
+          "dmxRange": [65, 65],
+          "type": "ColorTemperature",
+          "colorTemperature": "2725K"
+        },
+        {
+          "dmxRange": [66, 66],
+          "type": "ColorTemperature",
+          "colorTemperature": "2750K"
+        },
+        {
+          "dmxRange": [67, 67],
+          "type": "ColorTemperature",
+          "colorTemperature": "2775K"
+        },
+        {
+          "dmxRange": [68, 68],
+          "type": "ColorTemperature",
+          "colorTemperature": "2800K"
+        },
+        {
+          "dmxRange": [69, 69],
+          "type": "ColorTemperature",
+          "colorTemperature": "2825K"
+        },
+        {
+          "dmxRange": [70, 70],
+          "type": "ColorTemperature",
+          "colorTemperature": "2850K"
+        },
+        {
+          "dmxRange": [71, 71],
+          "type": "ColorTemperature",
+          "colorTemperature": "2875K"
+        },
+        {
+          "dmxRange": [72, 72],
+          "type": "ColorTemperature",
+          "colorTemperature": "2900K"
+        },
+        {
+          "dmxRange": [73, 73],
+          "type": "ColorTemperature",
+          "colorTemperature": "2925K"
+        },
+        {
+          "dmxRange": [74, 74],
+          "type": "ColorTemperature",
+          "colorTemperature": "2950K"
+        },
+        {
+          "dmxRange": [75, 75],
+          "type": "ColorTemperature",
+          "colorTemperature": "2975K"
+        },
+        {
+          "dmxRange": [76, 76],
+          "type": "ColorTemperature",
+          "colorTemperature": "3000K"
+        },
+        {
+          "dmxRange": [77, 77],
+          "type": "ColorTemperature",
+          "colorTemperature": "3025K"
+        },
+        {
+          "dmxRange": [78, 78],
+          "type": "ColorTemperature",
+          "colorTemperature": "3050K"
+        },
+        {
+          "dmxRange": [79, 79],
+          "type": "ColorTemperature",
+          "colorTemperature": "3075K"
+        },
+        {
+          "dmxRange": [80, 80],
+          "type": "ColorTemperature",
+          "colorTemperature": "3100K"
+        },
+        {
+          "dmxRange": [81, 81],
+          "type": "ColorTemperature",
+          "colorTemperature": "3125K"
+        },
+        {
+          "dmxRange": [82, 82],
+          "type": "ColorTemperature",
+          "colorTemperature": "3150K"
+        },
+        {
+          "dmxRange": [83, 83],
+          "type": "ColorTemperature",
+          "colorTemperature": "3175K"
+        },
+        {
+          "dmxRange": [84, 84],
+          "type": "ColorTemperature",
+          "colorTemperature": "3200K"
+        },
+        {
+          "dmxRange": [85, 85],
+          "type": "ColorTemperature",
+          "colorTemperature": "3225K"
+        },
+        {
+          "dmxRange": [86, 86],
+          "type": "ColorTemperature",
+          "colorTemperature": "3250K"
+        },
+        {
+          "dmxRange": [87, 87],
+          "type": "ColorTemperature",
+          "colorTemperature": "3275K"
+        },
+        {
+          "dmxRange": [88, 88],
+          "type": "ColorTemperature",
+          "colorTemperature": "3300K"
+        },
+        {
+          "dmxRange": [89, 89],
+          "type": "ColorTemperature",
+          "colorTemperature": "3325K"
+        },
+        {
+          "dmxRange": [90, 90],
+          "type": "ColorTemperature",
+          "colorTemperature": "3350K"
+        },
+        {
+          "dmxRange": [91, 91],
+          "type": "ColorTemperature",
+          "colorTemperature": "3375K"
+        },
+        {
+          "dmxRange": [92, 92],
+          "type": "ColorTemperature",
+          "colorTemperature": "3400K"
+        },
+        {
+          "dmxRange": [93, 93],
+          "type": "ColorTemperature",
+          "colorTemperature": "3425K"
+        },
+        {
+          "dmxRange": [94, 94],
+          "type": "ColorTemperature",
+          "colorTemperature": "3450K"
+        },
+        {
+          "dmxRange": [95, 95],
+          "type": "ColorTemperature",
+          "colorTemperature": "3475K"
+        },
+        {
+          "dmxRange": [96, 96],
+          "type": "ColorTemperature",
+          "colorTemperature": "3500K"
+        },
+        {
+          "dmxRange": [97, 97],
+          "type": "ColorTemperature",
+          "colorTemperature": "3525K"
+        },
+        {
+          "dmxRange": [98, 98],
+          "type": "ColorTemperature",
+          "colorTemperature": "3550K"
+        },
+        {
+          "dmxRange": [99, 99],
+          "type": "ColorTemperature",
+          "colorTemperature": "3575K"
+        },
+        {
+          "dmxRange": [100, 100],
+          "type": "ColorTemperature",
+          "colorTemperature": "3600K"
+        },
+        {
+          "dmxRange": [101, 101],
+          "type": "ColorTemperature",
+          "colorTemperature": "3625K"
+        },
+        {
+          "dmxRange": [102, 102],
+          "type": "ColorTemperature",
+          "colorTemperature": "3650K"
+        },
+        {
+          "dmxRange": [103, 103],
+          "type": "ColorTemperature",
+          "colorTemperature": "3675K"
+        },
+        {
+          "dmxRange": [104, 104],
+          "type": "ColorTemperature",
+          "colorTemperature": "3700K"
+        },
+        {
+          "dmxRange": [105, 105],
+          "type": "ColorTemperature",
+          "colorTemperature": "3725K"
+        },
+        {
+          "dmxRange": [106, 106],
+          "type": "ColorTemperature",
+          "colorTemperature": "3750K"
+        },
+        {
+          "dmxRange": [107, 107],
+          "type": "ColorTemperature",
+          "colorTemperature": "3775K"
+        },
+        {
+          "dmxRange": [108, 108],
+          "type": "ColorTemperature",
+          "colorTemperature": "3800K"
+        },
+        {
+          "dmxRange": [109, 109],
+          "type": "ColorTemperature",
+          "colorTemperature": "3825K"
+        },
+        {
+          "dmxRange": [110, 110],
+          "type": "ColorTemperature",
+          "colorTemperature": "3850K"
+        },
+        {
+          "dmxRange": [111, 111],
+          "type": "ColorTemperature",
+          "colorTemperature": "3875K"
+        },
+        {
+          "dmxRange": [112, 112],
+          "type": "ColorTemperature",
+          "colorTemperature": "3900K"
+        },
+        {
+          "dmxRange": [113, 113],
+          "type": "ColorTemperature",
+          "colorTemperature": "3925K"
+        },
+        {
+          "dmxRange": [114, 114],
+          "type": "ColorTemperature",
+          "colorTemperature": "3950K"
+        },
+        {
+          "dmxRange": [115, 115],
+          "type": "ColorTemperature",
+          "colorTemperature": "3975K"
+        },
+        {
+          "dmxRange": [116, 116],
+          "type": "ColorTemperature",
+          "colorTemperature": "4000K"
+        },
+        {
+          "dmxRange": [117, 117],
+          "type": "ColorTemperature",
+          "colorTemperature": "4025K"
+        },
+        {
+          "dmxRange": [118, 118],
+          "type": "ColorTemperature",
+          "colorTemperature": "4050K"
+        },
+        {
+          "dmxRange": [119, 119],
+          "type": "ColorTemperature",
+          "colorTemperature": "4075K"
+        },
+        {
+          "dmxRange": [120, 120],
+          "type": "ColorTemperature",
+          "colorTemperature": "4100K"
+        },
+        {
+          "dmxRange": [121, 121],
+          "type": "ColorTemperature",
+          "colorTemperature": "4125K"
+        },
+        {
+          "dmxRange": [122, 122],
+          "type": "ColorTemperature",
+          "colorTemperature": "4150K"
+        },
+        {
+          "dmxRange": [123, 123],
+          "type": "ColorTemperature",
+          "colorTemperature": "4175K"
+        },
+        {
+          "dmxRange": [124, 124],
+          "type": "ColorTemperature",
+          "colorTemperature": "4200K"
+        },
+        {
+          "dmxRange": [125, 125],
+          "type": "ColorTemperature",
+          "colorTemperature": "4225K"
+        },
+        {
+          "dmxRange": [126, 126],
+          "type": "ColorTemperature",
+          "colorTemperature": "4250K"
+        },
+        {
+          "dmxRange": [127, 127],
+          "type": "ColorTemperature",
+          "colorTemperature": "4275K"
+        },
+        {
+          "dmxRange": [128, 128],
+          "type": "ColorTemperature",
+          "colorTemperature": "4300K"
+        },
+        {
+          "dmxRange": [129, 129],
+          "type": "ColorTemperature",
+          "colorTemperature": "4325K"
+        },
+        {
+          "dmxRange": [130, 130],
+          "type": "ColorTemperature",
+          "colorTemperature": "4350K"
+        },
+        {
+          "dmxRange": [131, 131],
+          "type": "ColorTemperature",
+          "colorTemperature": "4375K"
+        },
+        {
+          "dmxRange": [132, 132],
+          "type": "ColorTemperature",
+          "colorTemperature": "4400K"
+        },
+        {
+          "dmxRange": [133, 133],
+          "type": "ColorTemperature",
+          "colorTemperature": "4425K"
+        },
+        {
+          "dmxRange": [134, 134],
+          "type": "ColorTemperature",
+          "colorTemperature": "4450K"
+        },
+        {
+          "dmxRange": [135, 135],
+          "type": "ColorTemperature",
+          "colorTemperature": "4475K"
+        },
+        {
+          "dmxRange": [136, 136],
+          "type": "ColorTemperature",
+          "colorTemperature": "4500K"
+        },
+        {
+          "dmxRange": [137, 137],
+          "type": "ColorTemperature",
+          "colorTemperature": "4525K"
+        },
+        {
+          "dmxRange": [138, 138],
+          "type": "ColorTemperature",
+          "colorTemperature": "4550K"
+        },
+        {
+          "dmxRange": [139, 139],
+          "type": "ColorTemperature",
+          "colorTemperature": "4575K"
+        },
+        {
+          "dmxRange": [140, 140],
+          "type": "ColorTemperature",
+          "colorTemperature": "4600K"
+        },
+        {
+          "dmxRange": [141, 141],
+          "type": "ColorTemperature",
+          "colorTemperature": "4625K"
+        },
+        {
+          "dmxRange": [142, 142],
+          "type": "ColorTemperature",
+          "colorTemperature": "4650K"
+        },
+        {
+          "dmxRange": [143, 143],
+          "type": "ColorTemperature",
+          "colorTemperature": "4675K"
+        },
+        {
+          "dmxRange": [144, 144],
+          "type": "ColorTemperature",
+          "colorTemperature": "4700K"
+        },
+        {
+          "dmxRange": [145, 145],
+          "type": "ColorTemperature",
+          "colorTemperature": "4725K"
+        },
+        {
+          "dmxRange": [146, 146],
+          "type": "ColorTemperature",
+          "colorTemperature": "4750K"
+        },
+        {
+          "dmxRange": [147, 147],
+          "type": "ColorTemperature",
+          "colorTemperature": "4775K"
+        },
+        {
+          "dmxRange": [148, 148],
+          "type": "ColorTemperature",
+          "colorTemperature": "4800K"
+        },
+        {
+          "dmxRange": [149, 149],
+          "type": "ColorTemperature",
+          "colorTemperature": "4825K"
+        },
+        {
+          "dmxRange": [150, 150],
+          "type": "ColorTemperature",
+          "colorTemperature": "4850K"
+        },
+        {
+          "dmxRange": [151, 151],
+          "type": "ColorTemperature",
+          "colorTemperature": "4875K"
+        },
+        {
+          "dmxRange": [152, 152],
+          "type": "ColorTemperature",
+          "colorTemperature": "4900K"
+        },
+        {
+          "dmxRange": [153, 153],
+          "type": "ColorTemperature",
+          "colorTemperature": "4925K"
+        },
+        {
+          "dmxRange": [154, 154],
+          "type": "ColorTemperature",
+          "colorTemperature": "4950K"
+        },
+        {
+          "dmxRange": [155, 155],
+          "type": "ColorTemperature",
+          "colorTemperature": "4975K"
+        },
+        {
+          "dmxRange": [156, 156],
+          "type": "ColorTemperature",
+          "colorTemperature": "5000K"
+        },
+        {
+          "dmxRange": [157, 157],
+          "type": "ColorTemperature",
+          "colorTemperature": "5025K"
+        },
+        {
+          "dmxRange": [158, 158],
+          "type": "ColorTemperature",
+          "colorTemperature": "5050K"
+        },
+        {
+          "dmxRange": [159, 159],
+          "type": "ColorTemperature",
+          "colorTemperature": "5075K"
+        },
+        {
+          "dmxRange": [160, 160],
+          "type": "ColorTemperature",
+          "colorTemperature": "5100K"
+        },
+        {
+          "dmxRange": [161, 161],
+          "type": "ColorTemperature",
+          "colorTemperature": "5125K"
+        },
+        {
+          "dmxRange": [162, 162],
+          "type": "ColorTemperature",
+          "colorTemperature": "5150K"
+        },
+        {
+          "dmxRange": [163, 163],
+          "type": "ColorTemperature",
+          "colorTemperature": "5175K"
+        },
+        {
+          "dmxRange": [164, 164],
+          "type": "ColorTemperature",
+          "colorTemperature": "5200K"
+        },
+        {
+          "dmxRange": [165, 165],
+          "type": "ColorTemperature",
+          "colorTemperature": "5225K"
+        },
+        {
+          "dmxRange": [166, 166],
+          "type": "ColorTemperature",
+          "colorTemperature": "5250K"
+        },
+        {
+          "dmxRange": [167, 167],
+          "type": "ColorTemperature",
+          "colorTemperature": "5275K"
+        },
+        {
+          "dmxRange": [168, 168],
+          "type": "ColorTemperature",
+          "colorTemperature": "5300K"
+        },
+        {
+          "dmxRange": [169, 169],
+          "type": "ColorTemperature",
+          "colorTemperature": "5325K"
+        },
+        {
+          "dmxRange": [170, 170],
+          "type": "ColorTemperature",
+          "colorTemperature": "5350K"
+        },
+        {
+          "dmxRange": [171, 171],
+          "type": "ColorTemperature",
+          "colorTemperature": "5375K"
+        },
+        {
+          "dmxRange": [172, 172],
+          "type": "ColorTemperature",
+          "colorTemperature": "5400K"
+        },
+        {
+          "dmxRange": [173, 173],
+          "type": "ColorTemperature",
+          "colorTemperature": "5425K"
+        },
+        {
+          "dmxRange": [174, 174],
+          "type": "ColorTemperature",
+          "colorTemperature": "5450K"
+        },
+        {
+          "dmxRange": [175, 175],
+          "type": "ColorTemperature",
+          "colorTemperature": "5475K"
+        },
+        {
+          "dmxRange": [176, 176],
+          "type": "ColorTemperature",
+          "colorTemperature": "5500K"
+        },
+        {
+          "dmxRange": [177, 177],
+          "type": "ColorTemperature",
+          "colorTemperature": "5525K"
+        },
+        {
+          "dmxRange": [178, 178],
+          "type": "ColorTemperature",
+          "colorTemperature": "5550K"
+        },
+        {
+          "dmxRange": [179, 179],
+          "type": "ColorTemperature",
+          "colorTemperature": "5575K"
+        },
+        {
+          "dmxRange": [180, 180],
+          "type": "ColorTemperature",
+          "colorTemperature": "5600K"
+        },
+        {
+          "dmxRange": [181, 181],
+          "type": "ColorTemperature",
+          "colorTemperature": "5650K"
+        },
+        {
+          "dmxRange": [182, 182],
+          "type": "ColorTemperature",
+          "colorTemperature": "5700K"
+        },
+        {
+          "dmxRange": [183, 183],
+          "type": "ColorTemperature",
+          "colorTemperature": "5750K"
+        },
+        {
+          "dmxRange": [184, 184],
+          "type": "ColorTemperature",
+          "colorTemperature": "5800K"
+        },
+        {
+          "dmxRange": [185, 185],
+          "type": "ColorTemperature",
+          "colorTemperature": "5850K"
+        },
+        {
+          "dmxRange": [186, 186],
+          "type": "ColorTemperature",
+          "colorTemperature": "5900K"
+        },
+        {
+          "dmxRange": [187, 187],
+          "type": "ColorTemperature",
+          "colorTemperature": "5950K"
+        },
+        {
+          "dmxRange": [188, 188],
+          "type": "ColorTemperature",
+          "colorTemperature": "6000K"
+        },
+        {
+          "dmxRange": [189, 189],
+          "type": "ColorTemperature",
+          "colorTemperature": "6050K"
+        },
+        {
+          "dmxRange": [190, 190],
+          "type": "ColorTemperature",
+          "colorTemperature": "6100K"
+        },
+        {
+          "dmxRange": [191, 191],
+          "type": "ColorTemperature",
+          "colorTemperature": "6150K"
+        },
+        {
+          "dmxRange": [192, 192],
+          "type": "ColorTemperature",
+          "colorTemperature": "6200K"
+        },
+        {
+          "dmxRange": [193, 193],
+          "type": "ColorTemperature",
+          "colorTemperature": "6250K"
+        },
+        {
+          "dmxRange": [194, 194],
+          "type": "ColorTemperature",
+          "colorTemperature": "6300K"
+        },
+        {
+          "dmxRange": [195, 195],
+          "type": "ColorTemperature",
+          "colorTemperature": "6350K"
+        },
+        {
+          "dmxRange": [196, 196],
+          "type": "ColorTemperature",
+          "colorTemperature": "6400K"
+        },
+        {
+          "dmxRange": [197, 197],
+          "type": "ColorTemperature",
+          "colorTemperature": "6450K"
+        },
+        {
+          "dmxRange": [198, 198],
+          "type": "ColorTemperature",
+          "colorTemperature": "6500K"
+        },
+        {
+          "dmxRange": [199, 199],
+          "type": "ColorTemperature",
+          "colorTemperature": "6550K"
+        },
+        {
+          "dmxRange": [200, 200],
+          "type": "ColorTemperature",
+          "colorTemperature": "6600K"
+        },
+        {
+          "dmxRange": [201, 201],
+          "type": "ColorTemperature",
+          "colorTemperature": "6650K"
+        },
+        {
+          "dmxRange": [202, 202],
+          "type": "ColorTemperature",
+          "colorTemperature": "6700K"
+        },
+        {
+          "dmxRange": [203, 203],
+          "type": "ColorTemperature",
+          "colorTemperature": "6750K"
+        },
+        {
+          "dmxRange": [204, 204],
+          "type": "ColorTemperature",
+          "colorTemperature": "6800K"
+        },
+        {
+          "dmxRange": [205, 205],
+          "type": "ColorTemperature",
+          "colorTemperature": "6850K"
+        },
+        {
+          "dmxRange": [206, 206],
+          "type": "ColorTemperature",
+          "colorTemperature": "6900K"
+        },
+        {
+          "dmxRange": [207, 207],
+          "type": "ColorTemperature",
+          "colorTemperature": "6950K"
+        },
+        {
+          "dmxRange": [208, 208],
+          "type": "ColorTemperature",
+          "colorTemperature": "7000K"
+        },
+        {
+          "dmxRange": [209, 209],
+          "type": "ColorTemperature",
+          "colorTemperature": "7050K"
+        },
+        {
+          "dmxRange": [210, 210],
+          "type": "ColorTemperature",
+          "colorTemperature": "7100K"
+        },
+        {
+          "dmxRange": [211, 211],
+          "type": "ColorTemperature",
+          "colorTemperature": "7150K"
+        },
+        {
+          "dmxRange": [212, 212],
+          "type": "ColorTemperature",
+          "colorTemperature": "7200K"
+        },
+        {
+          "dmxRange": [213, 213],
+          "type": "ColorTemperature",
+          "colorTemperature": "7250K"
+        },
+        {
+          "dmxRange": [214, 214],
+          "type": "ColorTemperature",
+          "colorTemperature": "7300K"
+        },
+        {
+          "dmxRange": [215, 215],
+          "type": "ColorTemperature",
+          "colorTemperature": "7350K"
+        },
+        {
+          "dmxRange": [216, 216],
+          "type": "ColorTemperature",
+          "colorTemperature": "7400K"
+        },
+        {
+          "dmxRange": [217, 217],
+          "type": "ColorTemperature",
+          "colorTemperature": "7450K"
+        },
+        {
+          "dmxRange": [218, 218],
+          "type": "ColorTemperature",
+          "colorTemperature": "7500K"
+        },
+        {
+          "dmxRange": [219, 219],
+          "type": "ColorTemperature",
+          "colorTemperature": "7550K"
+        },
+        {
+          "dmxRange": [220, 220],
+          "type": "ColorTemperature",
+          "colorTemperature": "7600K"
+        },
+        {
+          "dmxRange": [221, 221],
+          "type": "ColorTemperature",
+          "colorTemperature": "7650K"
+        },
+        {
+          "dmxRange": [222, 222],
+          "type": "ColorTemperature",
+          "colorTemperature": "7700K"
+        },
+        {
+          "dmxRange": [223, 223],
+          "type": "ColorTemperature",
+          "colorTemperature": "7800K"
+        },
+        {
+          "dmxRange": [224, 224],
+          "type": "ColorTemperature",
+          "colorTemperature": "7900K"
+        },
+        {
+          "dmxRange": [225, 225],
+          "type": "ColorTemperature",
+          "colorTemperature": "8000K"
+        },
+        {
+          "dmxRange": [226, 226],
+          "type": "ColorTemperature",
+          "colorTemperature": "8100K"
+        },
+        {
+          "dmxRange": [227, 227],
+          "type": "ColorTemperature",
+          "colorTemperature": "8200K"
+        },
+        {
+          "dmxRange": [228, 228],
+          "type": "ColorTemperature",
+          "colorTemperature": "8300K"
+        },
+        {
+          "dmxRange": [229, 229],
+          "type": "ColorTemperature",
+          "colorTemperature": "8400K"
+        },
+        {
+          "dmxRange": [230, 230],
+          "type": "ColorTemperature",
+          "colorTemperature": "8500K"
+        },
+        {
+          "dmxRange": [231, 231],
+          "type": "ColorTemperature",
+          "colorTemperature": "8600K"
+        },
+        {
+          "dmxRange": [232, 232],
+          "type": "ColorTemperature",
+          "colorTemperature": "8700K"
+        },
+        {
+          "dmxRange": [233, 233],
+          "type": "ColorTemperature",
+          "colorTemperature": "8800K"
+        },
+        {
+          "dmxRange": [234, 234],
+          "type": "ColorTemperature",
+          "colorTemperature": "8900K"
+        },
+        {
+          "dmxRange": [235, 235],
+          "type": "ColorTemperature",
+          "colorTemperature": "9000K"
+        },
+        {
+          "dmxRange": [236, 236],
+          "type": "ColorTemperature",
+          "colorTemperature": "9100K"
+        },
+        {
+          "dmxRange": [237, 237],
+          "type": "ColorTemperature",
+          "colorTemperature": "9200K"
+        },
+        {
+          "dmxRange": [238, 238],
+          "type": "ColorTemperature",
+          "colorTemperature": "9300K"
+        },
+        {
+          "dmxRange": [239, 239],
+          "type": "ColorTemperature",
+          "colorTemperature": "9400K"
+        },
+        {
+          "dmxRange": [240, 240],
+          "type": "ColorTemperature",
+          "colorTemperature": "9500K"
+        },
+        {
+          "dmxRange": [241, 241],
+          "type": "ColorTemperature",
+          "colorTemperature": "9600K"
+        },
+        {
+          "dmxRange": [242, 242],
+          "type": "ColorTemperature",
+          "colorTemperature": "9700K"
+        },
+        {
+          "dmxRange": [243, 243],
+          "type": "ColorTemperature",
+          "colorTemperature": "9800K"
+        },
+        {
+          "dmxRange": [244, 244],
+          "type": "ColorTemperature",
+          "colorTemperature": "9900K"
+        },
+        {
+          "dmxRange": [245, 245],
+          "type": "ColorTemperature",
+          "colorTemperature": "10000K"
+        },
+        {
+          "dmxRange": [246, 246],
+          "type": "ColorTemperature",
+          "colorTemperature": "10100K"
+        },
+        {
+          "dmxRange": [247, 247],
+          "type": "ColorTemperature",
+          "colorTemperature": "10200K"
+        },
+        {
+          "dmxRange": [248, 248],
+          "type": "ColorTemperature",
+          "colorTemperature": "10300K"
+        },
+        {
+          "dmxRange": [249, 249],
+          "type": "ColorTemperature",
+          "colorTemperature": "10400K"
+        },
+        {
+          "dmxRange": [250, 250],
+          "type": "ColorTemperature",
+          "colorTemperature": "10500K"
+        },
+        {
+          "dmxRange": [251, 251],
+          "type": "ColorTemperature",
+          "colorTemperature": "10600K"
+        },
+        {
+          "dmxRange": [252, 252],
+          "type": "ColorTemperature",
+          "colorTemperature": "10700K"
+        },
+        {
+          "dmxRange": [253, 253],
+          "type": "ColorTemperature",
+          "colorTemperature": "10800K"
+        },
+        {
+          "dmxRange": [254, 254],
+          "type": "ColorTemperature",
+          "colorTemperature": "10900K"
+        },
+        {
+          "dmxRange": [255, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "11000K"
+        }
+      ]
+    },
+    "Color Temperature 16bit": {
+      "name": "Color Temperature",
+      "fineChannelAliases": ["Color Temperature 16bit fine"],
+      "capabilities": [
+        {
+          "dmxRange": [0, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "2000K"
+        },
+        {
+          "dmxRange": [256, 511],
+          "type": "ColorTemperature",
+          "colorTemperature": "2010K"
+        },
+        {
+          "dmxRange": [512, 767],
+          "type": "ColorTemperature",
+          "colorTemperature": "2020K"
+        },
+        {
+          "dmxRange": [768, 1023],
+          "type": "ColorTemperature",
+          "colorTemperature": "2030K"
+        },
+        {
+          "dmxRange": [1024, 1279],
+          "type": "ColorTemperature",
+          "colorTemperature": "2040K"
+        },
+        {
+          "dmxRange": [1280, 1535],
+          "type": "ColorTemperature",
+          "colorTemperature": "2050K"
+        },
+        {
+          "dmxRange": [1536, 1791],
+          "type": "ColorTemperature",
+          "colorTemperature": "2060K"
+        },
+        {
+          "dmxRange": [1792, 2047],
+          "type": "ColorTemperature",
+          "colorTemperature": "2070K"
+        },
+        {
+          "dmxRange": [2048, 2303],
+          "type": "ColorTemperature",
+          "colorTemperature": "2080K"
+        },
+        {
+          "dmxRange": [2304, 2559],
+          "type": "ColorTemperature",
+          "colorTemperature": "2090K"
+        },
+        {
+          "dmxRange": [2560, 2815],
+          "type": "ColorTemperature",
+          "colorTemperature": "2100K"
+        },
+        {
+          "dmxRange": [2816, 3071],
+          "type": "ColorTemperature",
+          "colorTemperature": "2110K"
+        },
+        {
+          "dmxRange": [3072, 3327],
+          "type": "ColorTemperature",
+          "colorTemperature": "2120K"
+        },
+        {
+          "dmxRange": [3328, 3583],
+          "type": "ColorTemperature",
+          "colorTemperature": "2130K"
+        },
+        {
+          "dmxRange": [3584, 3839],
+          "type": "ColorTemperature",
+          "colorTemperature": "2140K"
+        },
+        {
+          "dmxRange": [3840, 4095],
+          "type": "ColorTemperature",
+          "colorTemperature": "2150K"
+        },
+        {
+          "dmxRange": [4096, 4351],
+          "type": "ColorTemperature",
+          "colorTemperature": "2160K"
+        },
+        {
+          "dmxRange": [4352, 4607],
+          "type": "ColorTemperature",
+          "colorTemperature": "2170K"
+        },
+        {
+          "dmxRange": [4608, 4863],
+          "type": "ColorTemperature",
+          "colorTemperature": "2180K"
+        },
+        {
+          "dmxRange": [4864, 5119],
+          "type": "ColorTemperature",
+          "colorTemperature": "2190K"
+        },
+        {
+          "dmxRange": [5120, 5375],
+          "type": "ColorTemperature",
+          "colorTemperature": "2200K"
+        },
+        {
+          "dmxRange": [5376, 5631],
+          "type": "ColorTemperature",
+          "colorTemperature": "2210K"
+        },
+        {
+          "dmxRange": [5632, 5887],
+          "type": "ColorTemperature",
+          "colorTemperature": "2220K"
+        },
+        {
+          "dmxRange": [5888, 6143],
+          "type": "ColorTemperature",
+          "colorTemperature": "2230K"
+        },
+        {
+          "dmxRange": [6144, 6399],
+          "type": "ColorTemperature",
+          "colorTemperature": "2240K"
+        },
+        {
+          "dmxRange": [6400, 6655],
+          "type": "ColorTemperature",
+          "colorTemperature": "2250K"
+        },
+        {
+          "dmxRange": [6656, 6911],
+          "type": "ColorTemperature",
+          "colorTemperature": "2260K"
+        },
+        {
+          "dmxRange": [6912, 7167],
+          "type": "ColorTemperature",
+          "colorTemperature": "2270K"
+        },
+        {
+          "dmxRange": [7168, 7423],
+          "type": "ColorTemperature",
+          "colorTemperature": "2280K"
+        },
+        {
+          "dmxRange": [7424, 7679],
+          "type": "ColorTemperature",
+          "colorTemperature": "2290K"
+        },
+        {
+          "dmxRange": [7680, 7935],
+          "type": "ColorTemperature",
+          "colorTemperature": "2300K"
+        },
+        {
+          "dmxRange": [7936, 8191],
+          "type": "ColorTemperature",
+          "colorTemperature": "2310K"
+        },
+        {
+          "dmxRange": [8192, 8447],
+          "type": "ColorTemperature",
+          "colorTemperature": "2320K"
+        },
+        {
+          "dmxRange": [8448, 8703],
+          "type": "ColorTemperature",
+          "colorTemperature": "2330K"
+        },
+        {
+          "dmxRange": [8704, 8959],
+          "type": "ColorTemperature",
+          "colorTemperature": "2340K"
+        },
+        {
+          "dmxRange": [8960, 9215],
+          "type": "ColorTemperature",
+          "colorTemperature": "2350K"
+        },
+        {
+          "dmxRange": [9216, 9471],
+          "type": "ColorTemperature",
+          "colorTemperature": "2360K"
+        },
+        {
+          "dmxRange": [9472, 9727],
+          "type": "ColorTemperature",
+          "colorTemperature": "2370K"
+        },
+        {
+          "dmxRange": [9728, 9983],
+          "type": "ColorTemperature",
+          "colorTemperature": "2380K"
+        },
+        {
+          "dmxRange": [9984, 10239],
+          "type": "ColorTemperature",
+          "colorTemperature": "2390K"
+        },
+        {
+          "dmxRange": [10240, 10495],
+          "type": "ColorTemperature",
+          "colorTemperature": "2400K"
+        },
+        {
+          "dmxRange": [10496, 10751],
+          "type": "ColorTemperature",
+          "colorTemperature": "2410K"
+        },
+        {
+          "dmxRange": [10752, 11007],
+          "type": "ColorTemperature",
+          "colorTemperature": "2420K"
+        },
+        {
+          "dmxRange": [11008, 11263],
+          "type": "ColorTemperature",
+          "colorTemperature": "2430K"
+        },
+        {
+          "dmxRange": [11264, 11519],
+          "type": "ColorTemperature",
+          "colorTemperature": "2440K"
+        },
+        {
+          "dmxRange": [11520, 11775],
+          "type": "ColorTemperature",
+          "colorTemperature": "2450K"
+        },
+        {
+          "dmxRange": [11776, 12031],
+          "type": "ColorTemperature",
+          "colorTemperature": "2460K"
+        },
+        {
+          "dmxRange": [12032, 12287],
+          "type": "ColorTemperature",
+          "colorTemperature": "2470K"
+        },
+        {
+          "dmxRange": [12288, 12543],
+          "type": "ColorTemperature",
+          "colorTemperature": "2480K"
+        },
+        {
+          "dmxRange": [12544, 12799],
+          "type": "ColorTemperature",
+          "colorTemperature": "2490K"
+        },
+        {
+          "dmxRange": [12800, 13055],
+          "type": "ColorTemperature",
+          "colorTemperature": "2500K"
+        },
+        {
+          "dmxRange": [13056, 13311],
+          "type": "ColorTemperature",
+          "colorTemperature": "2510K"
+        },
+        {
+          "dmxRange": [13312, 13567],
+          "type": "ColorTemperature",
+          "colorTemperature": "2520K"
+        },
+        {
+          "dmxRange": [13568, 13823],
+          "type": "ColorTemperature",
+          "colorTemperature": "2530K"
+        },
+        {
+          "dmxRange": [13824, 14079],
+          "type": "ColorTemperature",
+          "colorTemperature": "2540K"
+        },
+        {
+          "dmxRange": [14080, 14335],
+          "type": "ColorTemperature",
+          "colorTemperature": "2550K"
+        },
+        {
+          "dmxRange": [14336, 14591],
+          "type": "ColorTemperature",
+          "colorTemperature": "2560K"
+        },
+        {
+          "dmxRange": [14592, 14847],
+          "type": "ColorTemperature",
+          "colorTemperature": "2570K"
+        },
+        {
+          "dmxRange": [14848, 15103],
+          "type": "ColorTemperature",
+          "colorTemperature": "2580K"
+        },
+        {
+          "dmxRange": [15104, 15359],
+          "type": "ColorTemperature",
+          "colorTemperature": "2590K"
+        },
+        {
+          "dmxRange": [15360, 15615],
+          "type": "ColorTemperature",
+          "colorTemperature": "2600K"
+        },
+        {
+          "dmxRange": [15616, 15871],
+          "type": "ColorTemperature",
+          "colorTemperature": "2625K"
+        },
+        {
+          "dmxRange": [15872, 16127],
+          "type": "ColorTemperature",
+          "colorTemperature": "2650K"
+        },
+        {
+          "dmxRange": [16128, 16383],
+          "type": "ColorTemperature",
+          "colorTemperature": "2675K"
+        },
+        {
+          "dmxRange": [16384, 16639],
+          "type": "ColorTemperature",
+          "colorTemperature": "2700K"
+        },
+        {
+          "dmxRange": [16640, 16895],
+          "type": "ColorTemperature",
+          "colorTemperature": "2725K"
+        },
+        {
+          "dmxRange": [16896, 17151],
+          "type": "ColorTemperature",
+          "colorTemperature": "2750K"
+        },
+        {
+          "dmxRange": [17152, 17407],
+          "type": "ColorTemperature",
+          "colorTemperature": "2775K"
+        },
+        {
+          "dmxRange": [17408, 17663],
+          "type": "ColorTemperature",
+          "colorTemperature": "2800K"
+        },
+        {
+          "dmxRange": [17664, 17919],
+          "type": "ColorTemperature",
+          "colorTemperature": "2825K"
+        },
+        {
+          "dmxRange": [17920, 18175],
+          "type": "ColorTemperature",
+          "colorTemperature": "2850K"
+        },
+        {
+          "dmxRange": [18176, 18431],
+          "type": "ColorTemperature",
+          "colorTemperature": "2875K"
+        },
+        {
+          "dmxRange": [18432, 18687],
+          "type": "ColorTemperature",
+          "colorTemperature": "2900K"
+        },
+        {
+          "dmxRange": [18688, 18943],
+          "type": "ColorTemperature",
+          "colorTemperature": "2925K"
+        },
+        {
+          "dmxRange": [18944, 19199],
+          "type": "ColorTemperature",
+          "colorTemperature": "2950K"
+        },
+        {
+          "dmxRange": [19200, 19455],
+          "type": "ColorTemperature",
+          "colorTemperature": "2975K"
+        },
+        {
+          "dmxRange": [19456, 19711],
+          "type": "ColorTemperature",
+          "colorTemperature": "3000K"
+        },
+        {
+          "dmxRange": [19712, 19967],
+          "type": "ColorTemperature",
+          "colorTemperature": "3025K"
+        },
+        {
+          "dmxRange": [19968, 20223],
+          "type": "ColorTemperature",
+          "colorTemperature": "3050K"
+        },
+        {
+          "dmxRange": [20224, 20479],
+          "type": "ColorTemperature",
+          "colorTemperature": "3075K"
+        },
+        {
+          "dmxRange": [20480, 20735],
+          "type": "ColorTemperature",
+          "colorTemperature": "3100K"
+        },
+        {
+          "dmxRange": [20736, 20991],
+          "type": "ColorTemperature",
+          "colorTemperature": "3125K"
+        },
+        {
+          "dmxRange": [20992, 21247],
+          "type": "ColorTemperature",
+          "colorTemperature": "3150K"
+        },
+        {
+          "dmxRange": [21248, 21503],
+          "type": "ColorTemperature",
+          "colorTemperature": "3175K"
+        },
+        {
+          "dmxRange": [21504, 21759],
+          "type": "ColorTemperature",
+          "colorTemperature": "3200K"
+        },
+        {
+          "dmxRange": [21760, 22015],
+          "type": "ColorTemperature",
+          "colorTemperature": "3225K"
+        },
+        {
+          "dmxRange": [22016, 22271],
+          "type": "ColorTemperature",
+          "colorTemperature": "3250K"
+        },
+        {
+          "dmxRange": [22272, 22527],
+          "type": "ColorTemperature",
+          "colorTemperature": "3275K"
+        },
+        {
+          "dmxRange": [22528, 22783],
+          "type": "ColorTemperature",
+          "colorTemperature": "3300K"
+        },
+        {
+          "dmxRange": [22784, 23039],
+          "type": "ColorTemperature",
+          "colorTemperature": "3325K"
+        },
+        {
+          "dmxRange": [23040, 23295],
+          "type": "ColorTemperature",
+          "colorTemperature": "3350K"
+        },
+        {
+          "dmxRange": [23296, 23551],
+          "type": "ColorTemperature",
+          "colorTemperature": "3375K"
+        },
+        {
+          "dmxRange": [23552, 23807],
+          "type": "ColorTemperature",
+          "colorTemperature": "3400K"
+        },
+        {
+          "dmxRange": [23808, 24063],
+          "type": "ColorTemperature",
+          "colorTemperature": "3425K"
+        },
+        {
+          "dmxRange": [24064, 24319],
+          "type": "ColorTemperature",
+          "colorTemperature": "3450K"
+        },
+        {
+          "dmxRange": [24320, 24575],
+          "type": "ColorTemperature",
+          "colorTemperature": "3475K"
+        },
+        {
+          "dmxRange": [24576, 24831],
+          "type": "ColorTemperature",
+          "colorTemperature": "3500K"
+        },
+        {
+          "dmxRange": [24832, 25087],
+          "type": "ColorTemperature",
+          "colorTemperature": "3525K"
+        },
+        {
+          "dmxRange": [25088, 25343],
+          "type": "ColorTemperature",
+          "colorTemperature": "3550K"
+        },
+        {
+          "dmxRange": [25344, 25599],
+          "type": "ColorTemperature",
+          "colorTemperature": "3575K"
+        },
+        {
+          "dmxRange": [25600, 25855],
+          "type": "ColorTemperature",
+          "colorTemperature": "3600K"
+        },
+        {
+          "dmxRange": [25856, 26111],
+          "type": "ColorTemperature",
+          "colorTemperature": "3625K"
+        },
+        {
+          "dmxRange": [26112, 26367],
+          "type": "ColorTemperature",
+          "colorTemperature": "3650K"
+        },
+        {
+          "dmxRange": [26368, 26623],
+          "type": "ColorTemperature",
+          "colorTemperature": "3675K"
+        },
+        {
+          "dmxRange": [26624, 26879],
+          "type": "ColorTemperature",
+          "colorTemperature": "3700K"
+        },
+        {
+          "dmxRange": [26880, 27135],
+          "type": "ColorTemperature",
+          "colorTemperature": "3725K"
+        },
+        {
+          "dmxRange": [27136, 27391],
+          "type": "ColorTemperature",
+          "colorTemperature": "3750K"
+        },
+        {
+          "dmxRange": [27392, 27647],
+          "type": "ColorTemperature",
+          "colorTemperature": "3775K"
+        },
+        {
+          "dmxRange": [27648, 27903],
+          "type": "ColorTemperature",
+          "colorTemperature": "3800K"
+        },
+        {
+          "dmxRange": [27904, 28159],
+          "type": "ColorTemperature",
+          "colorTemperature": "3825K"
+        },
+        {
+          "dmxRange": [28160, 28415],
+          "type": "ColorTemperature",
+          "colorTemperature": "3850K"
+        },
+        {
+          "dmxRange": [28416, 28671],
+          "type": "ColorTemperature",
+          "colorTemperature": "3875K"
+        },
+        {
+          "dmxRange": [28672, 28927],
+          "type": "ColorTemperature",
+          "colorTemperature": "3900K"
+        },
+        {
+          "dmxRange": [28928, 29183],
+          "type": "ColorTemperature",
+          "colorTemperature": "3925K"
+        },
+        {
+          "dmxRange": [29184, 29439],
+          "type": "ColorTemperature",
+          "colorTemperature": "3950K"
+        },
+        {
+          "dmxRange": [29440, 29695],
+          "type": "ColorTemperature",
+          "colorTemperature": "3975K"
+        },
+        {
+          "dmxRange": [29696, 29951],
+          "type": "ColorTemperature",
+          "colorTemperature": "4000K"
+        },
+        {
+          "dmxRange": [29952, 30207],
+          "type": "ColorTemperature",
+          "colorTemperature": "4025K"
+        },
+        {
+          "dmxRange": [30208, 30463],
+          "type": "ColorTemperature",
+          "colorTemperature": "4050K"
+        },
+        {
+          "dmxRange": [30464, 30719],
+          "type": "ColorTemperature",
+          "colorTemperature": "4075K"
+        },
+        {
+          "dmxRange": [30720, 30975],
+          "type": "ColorTemperature",
+          "colorTemperature": "4100K"
+        },
+        {
+          "dmxRange": [30976, 31231],
+          "type": "ColorTemperature",
+          "colorTemperature": "4125K"
+        },
+        {
+          "dmxRange": [31232, 31487],
+          "type": "ColorTemperature",
+          "colorTemperature": "4150K"
+        },
+        {
+          "dmxRange": [31488, 31743],
+          "type": "ColorTemperature",
+          "colorTemperature": "4175K"
+        },
+        {
+          "dmxRange": [31744, 31999],
+          "type": "ColorTemperature",
+          "colorTemperature": "4200K"
+        },
+        {
+          "dmxRange": [32000, 32255],
+          "type": "ColorTemperature",
+          "colorTemperature": "4225K"
+        },
+        {
+          "dmxRange": [32256, 32511],
+          "type": "ColorTemperature",
+          "colorTemperature": "4250K"
+        },
+        {
+          "dmxRange": [32512, 32767],
+          "type": "ColorTemperature",
+          "colorTemperature": "4275K"
+        },
+        {
+          "dmxRange": [32768, 33023],
+          "type": "ColorTemperature",
+          "colorTemperature": "4300K"
+        },
+        {
+          "dmxRange": [33024, 33279],
+          "type": "ColorTemperature",
+          "colorTemperature": "4325K"
+        },
+        {
+          "dmxRange": [33280, 33535],
+          "type": "ColorTemperature",
+          "colorTemperature": "4350K"
+        },
+        {
+          "dmxRange": [33536, 33791],
+          "type": "ColorTemperature",
+          "colorTemperature": "4375K"
+        },
+        {
+          "dmxRange": [33792, 34047],
+          "type": "ColorTemperature",
+          "colorTemperature": "4400K"
+        },
+        {
+          "dmxRange": [34048, 34303],
+          "type": "ColorTemperature",
+          "colorTemperature": "4425K"
+        },
+        {
+          "dmxRange": [34304, 34559],
+          "type": "ColorTemperature",
+          "colorTemperature": "4450K"
+        },
+        {
+          "dmxRange": [34560, 34815],
+          "type": "ColorTemperature",
+          "colorTemperature": "4475K"
+        },
+        {
+          "dmxRange": [34816, 35071],
+          "type": "ColorTemperature",
+          "colorTemperature": "4500K"
+        },
+        {
+          "dmxRange": [35072, 35327],
+          "type": "ColorTemperature",
+          "colorTemperature": "4525K"
+        },
+        {
+          "dmxRange": [35328, 35583],
+          "type": "ColorTemperature",
+          "colorTemperature": "4550K"
+        },
+        {
+          "dmxRange": [35584, 35839],
+          "type": "ColorTemperature",
+          "colorTemperature": "4575K"
+        },
+        {
+          "dmxRange": [35840, 36095],
+          "type": "ColorTemperature",
+          "colorTemperature": "4600K"
+        },
+        {
+          "dmxRange": [36096, 36351],
+          "type": "ColorTemperature",
+          "colorTemperature": "4625K"
+        },
+        {
+          "dmxRange": [36352, 36607],
+          "type": "ColorTemperature",
+          "colorTemperature": "4650K"
+        },
+        {
+          "dmxRange": [36608, 36863],
+          "type": "ColorTemperature",
+          "colorTemperature": "4675K"
+        },
+        {
+          "dmxRange": [36864, 37119],
+          "type": "ColorTemperature",
+          "colorTemperature": "4700K"
+        },
+        {
+          "dmxRange": [37120, 37375],
+          "type": "ColorTemperature",
+          "colorTemperature": "4725K"
+        },
+        {
+          "dmxRange": [37376, 37631],
+          "type": "ColorTemperature",
+          "colorTemperature": "4750K"
+        },
+        {
+          "dmxRange": [37632, 37887],
+          "type": "ColorTemperature",
+          "colorTemperature": "4775K"
+        },
+        {
+          "dmxRange": [37888, 38143],
+          "type": "ColorTemperature",
+          "colorTemperature": "4800K"
+        },
+        {
+          "dmxRange": [38144, 38399],
+          "type": "ColorTemperature",
+          "colorTemperature": "4825K"
+        },
+        {
+          "dmxRange": [38400, 38655],
+          "type": "ColorTemperature",
+          "colorTemperature": "4850K"
+        },
+        {
+          "dmxRange": [38656, 38911],
+          "type": "ColorTemperature",
+          "colorTemperature": "4875K"
+        },
+        {
+          "dmxRange": [38912, 39167],
+          "type": "ColorTemperature",
+          "colorTemperature": "4900K"
+        },
+        {
+          "dmxRange": [39168, 39423],
+          "type": "ColorTemperature",
+          "colorTemperature": "4925K"
+        },
+        {
+          "dmxRange": [39424, 39679],
+          "type": "ColorTemperature",
+          "colorTemperature": "4950K"
+        },
+        {
+          "dmxRange": [39680, 39935],
+          "type": "ColorTemperature",
+          "colorTemperature": "4975K"
+        },
+        {
+          "dmxRange": [39936, 40191],
+          "type": "ColorTemperature",
+          "colorTemperature": "5000K"
+        },
+        {
+          "dmxRange": [40192, 40447],
+          "type": "ColorTemperature",
+          "colorTemperature": "5025K"
+        },
+        {
+          "dmxRange": [40448, 40703],
+          "type": "ColorTemperature",
+          "colorTemperature": "5050K"
+        },
+        {
+          "dmxRange": [40704, 40959],
+          "type": "ColorTemperature",
+          "colorTemperature": "5075K"
+        },
+        {
+          "dmxRange": [40960, 41215],
+          "type": "ColorTemperature",
+          "colorTemperature": "5100K"
+        },
+        {
+          "dmxRange": [41216, 41471],
+          "type": "ColorTemperature",
+          "colorTemperature": "5125K"
+        },
+        {
+          "dmxRange": [41472, 41727],
+          "type": "ColorTemperature",
+          "colorTemperature": "5150K"
+        },
+        {
+          "dmxRange": [41728, 41983],
+          "type": "ColorTemperature",
+          "colorTemperature": "5175K"
+        },
+        {
+          "dmxRange": [41984, 42239],
+          "type": "ColorTemperature",
+          "colorTemperature": "5200K"
+        },
+        {
+          "dmxRange": [42240, 42495],
+          "type": "ColorTemperature",
+          "colorTemperature": "5225K"
+        },
+        {
+          "dmxRange": [42496, 42751],
+          "type": "ColorTemperature",
+          "colorTemperature": "5250K"
+        },
+        {
+          "dmxRange": [42752, 43007],
+          "type": "ColorTemperature",
+          "colorTemperature": "5275K"
+        },
+        {
+          "dmxRange": [43008, 43263],
+          "type": "ColorTemperature",
+          "colorTemperature": "5300K"
+        },
+        {
+          "dmxRange": [43264, 43519],
+          "type": "ColorTemperature",
+          "colorTemperature": "5325K"
+        },
+        {
+          "dmxRange": [43520, 43775],
+          "type": "ColorTemperature",
+          "colorTemperature": "5350K"
+        },
+        {
+          "dmxRange": [43776, 44031],
+          "type": "ColorTemperature",
+          "colorTemperature": "5375K"
+        },
+        {
+          "dmxRange": [44032, 44287],
+          "type": "ColorTemperature",
+          "colorTemperature": "5400K"
+        },
+        {
+          "dmxRange": [44288, 44543],
+          "type": "ColorTemperature",
+          "colorTemperature": "5425K"
+        },
+        {
+          "dmxRange": [44544, 44799],
+          "type": "ColorTemperature",
+          "colorTemperature": "5450K"
+        },
+        {
+          "dmxRange": [44800, 45055],
+          "type": "ColorTemperature",
+          "colorTemperature": "5475K"
+        },
+        {
+          "dmxRange": [45056, 45311],
+          "type": "ColorTemperature",
+          "colorTemperature": "5500K"
+        },
+        {
+          "dmxRange": [45312, 45567],
+          "type": "ColorTemperature",
+          "colorTemperature": "5525K"
+        },
+        {
+          "dmxRange": [45568, 45823],
+          "type": "ColorTemperature",
+          "colorTemperature": "5550K"
+        },
+        {
+          "dmxRange": [45824, 46079],
+          "type": "ColorTemperature",
+          "colorTemperature": "5575K"
+        },
+        {
+          "dmxRange": [46080, 46335],
+          "type": "ColorTemperature",
+          "colorTemperature": "5600K"
+        },
+        {
+          "dmxRange": [46336, 46591],
+          "type": "ColorTemperature",
+          "colorTemperature": "5650K"
+        },
+        {
+          "dmxRange": [46592, 46847],
+          "type": "ColorTemperature",
+          "colorTemperature": "5700K"
+        },
+        {
+          "dmxRange": [46848, 47103],
+          "type": "ColorTemperature",
+          "colorTemperature": "5750K"
+        },
+        {
+          "dmxRange": [47104, 47359],
+          "type": "ColorTemperature",
+          "colorTemperature": "5800K"
+        },
+        {
+          "dmxRange": [47360, 47615],
+          "type": "ColorTemperature",
+          "colorTemperature": "5850K"
+        },
+        {
+          "dmxRange": [47616, 47871],
+          "type": "ColorTemperature",
+          "colorTemperature": "5900K"
+        },
+        {
+          "dmxRange": [47872, 48127],
+          "type": "ColorTemperature",
+          "colorTemperature": "5950K"
+        },
+        {
+          "dmxRange": [48128, 48383],
+          "type": "ColorTemperature",
+          "colorTemperature": "6000K"
+        },
+        {
+          "dmxRange": [48384, 48639],
+          "type": "ColorTemperature",
+          "colorTemperature": "6050K"
+        },
+        {
+          "dmxRange": [48640, 48895],
+          "type": "ColorTemperature",
+          "colorTemperature": "6100K"
+        },
+        {
+          "dmxRange": [48896, 49151],
+          "type": "ColorTemperature",
+          "colorTemperature": "6150K"
+        },
+        {
+          "dmxRange": [49152, 49407],
+          "type": "ColorTemperature",
+          "colorTemperature": "6200K"
+        },
+        {
+          "dmxRange": [49408, 49663],
+          "type": "ColorTemperature",
+          "colorTemperature": "6250K"
+        },
+        {
+          "dmxRange": [49664, 49919],
+          "type": "ColorTemperature",
+          "colorTemperature": "6300K"
+        },
+        {
+          "dmxRange": [49920, 50175],
+          "type": "ColorTemperature",
+          "colorTemperature": "6350K"
+        },
+        {
+          "dmxRange": [50176, 50431],
+          "type": "ColorTemperature",
+          "colorTemperature": "6400K"
+        },
+        {
+          "dmxRange": [50432, 50687],
+          "type": "ColorTemperature",
+          "colorTemperature": "6450K"
+        },
+        {
+          "dmxRange": [50688, 50943],
+          "type": "ColorTemperature",
+          "colorTemperature": "6500K"
+        },
+        {
+          "dmxRange": [50944, 51199],
+          "type": "ColorTemperature",
+          "colorTemperature": "6550K"
+        },
+        {
+          "dmxRange": [51200, 51455],
+          "type": "ColorTemperature",
+          "colorTemperature": "6600K"
+        },
+        {
+          "dmxRange": [51456, 51711],
+          "type": "ColorTemperature",
+          "colorTemperature": "6650K"
+        },
+        {
+          "dmxRange": [51712, 51967],
+          "type": "ColorTemperature",
+          "colorTemperature": "6700K"
+        },
+        {
+          "dmxRange": [51968, 52223],
+          "type": "ColorTemperature",
+          "colorTemperature": "6750K"
+        },
+        {
+          "dmxRange": [52224, 52479],
+          "type": "ColorTemperature",
+          "colorTemperature": "6800K"
+        },
+        {
+          "dmxRange": [52480, 52735],
+          "type": "ColorTemperature",
+          "colorTemperature": "6850K"
+        },
+        {
+          "dmxRange": [52736, 52991],
+          "type": "ColorTemperature",
+          "colorTemperature": "6900K"
+        },
+        {
+          "dmxRange": [52992, 53247],
+          "type": "ColorTemperature",
+          "colorTemperature": "6950K"
+        },
+        {
+          "dmxRange": [53248, 53503],
+          "type": "ColorTemperature",
+          "colorTemperature": "7000K"
+        },
+        {
+          "dmxRange": [53504, 53759],
+          "type": "ColorTemperature",
+          "colorTemperature": "7050K"
+        },
+        {
+          "dmxRange": [53760, 54015],
+          "type": "ColorTemperature",
+          "colorTemperature": "7100K"
+        },
+        {
+          "dmxRange": [54016, 54271],
+          "type": "ColorTemperature",
+          "colorTemperature": "7150K"
+        },
+        {
+          "dmxRange": [54272, 54527],
+          "type": "ColorTemperature",
+          "colorTemperature": "7200K"
+        },
+        {
+          "dmxRange": [54528, 54783],
+          "type": "ColorTemperature",
+          "colorTemperature": "7250K"
+        },
+        {
+          "dmxRange": [54784, 55039],
+          "type": "ColorTemperature",
+          "colorTemperature": "7300K"
+        },
+        {
+          "dmxRange": [55040, 55295],
+          "type": "ColorTemperature",
+          "colorTemperature": "7350K"
+        },
+        {
+          "dmxRange": [55296, 55551],
+          "type": "ColorTemperature",
+          "colorTemperature": "7400K"
+        },
+        {
+          "dmxRange": [55552, 55807],
+          "type": "ColorTemperature",
+          "colorTemperature": "7450K"
+        },
+        {
+          "dmxRange": [55808, 56063],
+          "type": "ColorTemperature",
+          "colorTemperature": "7500K"
+        },
+        {
+          "dmxRange": [56064, 56319],
+          "type": "ColorTemperature",
+          "colorTemperature": "7550K"
+        },
+        {
+          "dmxRange": [56320, 56575],
+          "type": "ColorTemperature",
+          "colorTemperature": "7600K"
+        },
+        {
+          "dmxRange": [56576, 56831],
+          "type": "ColorTemperature",
+          "colorTemperature": "7650K"
+        },
+        {
+          "dmxRange": [56832, 57087],
+          "type": "ColorTemperature",
+          "colorTemperature": "7700K"
+        },
+        {
+          "dmxRange": [57088, 57343],
+          "type": "ColorTemperature",
+          "colorTemperature": "7800K"
+        },
+        {
+          "dmxRange": [57344, 57599],
+          "type": "ColorTemperature",
+          "colorTemperature": "7900K"
+        },
+        {
+          "dmxRange": [57600, 57855],
+          "type": "ColorTemperature",
+          "colorTemperature": "8000K"
+        },
+        {
+          "dmxRange": [57856, 58111],
+          "type": "ColorTemperature",
+          "colorTemperature": "8100K"
+        },
+        {
+          "dmxRange": [58112, 58367],
+          "type": "ColorTemperature",
+          "colorTemperature": "8200K"
+        },
+        {
+          "dmxRange": [58368, 58623],
+          "type": "ColorTemperature",
+          "colorTemperature": "8300K"
+        },
+        {
+          "dmxRange": [58624, 58879],
+          "type": "ColorTemperature",
+          "colorTemperature": "8400K"
+        },
+        {
+          "dmxRange": [58880, 59135],
+          "type": "ColorTemperature",
+          "colorTemperature": "8500K"
+        },
+        {
+          "dmxRange": [59136, 59391],
+          "type": "ColorTemperature",
+          "colorTemperature": "8600K"
+        },
+        {
+          "dmxRange": [59392, 59647],
+          "type": "ColorTemperature",
+          "colorTemperature": "8700K"
+        },
+        {
+          "dmxRange": [59648, 59903],
+          "type": "ColorTemperature",
+          "colorTemperature": "8800K"
+        },
+        {
+          "dmxRange": [59904, 60159],
+          "type": "ColorTemperature",
+          "colorTemperature": "8900K"
+        },
+        {
+          "dmxRange": [60160, 60415],
+          "type": "ColorTemperature",
+          "colorTemperature": "9000K"
+        },
+        {
+          "dmxRange": [60416, 60671],
+          "type": "ColorTemperature",
+          "colorTemperature": "9100K"
+        },
+        {
+          "dmxRange": [60672, 60927],
+          "type": "ColorTemperature",
+          "colorTemperature": "9200K"
+        },
+        {
+          "dmxRange": [60928, 61183],
+          "type": "ColorTemperature",
+          "colorTemperature": "9300K"
+        },
+        {
+          "dmxRange": [61184, 61439],
+          "type": "ColorTemperature",
+          "colorTemperature": "9400K"
+        },
+        {
+          "dmxRange": [61440, 61695],
+          "type": "ColorTemperature",
+          "colorTemperature": "9500K"
+        },
+        {
+          "dmxRange": [61696, 61951],
+          "type": "ColorTemperature",
+          "colorTemperature": "9600K"
+        },
+        {
+          "dmxRange": [61952, 62207],
+          "type": "ColorTemperature",
+          "colorTemperature": "9700K"
+        },
+        {
+          "dmxRange": [62208, 62463],
+          "type": "ColorTemperature",
+          "colorTemperature": "9800K"
+        },
+        {
+          "dmxRange": [62464, 62719],
+          "type": "ColorTemperature",
+          "colorTemperature": "9900K"
+        },
+        {
+          "dmxRange": [62720, 62975],
+          "type": "ColorTemperature",
+          "colorTemperature": "10000K"
+        },
+        {
+          "dmxRange": [62976, 63231],
+          "type": "ColorTemperature",
+          "colorTemperature": "10100K"
+        },
+        {
+          "dmxRange": [63232, 63487],
+          "type": "ColorTemperature",
+          "colorTemperature": "10200K"
+        },
+        {
+          "dmxRange": [63488, 63743],
+          "type": "ColorTemperature",
+          "colorTemperature": "10300K"
+        },
+        {
+          "dmxRange": [63744, 63999],
+          "type": "ColorTemperature",
+          "colorTemperature": "10400K"
+        },
+        {
+          "dmxRange": [64000, 64255],
+          "type": "ColorTemperature",
+          "colorTemperature": "10500K"
+        },
+        {
+          "dmxRange": [64256, 64511],
+          "type": "ColorTemperature",
+          "colorTemperature": "10600K"
+        },
+        {
+          "dmxRange": [64512, 64767],
+          "type": "ColorTemperature",
+          "colorTemperature": "10700K"
+        },
+        {
+          "dmxRange": [64768, 65023],
+          "type": "ColorTemperature",
+          "colorTemperature": "10800K"
+        },
+        {
+          "dmxRange": [65024, 65279],
+          "type": "ColorTemperature",
+          "colorTemperature": "10900K"
+        },
+        {
+          "dmxRange": [65280, 65535],
+          "type": "ColorTemperature",
+          "colorTemperature": "11000K"
+        }
+      ]
+    },
+    "Green-Magenta Point": {
+      "name": "Green-Magenta Point",
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [11, 20],
+          "type": "Generic",
+          "comment": "Full minus green"
+        },
+        {
+          "dmxRange": [21, 119],
+          "type": "Generic",
+          "comment": "-99%…-1%"
+        },
+        {
+          "dmxRange": [120, 145],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [146, 244],
+          "type": "Generic",
+          "comment": "1%…99%"
+        },
+        {
+          "dmxRange": [245, 255],
+          "type": "Generic",
+          "comment": "Full plus green"
+        }
+      ]
+    },
+    "Hue": {
+      "fineChannelAliases": ["Hue fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…360°"
+      }
+    },
+    "Saturation": {
+      "fineChannelAliases": ["Saturation fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…100%"
+      }
+    },
+    "Red": {
+      "fineChannelAliases": ["Red fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "fineChannelAliases": ["Green fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "fineChannelAliases": ["Blue fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "Bi-Color Hybrid+ 8bit",
+      "channels": [
+        "Intensity",
+        "Color Temperature"
+      ]
+    },
+    {
+      "name": "Bi-Color Hybrid+ 16bit",
+      "channels": [
+        "Intensity",
+        "Intensity fine",
+        "Color Temperature 16bit",
+        "Color Temperature 16bit fine"
+      ]
+    },
+    {
+      "name": "TrueHybrid 8bit",
+      "channels": [
+        "Intensity",
+        "Color Temperature",
+        "Green-Magenta Point"
+      ]
+    },
+    {
+      "name": "TrueHybrid 16bit",
+      "channels": [
+        "Intensity",
+        "Intensity fine",
+        "Color Temperature 16bit",
+        "Color Temperature 16bit fine",
+        "Green-Magenta Point"
+      ]
+    },
+    {
+      "name": "Spectrum 8bit",
+      "channels": [
+        "Intensity",
+        "Color Temperature",
+        "Green-Magenta Point",
+        "Saturation",
+        "Hue"
+      ]
+    },
+    {
+      "name": "Spectrum 16bit",
+      "channels": [
+        "Intensity",
+        "Intensity fine",
+        "Color Temperature 16bit",
+        "Color Temperature 16bit fine",
+        "Green-Magenta Point",
+        "Saturation",
+        "Saturation fine",
+        "Hue",
+        "Hue fine"
+      ]
+    },
+    {
+      "name": "RGB 8bit",
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "RGB 16bit",
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine"
+      ]
+    },
+    {
+      "name": "RGB Spectrum 8bit",
+      "channels": [
+        "Intensity",
+        "Color Temperature",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "RGB Spectrum 16bit",
+      "channels": [
+        "Intensity",
+        "Intensity fine",
+        "Color Temperature 16bit",
+        "Color Temperature 16bit fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine"
+      ]
+    }
+  ]
+}
