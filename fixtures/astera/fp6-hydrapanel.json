@@ -1,0 +1,3455 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "FP7 HydraPanel",
+  "categories": ["Color Changer", "Pixel Bar"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2021-01-12",
+    "lastModifyDate": "2021-01-12"
+  },
+  "matrix": {
+    "pixelKeys": [
+      [
+        [ "1", "2", "3", "4", "5", "6" ]
+      ]
+    ]
+  },
+  "templateChannels": {
+    "Dimmer $pixelKey": {
+      "fineChannelAliases": ["Dimmer $pixelKey fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Emulated White $pixelKey": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "White"
+      }
+    },
+    "Red $pixelKey": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green $pixelKey": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue $pixelKey": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Amber $pixelKey": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "CIE x $pixelKey": {
+      "fineChannelAliases": ["CIE x $pixelKey fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…0.85"
+      }
+    },
+    "CIE y $pixelKey": {
+      "fineChannelAliases": ["CIE y $pixelKey fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…0.85"
+      }
+    },
+    "Index Colors $pixelKey": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 1],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [2, 2],
+          "type": "ColorPreset",
+          "comment": "Rose Pink",
+          "colors": ["#ff8fb9"]
+        },
+        {
+          "dmxRange": [3, 3],
+          "type": "ColorPreset",
+          "comment": "Lavender Tint",
+          "colors": ["#ffdab5"]
+        },
+        {
+          "dmxRange": [4, 4],
+          "type": "ColorPreset",
+          "comment": "Medium Bastard Amber",
+          "colors": ["#ffb783"]
+        },
+        {
+          "dmxRange": [5, 6],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [7, 7],
+          "type": "ColorPreset",
+          "comment": "Pale Yellow",
+          "colors": ["#ffd78c"]
+        },
+        {
+          "dmxRange": [8, 8],
+          "type": "ColorPreset",
+          "comment": "Dark Salmon",
+          "colors": ["#ff814c"]
+        },
+        {
+          "dmxRange": [9, 9],
+          "type": "ColorPreset",
+          "comment": "Pale Amber Gold",
+          "colors": ["#ffc176"]
+        },
+        {
+          "dmxRange": [10, 10],
+          "type": "ColorPreset",
+          "comment": "Medium Yellow",
+          "colors": ["#ffd21c"]
+        },
+        {
+          "dmxRange": [11, 12],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [13, 13],
+          "type": "ColorPreset",
+          "comment": "Straw Tint",
+          "colors": ["#ffc069"]
+        },
+        {
+          "dmxRange": [14, 14],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [15, 15],
+          "type": "ColorPreset",
+          "comment": "Deep Straw",
+          "colors": ["#ff9f00"]
+        },
+        {
+          "dmxRange": [16, 16],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [17, 17],
+          "type": "ColorPreset",
+          "comment": "Surprise Peach",
+          "colors": ["#ffa25b"]
+        },
+        {
+          "dmxRange": [18, 18],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [19, 19],
+          "type": "ColorPreset",
+          "comment": "Fire",
+          "colors": ["#ff391b"]
+        },
+        {
+          "dmxRange": [20, 20],
+          "type": "ColorPreset",
+          "comment": "Medium Amber",
+          "colors": ["#ff9123"]
+        },
+        {
+          "dmxRange": [21, 21],
+          "type": "ColorPreset",
+          "comment": "Gold Amber",
+          "colors": ["#ff7600"]
+        },
+        {
+          "dmxRange": [22, 22],
+          "type": "ColorPreset",
+          "comment": "Dark Amber",
+          "colors": ["#ff4f0a"]
+        },
+        {
+          "dmxRange": [23, 23],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [24, 24],
+          "type": "ColorPreset",
+          "comment": "Scarlet",
+          "colors": ["#ff5647"]
+        },
+        {
+          "dmxRange": [25, 25],
+          "type": "ColorPreset",
+          "comment": "Sunset Red",
+          "colors": ["#ff6f2f"]
+        },
+        {
+          "dmxRange": [26, 26],
+          "type": "ColorPreset",
+          "comment": "Bright Red",
+          "colors": ["#ff0012"]
+        },
+        {
+          "dmxRange": [27, 27],
+          "type": "ColorPreset",
+          "comment": "Medium Red",
+          "colors": ["#ff0020"]
+        },
+        {
+          "dmxRange": [28, 28],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [29, 29],
+          "type": "ColorPreset",
+          "comment": "Plasa Red",
+          "colors": ["#ff2707"]
+        },
+        {
+          "dmxRange": [30, 34],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [35, 35],
+          "type": "ColorPreset",
+          "comment": "Light Pink",
+          "colors": ["#ffbaa1"]
+        },
+        {
+          "dmxRange": [36, 36],
+          "type": "ColorPreset",
+          "comment": "Medium Pink",
+          "colors": ["#ff9f98"]
+        },
+        {
+          "dmxRange": [37, 45],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [46, 46],
+          "type": "ColorPreset",
+          "comment": "Dark Magenta",
+          "colors": ["#ff0055"]
+        },
+        {
+          "dmxRange": [47, 47],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [48, 48],
+          "type": "ColorPreset",
+          "comment": "Rose Purple",
+          "colors": ["#ff95e0"]
+        },
+        {
+          "dmxRange": [49, 49],
+          "type": "ColorPreset",
+          "comment": "Medium Purple",
+          "colors": ["#ff50f1"]
+        },
+        {
+          "dmxRange": [50, 51],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [52, 52],
+          "type": "ColorPreset",
+          "comment": "Light Lavender",
+          "colors": ["#ffdcf6"]
+        },
+        {
+          "dmxRange": [53, 53],
+          "type": "ColorPreset",
+          "comment": "Paler Lavender",
+          "colors": ["#ffe5ca"]
+        },
+        {
+          "dmxRange": [54, 57],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [58, 58],
+          "type": "ColorPreset",
+          "comment": "Lavender",
+          "colors": ["#af7cff"]
+        },
+        {
+          "dmxRange": [59, 60],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [61, 61],
+          "type": "ColorPreset",
+          "comment": "Mist Blue",
+          "colors": ["#fff9db"]
+        },
+        {
+          "dmxRange": [62, 62],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [63, 63],
+          "type": "ColorPreset",
+          "comment": "Pale Blue",
+          "colors": ["#f6ffeb"]
+        },
+        {
+          "dmxRange": [64, 67],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [68, 68],
+          "type": "ColorPreset",
+          "comment": "Sky Blue",
+          "colors": ["#00acff"]
+        },
+        {
+          "dmxRange": [69, 70],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [71, 71],
+          "type": "ColorPreset",
+          "comment": "Tokyo Blue",
+          "colors": ["#0040ff"]
+        },
+        {
+          "dmxRange": [72, 74],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [75, 75],
+          "type": "ColorPreset",
+          "comment": "Evening Blue",
+          "colors": ["#00a1ff"]
+        },
+        {
+          "dmxRange": [76, 78],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [79, 79],
+          "type": "ColorPreset",
+          "comment": "Just Blue",
+          "colors": ["#007bff"]
+        },
+        {
+          "dmxRange": [80, 84],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [85, 85],
+          "type": "ColorPreset",
+          "comment": "Deeper Blue",
+          "colors": ["#0075ff"]
+        },
+        {
+          "dmxRange": [86, 87],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [88, 88],
+          "type": "ColorPreset",
+          "comment": "Lime Green",
+          "colors": ["#fffe4c"]
+        },
+        {
+          "dmxRange": [89, 89],
+          "type": "ColorPreset",
+          "comment": "Moss Green",
+          "colors": ["#a7ff58"]
+        },
+        {
+          "dmxRange": [90, 90],
+          "type": "ColorPreset",
+          "comment": "Dark Yellow Green",
+          "colors": ["#3aff42"]
+        },
+        {
+          "dmxRange": [91, 99],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [100, 100],
+          "type": "ColorPreset",
+          "comment": "Spring Yellow",
+          "colors": ["#ffd930"]
+        },
+        {
+          "dmxRange": [101, 101],
+          "type": "ColorPreset",
+          "comment": "Yellow",
+          "colors": ["#ffc600"]
+        },
+        {
+          "dmxRange": [102, 102],
+          "type": "ColorPreset",
+          "comment": "Light Amber",
+          "colors": ["#ffba45"]
+        },
+        {
+          "dmxRange": [103, 103],
+          "type": "ColorPreset",
+          "comment": "Straw",
+          "colors": ["#ffd88f"]
+        },
+        {
+          "dmxRange": [104, 104],
+          "type": "ColorPreset",
+          "comment": "Deep Amber",
+          "colors": ["#ffa704"]
+        },
+        {
+          "dmxRange": [105, 105],
+          "type": "ColorPreset",
+          "comment": "Orange",
+          "colors": ["#ff8700"]
+        },
+        {
+          "dmxRange": [106, 106],
+          "type": "ColorPreset",
+          "comment": "Primary Red",
+          "colors": ["#ff0018"]
+        },
+        {
+          "dmxRange": [107, 107],
+          "type": "ColorPreset",
+          "comment": "Light Rose",
+          "colors": ["#ff8d7e"]
+        },
+        {
+          "dmxRange": [108, 108],
+          "type": "ColorPreset",
+          "comment": "English Rose",
+          "colors": ["#ffa76b"]
+        },
+        {
+          "dmxRange": [109, 109],
+          "type": "ColorPreset",
+          "comment": "Light Salmon",
+          "colors": ["#ff9a83"]
+        },
+        {
+          "dmxRange": [110, 110],
+          "type": "ColorPreset",
+          "comment": "Middle Rose",
+          "colors": ["#ff9ba1"]
+        },
+        {
+          "dmxRange": [111, 111],
+          "type": "ColorPreset",
+          "comment": "Dark Pink",
+          "colors": ["#ff7194"]
+        },
+        {
+          "dmxRange": [112, 112],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [113, 113],
+          "type": "ColorPreset",
+          "comment": "Magenta",
+          "colors": ["#ff0059"]
+        },
+        {
+          "dmxRange": [114, 114],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [115, 115],
+          "type": "ColorPreset",
+          "comment": "Peacock Blue",
+          "colors": ["#00ffd8"]
+        },
+        {
+          "dmxRange": [116, 116],
+          "type": "ColorPreset",
+          "comment": "Medium Blue-Green",
+          "colors": ["#00ffe1"]
+        },
+        {
+          "dmxRange": [117, 117],
+          "type": "ColorPreset",
+          "comment": "Steel Blue",
+          "colors": ["#ffc8de"]
+        },
+        {
+          "dmxRange": [118, 118],
+          "type": "ColorPreset",
+          "comment": "Light Blue",
+          "colors": ["#00a0ff"]
+        },
+        {
+          "dmxRange": [119, 119],
+          "type": "ColorPreset",
+          "comment": "Dark Blue",
+          "colors": ["#0069ff"]
+        },
+        {
+          "dmxRange": [120, 120],
+          "type": "ColorPreset",
+          "comment": "Deep Blue",
+          "colors": ["#0062ff"]
+        },
+        {
+          "dmxRange": [121, 121],
+          "type": "ColorPreset",
+          "comment": "LEE Green",
+          "colors": ["#cfff53"]
+        },
+        {
+          "dmxRange": [122, 122],
+          "type": "ColorPreset",
+          "comment": "Fern Green",
+          "colors": ["#8fff60"]
+        },
+        {
+          "dmxRange": [123, 123],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [124, 124],
+          "type": "ColorPreset",
+          "comment": "Dark Green",
+          "colors": ["#00ff66"]
+        },
+        {
+          "dmxRange": [125, 125],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [126, 126],
+          "type": "ColorPreset",
+          "comment": "Mauve",
+          "colors": ["#ff00f1"]
+        },
+        {
+          "dmxRange": [127, 127],
+          "type": "ColorPreset",
+          "comment": "Smokey Pink",
+          "colors": ["#ff8987"]
+        },
+        {
+          "dmxRange": [128, 128],
+          "type": "ColorPreset",
+          "comment": "Bright Pink",
+          "colors": ["#ff2e9b"]
+        },
+        {
+          "dmxRange": [129, 129],
+          "type": "ColorPreset",
+          "comment": "Heavy Frost",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [130, 130],
+          "type": "ColorPreset",
+          "comment": "Clear",
+          "colors": ["#ffb258"]
+        },
+        {
+          "dmxRange": [131, 131],
+          "type": "ColorPreset",
+          "comment": "Marine Blue",
+          "colors": ["#8fffd3"]
+        },
+        {
+          "dmxRange": [132, 132],
+          "type": "ColorPreset",
+          "comment": "Medium Blue",
+          "colors": ["#00a0ff"]
+        },
+        {
+          "dmxRange": [133, 133],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [134, 134],
+          "type": "ColorPreset",
+          "comment": "Golden Amber",
+          "colors": ["#ff8944"]
+        },
+        {
+          "dmxRange": [135, 135],
+          "type": "ColorPreset",
+          "comment": "Deep Golden Amber",
+          "colors": ["#ff4200"]
+        },
+        {
+          "dmxRange": [136, 136],
+          "type": "ColorPreset",
+          "comment": "Pale Lavender",
+          "colors": ["#ffd0cd"]
+        },
+        {
+          "dmxRange": [137, 137],
+          "type": "ColorPreset",
+          "comment": "Special Lavender",
+          "colors": ["#d6c1ff"]
+        },
+        {
+          "dmxRange": [138, 138],
+          "type": "ColorPreset",
+          "comment": "Pale Green",
+          "colors": ["#fff87c"]
+        },
+        {
+          "dmxRange": [139, 139],
+          "type": "ColorPreset",
+          "comment": "Primary Green",
+          "colors": ["#4bff00"]
+        },
+        {
+          "dmxRange": [140, 140],
+          "type": "ColorPreset",
+          "comment": "Summer Blue",
+          "colors": ["#a8fffc"]
+        },
+        {
+          "dmxRange": [141, 141],
+          "type": "ColorPreset",
+          "comment": "Bright Blue",
+          "colors": ["#00c8ff"]
+        },
+        {
+          "dmxRange": [142, 142],
+          "type": "ColorPreset",
+          "comment": "Pale Violet",
+          "colors": ["#afaeff"]
+        },
+        {
+          "dmxRange": [143, 143],
+          "type": "ColorPreset",
+          "comment": "Pale Navy Blue",
+          "colors": ["#50e5ff"]
+        },
+        {
+          "dmxRange": [144, 144],
+          "type": "ColorPreset",
+          "comment": "No Colour Blue",
+          "colors": ["#7df5ff"]
+        },
+        {
+          "dmxRange": [145, 146],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [147, 147],
+          "type": "ColorPreset",
+          "comment": "Apricot",
+          "colors": ["#ffa255"]
+        },
+        {
+          "dmxRange": [148, 148],
+          "type": "ColorPreset",
+          "comment": "Bright Rose",
+          "colors": ["#ff536c"]
+        },
+        {
+          "dmxRange": [149, 150],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [151, 151],
+          "type": "ColorPreset",
+          "comment": "Gold Tint",
+          "colors": ["#ffb78b"]
+        },
+        {
+          "dmxRange": [152, 152],
+          "type": "ColorPreset",
+          "comment": "Pale Gold",
+          "colors": ["#ffb684"]
+        },
+        {
+          "dmxRange": [153, 153],
+          "type": "ColorPreset",
+          "comment": "Pale Salmon",
+          "colors": ["#ffae8f"]
+        },
+        {
+          "dmxRange": [154, 154],
+          "type": "ColorPreset",
+          "comment": "Pale Rose",
+          "colors": ["#ffbd92"]
+        },
+        {
+          "dmxRange": [155, 155],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [156, 156],
+          "type": "ColorPreset",
+          "comment": "Chocolate",
+          "colors": ["#ffbc77"]
+        },
+        {
+          "dmxRange": [157, 157],
+          "type": "ColorPreset",
+          "comment": "Pink",
+          "colors": ["#ff716e"]
+        },
+        {
+          "dmxRange": [158, 158],
+          "type": "ColorPreset",
+          "comment": "Deep Orange",
+          "colors": ["#ff7800"]
+        },
+        {
+          "dmxRange": [159, 159],
+          "type": "ColorPreset",
+          "comment": "No Colour Straw",
+          "colors": ["#ffd79c"]
+        },
+        {
+          "dmxRange": [160, 160],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [161, 161],
+          "type": "ColorPreset",
+          "comment": "Slate Blue",
+          "colors": ["#67cdff"]
+        },
+        {
+          "dmxRange": [162, 162],
+          "type": "ColorPreset",
+          "comment": "Bastard Amber",
+          "colors": ["#ffc290"]
+        },
+        {
+          "dmxRange": [163, 163],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [164, 164],
+          "type": "ColorPreset",
+          "comment": "Flame Red",
+          "colors": ["#ff3622"]
+        },
+        {
+          "dmxRange": [165, 165],
+          "type": "ColorPreset",
+          "comment": "Daylight Blue",
+          "colors": ["#00c2ff"]
+        },
+        {
+          "dmxRange": [166, 168],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [169, 169],
+          "type": "ColorPreset",
+          "comment": "Lilac Tint",
+          "colors": ["#ffd9c1"]
+        },
+        {
+          "dmxRange": [170, 170],
+          "type": "ColorPreset",
+          "comment": "Deep Lavender",
+          "colors": ["#ffc0e1"]
+        },
+        {
+          "dmxRange": [171, 171],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [172, 172],
+          "type": "ColorPreset",
+          "comment": "Lagoon Blue",
+          "colors": ["#00f3ff"]
+        },
+        {
+          "dmxRange": [173, 173],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [174, 174],
+          "type": "ColorPreset",
+          "comment": "Dark Steel Blue",
+          "colors": ["#abe0ff"]
+        },
+        {
+          "dmxRange": [175, 175],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [176, 176],
+          "type": "ColorPreset",
+          "comment": "Loving Amber",
+          "colors": ["#ff9d75"]
+        },
+        {
+          "dmxRange": [177, 178],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [179, 179],
+          "type": "ColorPreset",
+          "comment": "Chrome Orange",
+          "colors": ["#ff9e00"]
+        },
+        {
+          "dmxRange": [180, 180],
+          "type": "ColorPreset",
+          "comment": "Dark Lavender",
+          "colors": ["#8866ff"]
+        },
+        {
+          "dmxRange": [181, 181],
+          "type": "ColorPreset",
+          "comment": "Congo Blue",
+          "colors": ["#1a44ff"]
+        },
+        {
+          "dmxRange": [182, 182],
+          "type": "ColorPreset",
+          "comment": "Light Red",
+          "colors": ["#ff3914"]
+        },
+        {
+          "dmxRange": [183, 183],
+          "type": "ColorPreset",
+          "comment": "Moonlight Blue",
+          "colors": ["#00cfff"]
+        },
+        {
+          "dmxRange": [184, 184],
+          "type": "ColorPreset",
+          "comment": "Cosmetic Peach",
+          "colors": ["#ffd19c"]
+        },
+        {
+          "dmxRange": [185, 185],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [186, 186],
+          "type": "ColorPreset",
+          "comment": "Cosmetic Silver Rose",
+          "colors": ["#ffcca5"]
+        },
+        {
+          "dmxRange": [187, 187],
+          "type": "ColorPreset",
+          "comment": "Cosmetic Rouge",
+          "colors": ["#ffcb97"]
+        },
+        {
+          "dmxRange": [188, 188],
+          "type": "ColorPreset",
+          "comment": "Cosmetic Highlight",
+          "colors": ["#ffcf9b"]
+        },
+        {
+          "dmxRange": [189, 189],
+          "type": "ColorPreset",
+          "comment": "Cosmetic Silver Moss",
+          "colors": ["#ffda98"]
+        },
+        {
+          "dmxRange": [190, 190],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [191, 191],
+          "type": "ColorPreset",
+          "comment": "Cosmetic Aqua Blue",
+          "colors": ["#ffe5b3"]
+        },
+        {
+          "dmxRange": [192, 192],
+          "type": "ColorPreset",
+          "comment": "Flesh Pink",
+          "colors": ["#ff7487"]
+        },
+        {
+          "dmxRange": [193, 193],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [194, 194],
+          "type": "ColorPreset",
+          "comment": "Surprise Pink",
+          "colors": ["#e5c7ff"]
+        },
+        {
+          "dmxRange": [195, 195],
+          "type": "ColorPreset",
+          "comment": "Zenith Blue",
+          "colors": ["#005fff"]
+        },
+        {
+          "dmxRange": [196, 196],
+          "type": "ColorPreset",
+          "comment": "True Blue",
+          "colors": ["#64deff"]
+        },
+        {
+          "dmxRange": [197, 197],
+          "type": "ColorPreset",
+          "comment": "Alice Blue",
+          "colors": ["#3aa0ff"]
+        },
+        {
+          "dmxRange": [198, 198],
+          "type": "ColorPreset",
+          "comment": "Palace Blue",
+          "colors": ["#00d2ff"]
+        },
+        {
+          "dmxRange": [199, 199],
+          "type": "ColorPreset",
+          "comment": "Regal Blue",
+          "colors": ["#2d72ff"]
+        },
+        {
+          "dmxRange": [200, 200],
+          "type": "ColorPreset",
+          "comment": "Double CT Blue",
+          "colors": ["#6fbcff"]
+        },
+        {
+          "dmxRange": [201, 201],
+          "type": "ColorPreset",
+          "comment": "Full CT Blue",
+          "colors": ["#dbf5ff"]
+        },
+        {
+          "dmxRange": [202, 202],
+          "type": "ColorPreset",
+          "comment": "1/2 CT Blue",
+          "colors": ["#fffce6"]
+        },
+        {
+          "dmxRange": [203, 203],
+          "type": "ColorPreset",
+          "comment": "1/4 CT Blue",
+          "colors": ["#ffe9c7"]
+        },
+        {
+          "dmxRange": [204, 204],
+          "type": "ColorPreset",
+          "comment": "Full CT Orange",
+          "colors": ["#ffa955"]
+        },
+        {
+          "dmxRange": [205, 205],
+          "type": "ColorPreset",
+          "comment": "1/2 CT Orange",
+          "colors": ["#ffc079"]
+        },
+        {
+          "dmxRange": [206, 206],
+          "type": "ColorPreset",
+          "comment": "1/4 CT Orange",
+          "colors": ["#ffc98e"]
+        },
+        {
+          "dmxRange": [207, 207],
+          "type": "ColorPreset",
+          "comment": "Full CT Orange +",
+          "colors": ["#ffa858"]
+        },
+        {
+          "dmxRange": [208, 208],
+          "type": "ColorPreset",
+          "comment": "Full CT Orange +",
+          "colors": ["#ffa853"]
+        },
+        {
+          "dmxRange": [209, 209],
+          "type": "ColorPreset",
+          "comment": "0.3 Neutral Density",
+          "colors": ["#ffdcab"]
+        },
+        {
+          "dmxRange": [210, 210],
+          "type": "ColorPreset",
+          "comment": "0.6 Neutral Density",
+          "colors": ["#ffddad"]
+        },
+        {
+          "dmxRange": [211, 211],
+          "type": "ColorPreset",
+          "comment": "0.9 Neutral Density",
+          "colors": ["#ffdeaa"]
+        },
+        {
+          "dmxRange": [212, 212],
+          "type": "ColorPreset",
+          "comment": "LCT Yellow",
+          "colors": ["#ffd68c"]
+        },
+        {
+          "dmxRange": [213, 213],
+          "type": "ColorPreset",
+          "comment": "Emulated White Flame Green",
+          "colors": ["#ffe89c"]
+        },
+        {
+          "dmxRange": [214, 215],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [216, 216],
+          "type": "ColorPreset",
+          "comment": "Emulated White Diffusion",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [217, 217],
+          "type": "ColorPreset",
+          "comment": "Blue Diffusion",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [218, 218],
+          "type": "ColorPreset",
+          "comment": "1/8 CT Blue",
+          "colors": ["#ffe1b7"]
+        },
+        {
+          "dmxRange": [219, 219],
+          "type": "ColorPreset",
+          "comment": "LEE Fluorescent Green",
+          "colors": ["#a9ffc1"]
+        },
+        {
+          "dmxRange": [220, 220],
+          "type": "ColorPreset",
+          "comment": "Emulated White Frost",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [221, 221],
+          "type": "ColorPreset",
+          "comment": "Blue Frost",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [222, 222],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [223, 223],
+          "type": "ColorPreset",
+          "comment": "1/8 CT Orange",
+          "colors": ["#ffd39b"]
+        },
+        {
+          "dmxRange": [224, 224],
+          "type": "ColorPreset",
+          "comment": "Daylight Blue Frost",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [225, 225],
+          "type": "ColorPreset",
+          "comment": "LEE N.D. Frost",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [226, 226],
+          "type": "ColorPreset",
+          "comment": "LEE U.V.",
+          "colors": ["#ffdaa8"]
+        },
+        {
+          "dmxRange": [227, 227],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [228, 228],
+          "type": "ColorPreset",
+          "comment": "Brushed Silk",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [229, 229],
+          "type": "ColorPreset",
+          "comment": "1/4 Tough Spun",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [230, 230],
+          "type": "ColorPreset",
+          "comment": "Super Correction",
+          "colors": ["#ffc67c"]
+        },
+        {
+          "dmxRange": [231, 231],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [232, 232],
+          "type": "ColorPreset",
+          "comment": "Super Emulated White Flame Green",
+          "colors": ["#ffad5d"]
+        },
+        {
+          "dmxRange": [233, 235],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [236, 236],
+          "type": "ColorPreset",
+          "comment": "H.M.I (To Tungsten)",
+          "colors": ["#ffa95f"]
+        },
+        {
+          "dmxRange": [237, 237],
+          "type": "ColorPreset",
+          "comment": "C.I.D. (To Tungsten)",
+          "colors": ["#ffa360"]
+        },
+        {
+          "dmxRange": [238, 238],
+          "type": "ColorPreset",
+          "comment": "C.S.I. (To Tungsten)",
+          "colors": ["#ffb483"]
+        },
+        {
+          "dmxRange": [239, 239],
+          "type": "ColorPreset",
+          "comment": "Polariser",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [240, 240],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [241, 241],
+          "type": "ColorPreset",
+          "comment": "LEE Fluorescent 5700 K",
+          "colors": ["#ccffdc"]
+        },
+        {
+          "dmxRange": [242, 242],
+          "type": "ColorPreset",
+          "comment": "LEE Fluorescent 4300 K",
+          "colors": ["#e0ffb8"]
+        },
+        {
+          "dmxRange": [243, 243],
+          "type": "ColorPreset",
+          "comment": "LEE Fluorescent 3600 K",
+          "colors": ["#f2ffa8"]
+        },
+        {
+          "dmxRange": [244, 244],
+          "type": "ColorPreset",
+          "comment": "LEE Plus Green",
+          "colors": ["#ffed8f"]
+        },
+        {
+          "dmxRange": [245, 245],
+          "type": "ColorPreset",
+          "comment": "1/2 Plus Green",
+          "colors": ["#ffe49b"]
+        },
+        {
+          "dmxRange": [246, 246],
+          "type": "ColorPreset",
+          "comment": "1/4 Plus Green",
+          "colors": ["#ffe0a3"]
+        },
+        {
+          "dmxRange": [247, 247],
+          "type": "ColorPreset",
+          "comment": "LEE Minus Green",
+          "colors": ["#ffbdaa"]
+        },
+        {
+          "dmxRange": [248, 248],
+          "type": "ColorPreset",
+          "comment": "1/2 Minus Green",
+          "colors": ["#ffccab"]
+        },
+        {
+          "dmxRange": [249, 249],
+          "type": "ColorPreset",
+          "comment": "1/4 Minus Green",
+          "colors": ["#ffd5ad"]
+        },
+        {
+          "dmxRange": [250, 250],
+          "type": "ColorPreset",
+          "comment": "1/2 Emulated White Diffusion",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [251, 251],
+          "type": "ColorPreset",
+          "comment": "1/4 Emulated White Diffusion",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [252, 252],
+          "type": "ColorPreset",
+          "comment": "1/8 Emulated White Diffusion",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [253, 253],
+          "type": "ColorPreset",
+          "comment": "Hampshire Frost",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [254, 254],
+          "type": "ColorPreset",
+          "comment": "New Hampshire Frost",
+          "helpWanted": "What is the RGB color mixing?"
+        },
+        {
+          "dmxRange": [255, 255],
+          "type": "ColorPreset",
+          "comment": "Hollywood Frost",
+          "helpWanted": "What is the RGB color mixing?"
+        }
+      ]
+    },
+    "Color Temperature $pixelKey": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 0],
+          "type": "ColorTemperature",
+          "colorTemperature": "1750K"
+        },
+        {
+          "dmxRange": [1, 1],
+          "type": "ColorTemperature",
+          "colorTemperature": "1782K"
+        },
+        {
+          "dmxRange": [2, 2],
+          "type": "ColorTemperature",
+          "colorTemperature": "1814K"
+        },
+        {
+          "dmxRange": [3, 3],
+          "type": "ColorTemperature",
+          "colorTemperature": "1846K"
+        },
+        {
+          "dmxRange": [4, 4],
+          "type": "ColorTemperature",
+          "colorTemperature": "1878K"
+        },
+        {
+          "dmxRange": [5, 5],
+          "type": "ColorTemperature",
+          "colorTemperature": "1910K"
+        },
+        {
+          "dmxRange": [6, 6],
+          "type": "ColorTemperature",
+          "colorTemperature": "1942K"
+        },
+        {
+          "dmxRange": [7, 7],
+          "type": "ColorTemperature",
+          "colorTemperature": "1974K"
+        },
+        {
+          "dmxRange": [8, 8],
+          "type": "ColorTemperature",
+          "colorTemperature": "2006K"
+        },
+        {
+          "dmxRange": [9, 9],
+          "type": "ColorTemperature",
+          "colorTemperature": "2038K"
+        },
+        {
+          "dmxRange": [10, 10],
+          "type": "ColorTemperature",
+          "colorTemperature": "2070K"
+        },
+        {
+          "dmxRange": [11, 11],
+          "type": "ColorTemperature",
+          "colorTemperature": "2102K"
+        },
+        {
+          "dmxRange": [12, 12],
+          "type": "ColorTemperature",
+          "colorTemperature": "2134K"
+        },
+        {
+          "dmxRange": [13, 13],
+          "type": "ColorTemperature",
+          "colorTemperature": "2166K"
+        },
+        {
+          "dmxRange": [14, 14],
+          "type": "ColorTemperature",
+          "colorTemperature": "2198K"
+        },
+        {
+          "dmxRange": [15, 15],
+          "type": "ColorTemperature",
+          "colorTemperature": "2230K"
+        },
+        {
+          "dmxRange": [16, 16],
+          "type": "ColorTemperature",
+          "colorTemperature": "2262K"
+        },
+        {
+          "dmxRange": [17, 17],
+          "type": "ColorTemperature",
+          "colorTemperature": "2294K"
+        },
+        {
+          "dmxRange": [18, 18],
+          "type": "ColorTemperature",
+          "colorTemperature": "2326K"
+        },
+        {
+          "dmxRange": [19, 19],
+          "type": "ColorTemperature",
+          "colorTemperature": "2358K"
+        },
+        {
+          "dmxRange": [20, 20],
+          "type": "ColorTemperature",
+          "colorTemperature": "2390K"
+        },
+        {
+          "dmxRange": [21, 21],
+          "type": "ColorTemperature",
+          "colorTemperature": "2422K"
+        },
+        {
+          "dmxRange": [22, 22],
+          "type": "ColorTemperature",
+          "colorTemperature": "2454K"
+        },
+        {
+          "dmxRange": [23, 23],
+          "type": "ColorTemperature",
+          "colorTemperature": "2486K"
+        },
+        {
+          "dmxRange": [24, 24],
+          "type": "ColorTemperature",
+          "colorTemperature": "2518K"
+        },
+        {
+          "dmxRange": [25, 25],
+          "type": "ColorTemperature",
+          "colorTemperature": "2550K"
+        },
+        {
+          "dmxRange": [26, 26],
+          "type": "ColorTemperature",
+          "colorTemperature": "2582K"
+        },
+        {
+          "dmxRange": [27, 27],
+          "type": "ColorTemperature",
+          "colorTemperature": "2614K"
+        },
+        {
+          "dmxRange": [28, 28],
+          "type": "ColorTemperature",
+          "colorTemperature": "2646K"
+        },
+        {
+          "dmxRange": [29, 29],
+          "type": "ColorTemperature",
+          "colorTemperature": "2678K"
+        },
+        {
+          "dmxRange": [30, 30],
+          "type": "ColorTemperature",
+          "colorTemperature": "2710K"
+        },
+        {
+          "dmxRange": [31, 31],
+          "type": "ColorTemperature",
+          "colorTemperature": "2742K"
+        },
+        {
+          "dmxRange": [32, 32],
+          "type": "ColorTemperature",
+          "colorTemperature": "2774K"
+        },
+        {
+          "dmxRange": [33, 33],
+          "type": "ColorTemperature",
+          "colorTemperature": "2806K"
+        },
+        {
+          "dmxRange": [34, 34],
+          "type": "ColorTemperature",
+          "colorTemperature": "2838K"
+        },
+        {
+          "dmxRange": [35, 35],
+          "type": "ColorTemperature",
+          "colorTemperature": "2870K"
+        },
+        {
+          "dmxRange": [36, 36],
+          "type": "ColorTemperature",
+          "colorTemperature": "2902K"
+        },
+        {
+          "dmxRange": [37, 37],
+          "type": "ColorTemperature",
+          "colorTemperature": "2934K"
+        },
+        {
+          "dmxRange": [38, 38],
+          "type": "ColorTemperature",
+          "colorTemperature": "2966K"
+        },
+        {
+          "dmxRange": [39, 39],
+          "type": "ColorTemperature",
+          "colorTemperature": "2998K"
+        },
+        {
+          "dmxRange": [40, 40],
+          "type": "ColorTemperature",
+          "colorTemperature": "3030K"
+        },
+        {
+          "dmxRange": [41, 41],
+          "type": "ColorTemperature",
+          "colorTemperature": "3062K"
+        },
+        {
+          "dmxRange": [42, 42],
+          "type": "ColorTemperature",
+          "colorTemperature": "3094K"
+        },
+        {
+          "dmxRange": [43, 43],
+          "type": "ColorTemperature",
+          "colorTemperature": "3126K"
+        },
+        {
+          "dmxRange": [44, 44],
+          "type": "ColorTemperature",
+          "colorTemperature": "3158K"
+        },
+        {
+          "dmxRange": [45, 45],
+          "type": "ColorTemperature",
+          "colorTemperature": "3190K"
+        },
+        {
+          "dmxRange": [46, 46],
+          "type": "ColorTemperature",
+          "colorTemperature": "3222K"
+        },
+        {
+          "dmxRange": [47, 47],
+          "type": "ColorTemperature",
+          "colorTemperature": "3254K"
+        },
+        {
+          "dmxRange": [48, 48],
+          "type": "ColorTemperature",
+          "colorTemperature": "3286K"
+        },
+        {
+          "dmxRange": [49, 49],
+          "type": "ColorTemperature",
+          "colorTemperature": "3318K"
+        },
+        {
+          "dmxRange": [50, 50],
+          "type": "ColorTemperature",
+          "colorTemperature": "3350K"
+        },
+        {
+          "dmxRange": [51, 51],
+          "type": "ColorTemperature",
+          "colorTemperature": "3382K"
+        },
+        {
+          "dmxRange": [52, 52],
+          "type": "ColorTemperature",
+          "colorTemperature": "3414K"
+        },
+        {
+          "dmxRange": [53, 53],
+          "type": "ColorTemperature",
+          "colorTemperature": "3446K"
+        },
+        {
+          "dmxRange": [54, 54],
+          "type": "ColorTemperature",
+          "colorTemperature": "3478K"
+        },
+        {
+          "dmxRange": [55, 55],
+          "type": "ColorTemperature",
+          "colorTemperature": "3510K"
+        },
+        {
+          "dmxRange": [56, 56],
+          "type": "ColorTemperature",
+          "colorTemperature": "3542K"
+        },
+        {
+          "dmxRange": [57, 57],
+          "type": "ColorTemperature",
+          "colorTemperature": "3574K"
+        },
+        {
+          "dmxRange": [58, 58],
+          "type": "ColorTemperature",
+          "colorTemperature": "3606K"
+        },
+        {
+          "dmxRange": [59, 59],
+          "type": "ColorTemperature",
+          "colorTemperature": "3638K"
+        },
+        {
+          "dmxRange": [60, 60],
+          "type": "ColorTemperature",
+          "colorTemperature": "3670K"
+        },
+        {
+          "dmxRange": [61, 61],
+          "type": "ColorTemperature",
+          "colorTemperature": "3702K"
+        },
+        {
+          "dmxRange": [62, 62],
+          "type": "ColorTemperature",
+          "colorTemperature": "3734K"
+        },
+        {
+          "dmxRange": [63, 63],
+          "type": "ColorTemperature",
+          "colorTemperature": "3766K"
+        },
+        {
+          "dmxRange": [64, 64],
+          "type": "ColorTemperature",
+          "colorTemperature": "3798K"
+        },
+        {
+          "dmxRange": [65, 65],
+          "type": "ColorTemperature",
+          "colorTemperature": "3830K"
+        },
+        {
+          "dmxRange": [66, 66],
+          "type": "ColorTemperature",
+          "colorTemperature": "3862K"
+        },
+        {
+          "dmxRange": [67, 67],
+          "type": "ColorTemperature",
+          "colorTemperature": "3894K"
+        },
+        {
+          "dmxRange": [68, 68],
+          "type": "ColorTemperature",
+          "colorTemperature": "3926K"
+        },
+        {
+          "dmxRange": [69, 69],
+          "type": "ColorTemperature",
+          "colorTemperature": "3958K"
+        },
+        {
+          "dmxRange": [70, 70],
+          "type": "ColorTemperature",
+          "colorTemperature": "3990K"
+        },
+        {
+          "dmxRange": [71, 71],
+          "type": "ColorTemperature",
+          "colorTemperature": "4022K"
+        },
+        {
+          "dmxRange": [72, 72],
+          "type": "ColorTemperature",
+          "colorTemperature": "4054K"
+        },
+        {
+          "dmxRange": [73, 73],
+          "type": "ColorTemperature",
+          "colorTemperature": "4086K"
+        },
+        {
+          "dmxRange": [74, 74],
+          "type": "ColorTemperature",
+          "colorTemperature": "4118K"
+        },
+        {
+          "dmxRange": [75, 75],
+          "type": "ColorTemperature",
+          "colorTemperature": "4150K"
+        },
+        {
+          "dmxRange": [76, 76],
+          "type": "ColorTemperature",
+          "colorTemperature": "4182K"
+        },
+        {
+          "dmxRange": [77, 77],
+          "type": "ColorTemperature",
+          "colorTemperature": "4214K"
+        },
+        {
+          "dmxRange": [78, 78],
+          "type": "ColorTemperature",
+          "colorTemperature": "4246K"
+        },
+        {
+          "dmxRange": [79, 79],
+          "type": "ColorTemperature",
+          "colorTemperature": "4278K"
+        },
+        {
+          "dmxRange": [80, 80],
+          "type": "ColorTemperature",
+          "colorTemperature": "4310K"
+        },
+        {
+          "dmxRange": [81, 81],
+          "type": "ColorTemperature",
+          "colorTemperature": "4342K"
+        },
+        {
+          "dmxRange": [82, 82],
+          "type": "ColorTemperature",
+          "colorTemperature": "4374K"
+        },
+        {
+          "dmxRange": [83, 83],
+          "type": "ColorTemperature",
+          "colorTemperature": "4406K"
+        },
+        {
+          "dmxRange": [84, 84],
+          "type": "ColorTemperature",
+          "colorTemperature": "4438K"
+        },
+        {
+          "dmxRange": [85, 85],
+          "type": "ColorTemperature",
+          "colorTemperature": "4470K"
+        },
+        {
+          "dmxRange": [86, 86],
+          "type": "ColorTemperature",
+          "colorTemperature": "4502K"
+        },
+        {
+          "dmxRange": [87, 87],
+          "type": "ColorTemperature",
+          "colorTemperature": "4534K"
+        },
+        {
+          "dmxRange": [88, 88],
+          "type": "ColorTemperature",
+          "colorTemperature": "4566K"
+        },
+        {
+          "dmxRange": [89, 89],
+          "type": "ColorTemperature",
+          "colorTemperature": "4598K"
+        },
+        {
+          "dmxRange": [90, 90],
+          "type": "ColorTemperature",
+          "colorTemperature": "4630K"
+        },
+        {
+          "dmxRange": [91, 91],
+          "type": "ColorTemperature",
+          "colorTemperature": "4662K"
+        },
+        {
+          "dmxRange": [92, 92],
+          "type": "ColorTemperature",
+          "colorTemperature": "4694K"
+        },
+        {
+          "dmxRange": [93, 93],
+          "type": "ColorTemperature",
+          "colorTemperature": "4726K"
+        },
+        {
+          "dmxRange": [94, 94],
+          "type": "ColorTemperature",
+          "colorTemperature": "4758K"
+        },
+        {
+          "dmxRange": [95, 95],
+          "type": "ColorTemperature",
+          "colorTemperature": "4790K"
+        },
+        {
+          "dmxRange": [96, 96],
+          "type": "ColorTemperature",
+          "colorTemperature": "4822K"
+        },
+        {
+          "dmxRange": [97, 97],
+          "type": "ColorTemperature",
+          "colorTemperature": "4854K"
+        },
+        {
+          "dmxRange": [98, 98],
+          "type": "ColorTemperature",
+          "colorTemperature": "4886K"
+        },
+        {
+          "dmxRange": [99, 99],
+          "type": "ColorTemperature",
+          "colorTemperature": "4918K"
+        },
+        {
+          "dmxRange": [100, 100],
+          "type": "ColorTemperature",
+          "colorTemperature": "4950K"
+        },
+        {
+          "dmxRange": [101, 101],
+          "type": "ColorTemperature",
+          "colorTemperature": "4982K"
+        },
+        {
+          "dmxRange": [102, 102],
+          "type": "ColorTemperature",
+          "colorTemperature": "5014K"
+        },
+        {
+          "dmxRange": [103, 103],
+          "type": "ColorTemperature",
+          "colorTemperature": "5046K"
+        },
+        {
+          "dmxRange": [104, 104],
+          "type": "ColorTemperature",
+          "colorTemperature": "5078K"
+        },
+        {
+          "dmxRange": [105, 105],
+          "type": "ColorTemperature",
+          "colorTemperature": "5110K"
+        },
+        {
+          "dmxRange": [106, 106],
+          "type": "ColorTemperature",
+          "colorTemperature": "5142K"
+        },
+        {
+          "dmxRange": [107, 107],
+          "type": "ColorTemperature",
+          "colorTemperature": "5174K"
+        },
+        {
+          "dmxRange": [108, 108],
+          "type": "ColorTemperature",
+          "colorTemperature": "5206K"
+        },
+        {
+          "dmxRange": [109, 109],
+          "type": "ColorTemperature",
+          "colorTemperature": "5238K"
+        },
+        {
+          "dmxRange": [110, 110],
+          "type": "ColorTemperature",
+          "colorTemperature": "5270K"
+        },
+        {
+          "dmxRange": [111, 111],
+          "type": "ColorTemperature",
+          "colorTemperature": "5302K"
+        },
+        {
+          "dmxRange": [112, 112],
+          "type": "ColorTemperature",
+          "colorTemperature": "5334K"
+        },
+        {
+          "dmxRange": [113, 113],
+          "type": "ColorTemperature",
+          "colorTemperature": "5366K"
+        },
+        {
+          "dmxRange": [114, 114],
+          "type": "ColorTemperature",
+          "colorTemperature": "5398K"
+        },
+        {
+          "dmxRange": [115, 115],
+          "type": "ColorTemperature",
+          "colorTemperature": "5430K"
+        },
+        {
+          "dmxRange": [116, 116],
+          "type": "ColorTemperature",
+          "colorTemperature": "5462K"
+        },
+        {
+          "dmxRange": [117, 117],
+          "type": "ColorTemperature",
+          "colorTemperature": "5494K"
+        },
+        {
+          "dmxRange": [118, 118],
+          "type": "ColorTemperature",
+          "colorTemperature": "5526K"
+        },
+        {
+          "dmxRange": [119, 119],
+          "type": "ColorTemperature",
+          "colorTemperature": "5558K"
+        },
+        {
+          "dmxRange": [120, 120],
+          "type": "ColorTemperature",
+          "colorTemperature": "5590K"
+        },
+        {
+          "dmxRange": [121, 121],
+          "type": "ColorTemperature",
+          "colorTemperature": "5622K"
+        },
+        {
+          "dmxRange": [122, 122],
+          "type": "ColorTemperature",
+          "colorTemperature": "5654K"
+        },
+        {
+          "dmxRange": [123, 123],
+          "type": "ColorTemperature",
+          "colorTemperature": "5686K"
+        },
+        {
+          "dmxRange": [124, 124],
+          "type": "ColorTemperature",
+          "colorTemperature": "5718K"
+        },
+        {
+          "dmxRange": [125, 125],
+          "type": "ColorTemperature",
+          "colorTemperature": "5750K"
+        },
+        {
+          "dmxRange": [126, 126],
+          "type": "ColorTemperature",
+          "colorTemperature": "5782K"
+        },
+        {
+          "dmxRange": [127, 127],
+          "type": "ColorTemperature",
+          "colorTemperature": "5814K"
+        },
+        {
+          "dmxRange": [128, 128],
+          "type": "ColorTemperature",
+          "colorTemperature": "5846K"
+        },
+        {
+          "dmxRange": [129, 129],
+          "type": "ColorTemperature",
+          "colorTemperature": "5878K"
+        },
+        {
+          "dmxRange": [130, 130],
+          "type": "ColorTemperature",
+          "colorTemperature": "5910K"
+        },
+        {
+          "dmxRange": [131, 131],
+          "type": "ColorTemperature",
+          "colorTemperature": "5942K"
+        },
+        {
+          "dmxRange": [132, 132],
+          "type": "ColorTemperature",
+          "colorTemperature": "5974K"
+        },
+        {
+          "dmxRange": [133, 133],
+          "type": "ColorTemperature",
+          "colorTemperature": "6006K"
+        },
+        {
+          "dmxRange": [134, 134],
+          "type": "ColorTemperature",
+          "colorTemperature": "6038K"
+        },
+        {
+          "dmxRange": [135, 135],
+          "type": "ColorTemperature",
+          "colorTemperature": "6070K"
+        },
+        {
+          "dmxRange": [136, 136],
+          "type": "ColorTemperature",
+          "colorTemperature": "6102K"
+        },
+        {
+          "dmxRange": [137, 137],
+          "type": "ColorTemperature",
+          "colorTemperature": "6134K"
+        },
+        {
+          "dmxRange": [138, 138],
+          "type": "ColorTemperature",
+          "colorTemperature": "6166K"
+        },
+        {
+          "dmxRange": [139, 139],
+          "type": "ColorTemperature",
+          "colorTemperature": "6198K"
+        },
+        {
+          "dmxRange": [140, 140],
+          "type": "ColorTemperature",
+          "colorTemperature": "6230K"
+        },
+        {
+          "dmxRange": [141, 141],
+          "type": "ColorTemperature",
+          "colorTemperature": "6262K"
+        },
+        {
+          "dmxRange": [142, 142],
+          "type": "ColorTemperature",
+          "colorTemperature": "6294K"
+        },
+        {
+          "dmxRange": [143, 143],
+          "type": "ColorTemperature",
+          "colorTemperature": "6326K"
+        },
+        {
+          "dmxRange": [144, 144],
+          "type": "ColorTemperature",
+          "colorTemperature": "6358K"
+        },
+        {
+          "dmxRange": [145, 145],
+          "type": "ColorTemperature",
+          "colorTemperature": "6390K"
+        },
+        {
+          "dmxRange": [146, 146],
+          "type": "ColorTemperature",
+          "colorTemperature": "6422K"
+        },
+        {
+          "dmxRange": [147, 147],
+          "type": "ColorTemperature",
+          "colorTemperature": "6454K"
+        },
+        {
+          "dmxRange": [148, 148],
+          "type": "ColorTemperature",
+          "colorTemperature": "6486K"
+        },
+        {
+          "dmxRange": [149, 149],
+          "type": "ColorTemperature",
+          "colorTemperature": "6518K"
+        },
+        {
+          "dmxRange": [150, 150],
+          "type": "ColorTemperature",
+          "colorTemperature": "6550K"
+        },
+        {
+          "dmxRange": [151, 151],
+          "type": "ColorTemperature",
+          "colorTemperature": "6582K"
+        },
+        {
+          "dmxRange": [152, 152],
+          "type": "ColorTemperature",
+          "colorTemperature": "6614K"
+        },
+        {
+          "dmxRange": [153, 153],
+          "type": "ColorTemperature",
+          "colorTemperature": "6646K"
+        },
+        {
+          "dmxRange": [154, 154],
+          "type": "ColorTemperature",
+          "colorTemperature": "6678K"
+        },
+        {
+          "dmxRange": [155, 155],
+          "type": "ColorTemperature",
+          "colorTemperature": "6710K"
+        },
+        {
+          "dmxRange": [156, 156],
+          "type": "ColorTemperature",
+          "colorTemperature": "6742K"
+        },
+        {
+          "dmxRange": [157, 157],
+          "type": "ColorTemperature",
+          "colorTemperature": "6774K"
+        },
+        {
+          "dmxRange": [158, 158],
+          "type": "ColorTemperature",
+          "colorTemperature": "6806K"
+        },
+        {
+          "dmxRange": [159, 159],
+          "type": "ColorTemperature",
+          "colorTemperature": "6838K"
+        },
+        {
+          "dmxRange": [160, 160],
+          "type": "ColorTemperature",
+          "colorTemperature": "6870K"
+        },
+        {
+          "dmxRange": [161, 161],
+          "type": "ColorTemperature",
+          "colorTemperature": "6902K"
+        },
+        {
+          "dmxRange": [162, 162],
+          "type": "ColorTemperature",
+          "colorTemperature": "6934K"
+        },
+        {
+          "dmxRange": [163, 163],
+          "type": "ColorTemperature",
+          "colorTemperature": "6966K"
+        },
+        {
+          "dmxRange": [164, 164],
+          "type": "ColorTemperature",
+          "colorTemperature": "6998K"
+        },
+        {
+          "dmxRange": [165, 165],
+          "type": "ColorTemperature",
+          "colorTemperature": "7030K"
+        },
+        {
+          "dmxRange": [166, 166],
+          "type": "ColorTemperature",
+          "colorTemperature": "7062K"
+        },
+        {
+          "dmxRange": [167, 167],
+          "type": "ColorTemperature",
+          "colorTemperature": "7094K"
+        },
+        {
+          "dmxRange": [168, 168],
+          "type": "ColorTemperature",
+          "colorTemperature": "7126K"
+        },
+        {
+          "dmxRange": [169, 169],
+          "type": "ColorTemperature",
+          "colorTemperature": "7158K"
+        },
+        {
+          "dmxRange": [170, 170],
+          "type": "ColorTemperature",
+          "colorTemperature": "7190K"
+        },
+        {
+          "dmxRange": [171, 171],
+          "type": "ColorTemperature",
+          "colorTemperature": "7222K"
+        },
+        {
+          "dmxRange": [172, 172],
+          "type": "ColorTemperature",
+          "colorTemperature": "7254K"
+        },
+        {
+          "dmxRange": [173, 173],
+          "type": "ColorTemperature",
+          "colorTemperature": "7286K"
+        },
+        {
+          "dmxRange": [174, 174],
+          "type": "ColorTemperature",
+          "colorTemperature": "7318K"
+        },
+        {
+          "dmxRange": [175, 175],
+          "type": "ColorTemperature",
+          "colorTemperature": "7350K"
+        },
+        {
+          "dmxRange": [176, 176],
+          "type": "ColorTemperature",
+          "colorTemperature": "7382K"
+        },
+        {
+          "dmxRange": [177, 177],
+          "type": "ColorTemperature",
+          "colorTemperature": "7414K"
+        },
+        {
+          "dmxRange": [178, 178],
+          "type": "ColorTemperature",
+          "colorTemperature": "7446K"
+        },
+        {
+          "dmxRange": [179, 179],
+          "type": "ColorTemperature",
+          "colorTemperature": "7478K"
+        },
+        {
+          "dmxRange": [180, 180],
+          "type": "ColorTemperature",
+          "colorTemperature": "7510K"
+        },
+        {
+          "dmxRange": [181, 181],
+          "type": "ColorTemperature",
+          "colorTemperature": "7542K"
+        },
+        {
+          "dmxRange": [182, 182],
+          "type": "ColorTemperature",
+          "colorTemperature": "7574K"
+        },
+        {
+          "dmxRange": [183, 183],
+          "type": "ColorTemperature",
+          "colorTemperature": "7606K"
+        },
+        {
+          "dmxRange": [184, 184],
+          "type": "ColorTemperature",
+          "colorTemperature": "7638K"
+        },
+        {
+          "dmxRange": [185, 185],
+          "type": "ColorTemperature",
+          "colorTemperature": "7670K"
+        },
+        {
+          "dmxRange": [186, 186],
+          "type": "ColorTemperature",
+          "colorTemperature": "7702K"
+        },
+        {
+          "dmxRange": [187, 187],
+          "type": "ColorTemperature",
+          "colorTemperature": "7734K"
+        },
+        {
+          "dmxRange": [188, 188],
+          "type": "ColorTemperature",
+          "colorTemperature": "7766K"
+        },
+        {
+          "dmxRange": [189, 189],
+          "type": "ColorTemperature",
+          "colorTemperature": "7798K"
+        },
+        {
+          "dmxRange": [190, 190],
+          "type": "ColorTemperature",
+          "colorTemperature": "7830K"
+        },
+        {
+          "dmxRange": [191, 191],
+          "type": "ColorTemperature",
+          "colorTemperature": "7862K"
+        },
+        {
+          "dmxRange": [192, 192],
+          "type": "ColorTemperature",
+          "colorTemperature": "7894K"
+        },
+        {
+          "dmxRange": [193, 193],
+          "type": "ColorTemperature",
+          "colorTemperature": "7926K"
+        },
+        {
+          "dmxRange": [194, 194],
+          "type": "ColorTemperature",
+          "colorTemperature": "7958K"
+        },
+        {
+          "dmxRange": [195, 195],
+          "type": "ColorTemperature",
+          "colorTemperature": "7990K"
+        },
+        {
+          "dmxRange": [196, 196],
+          "type": "ColorTemperature",
+          "colorTemperature": "8022K"
+        },
+        {
+          "dmxRange": [197, 197],
+          "type": "ColorTemperature",
+          "colorTemperature": "8054K"
+        },
+        {
+          "dmxRange": [198, 198],
+          "type": "ColorTemperature",
+          "colorTemperature": "8086K"
+        },
+        {
+          "dmxRange": [199, 199],
+          "type": "ColorTemperature",
+          "colorTemperature": "8118K"
+        },
+        {
+          "dmxRange": [200, 200],
+          "type": "ColorTemperature",
+          "colorTemperature": "8150K"
+        },
+        {
+          "dmxRange": [201, 201],
+          "type": "ColorTemperature",
+          "colorTemperature": "8182K"
+        },
+        {
+          "dmxRange": [202, 202],
+          "type": "ColorTemperature",
+          "colorTemperature": "8214K"
+        },
+        {
+          "dmxRange": [203, 203],
+          "type": "ColorTemperature",
+          "colorTemperature": "8246K"
+        },
+        {
+          "dmxRange": [204, 204],
+          "type": "ColorTemperature",
+          "colorTemperature": "8278K"
+        },
+        {
+          "dmxRange": [205, 205],
+          "type": "ColorTemperature",
+          "colorTemperature": "8310K"
+        },
+        {
+          "dmxRange": [206, 206],
+          "type": "ColorTemperature",
+          "colorTemperature": "8342K"
+        },
+        {
+          "dmxRange": [207, 207],
+          "type": "ColorTemperature",
+          "colorTemperature": "8374K"
+        },
+        {
+          "dmxRange": [208, 208],
+          "type": "ColorTemperature",
+          "colorTemperature": "8406K"
+        },
+        {
+          "dmxRange": [209, 209],
+          "type": "ColorTemperature",
+          "colorTemperature": "8438K"
+        },
+        {
+          "dmxRange": [210, 210],
+          "type": "ColorTemperature",
+          "colorTemperature": "8470K"
+        },
+        {
+          "dmxRange": [211, 211],
+          "type": "ColorTemperature",
+          "colorTemperature": "8502K"
+        },
+        {
+          "dmxRange": [212, 212],
+          "type": "ColorTemperature",
+          "colorTemperature": "8534K"
+        },
+        {
+          "dmxRange": [213, 213],
+          "type": "ColorTemperature",
+          "colorTemperature": "8566K"
+        },
+        {
+          "dmxRange": [214, 214],
+          "type": "ColorTemperature",
+          "colorTemperature": "8598K"
+        },
+        {
+          "dmxRange": [215, 215],
+          "type": "ColorTemperature",
+          "colorTemperature": "8630K"
+        },
+        {
+          "dmxRange": [216, 216],
+          "type": "ColorTemperature",
+          "colorTemperature": "8662K"
+        },
+        {
+          "dmxRange": [217, 217],
+          "type": "ColorTemperature",
+          "colorTemperature": "8694K"
+        },
+        {
+          "dmxRange": [218, 218],
+          "type": "ColorTemperature",
+          "colorTemperature": "8726K"
+        },
+        {
+          "dmxRange": [219, 219],
+          "type": "ColorTemperature",
+          "colorTemperature": "8758K"
+        },
+        {
+          "dmxRange": [220, 220],
+          "type": "ColorTemperature",
+          "colorTemperature": "8790K"
+        },
+        {
+          "dmxRange": [221, 221],
+          "type": "ColorTemperature",
+          "colorTemperature": "8822K"
+        },
+        {
+          "dmxRange": [222, 222],
+          "type": "ColorTemperature",
+          "colorTemperature": "8854K"
+        },
+        {
+          "dmxRange": [223, 223],
+          "type": "ColorTemperature",
+          "colorTemperature": "8886K"
+        },
+        {
+          "dmxRange": [224, 224],
+          "type": "ColorTemperature",
+          "colorTemperature": "8918K"
+        },
+        {
+          "dmxRange": [225, 225],
+          "type": "ColorTemperature",
+          "colorTemperature": "8950K"
+        },
+        {
+          "dmxRange": [226, 226],
+          "type": "ColorTemperature",
+          "colorTemperature": "8982K"
+        },
+        {
+          "dmxRange": [227, 227],
+          "type": "ColorTemperature",
+          "colorTemperature": "9014K"
+        },
+        {
+          "dmxRange": [228, 228],
+          "type": "ColorTemperature",
+          "colorTemperature": "9046K"
+        },
+        {
+          "dmxRange": [229, 229],
+          "type": "ColorTemperature",
+          "colorTemperature": "9078K"
+        },
+        {
+          "dmxRange": [230, 230],
+          "type": "ColorTemperature",
+          "colorTemperature": "9110K"
+        },
+        {
+          "dmxRange": [231, 231],
+          "type": "ColorTemperature",
+          "colorTemperature": "9142K"
+        },
+        {
+          "dmxRange": [232, 232],
+          "type": "ColorTemperature",
+          "colorTemperature": "9174K"
+        },
+        {
+          "dmxRange": [233, 233],
+          "type": "ColorTemperature",
+          "colorTemperature": "9206K"
+        },
+        {
+          "dmxRange": [234, 234],
+          "type": "ColorTemperature",
+          "colorTemperature": "9238K"
+        },
+        {
+          "dmxRange": [235, 235],
+          "type": "ColorTemperature",
+          "colorTemperature": "9270K"
+        },
+        {
+          "dmxRange": [236, 236],
+          "type": "ColorTemperature",
+          "colorTemperature": "9302K"
+        },
+        {
+          "dmxRange": [237, 237],
+          "type": "ColorTemperature",
+          "colorTemperature": "9334K"
+        },
+        {
+          "dmxRange": [238, 238],
+          "type": "ColorTemperature",
+          "colorTemperature": "9366K"
+        },
+        {
+          "dmxRange": [239, 239],
+          "type": "ColorTemperature",
+          "colorTemperature": "9398K"
+        },
+        {
+          "dmxRange": [240, 240],
+          "type": "ColorTemperature",
+          "colorTemperature": "9430K"
+        },
+        {
+          "dmxRange": [241, 241],
+          "type": "ColorTemperature",
+          "colorTemperature": "9462K"
+        },
+        {
+          "dmxRange": [242, 242],
+          "type": "ColorTemperature",
+          "colorTemperature": "9494K"
+        },
+        {
+          "dmxRange": [243, 243],
+          "type": "ColorTemperature",
+          "colorTemperature": "9526K"
+        },
+        {
+          "dmxRange": [244, 244],
+          "type": "ColorTemperature",
+          "colorTemperature": "9558K"
+        },
+        {
+          "dmxRange": [245, 245],
+          "type": "ColorTemperature",
+          "colorTemperature": "9590K"
+        },
+        {
+          "dmxRange": [246, 246],
+          "type": "ColorTemperature",
+          "colorTemperature": "9622K"
+        },
+        {
+          "dmxRange": [247, 247],
+          "type": "ColorTemperature",
+          "colorTemperature": "9654K"
+        },
+        {
+          "dmxRange": [248, 248],
+          "type": "ColorTemperature",
+          "colorTemperature": "9686K"
+        },
+        {
+          "dmxRange": [249, 249],
+          "type": "ColorTemperature",
+          "colorTemperature": "9718K"
+        },
+        {
+          "dmxRange": [250, 250],
+          "type": "ColorTemperature",
+          "colorTemperature": "9750K"
+        },
+        {
+          "dmxRange": [251, 251],
+          "type": "ColorTemperature",
+          "colorTemperature": "9782K"
+        },
+        {
+          "dmxRange": [252, 252],
+          "type": "ColorTemperature",
+          "colorTemperature": "9814K"
+        },
+        {
+          "dmxRange": [253, 253],
+          "type": "ColorTemperature",
+          "colorTemperature": "9846K"
+        },
+        {
+          "dmxRange": [254, 254],
+          "type": "ColorTemperature",
+          "colorTemperature": "9878K"
+        },
+        {
+          "dmxRange": [255, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "9910K"
+        }
+      ]
+    },
+    "Crossfade $pixelKey": {
+      "capability":
+        {
+          "type": "Generic",
+          "comment": "CCT crossfade to RGB"
+        }
+    },
+    "Green-Magenta Point $pixelKey": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 4],
+          "type": "Generic",
+          "comment": "Neutral"
+        },
+        {
+          "dmxRange": [5, 255],
+          "type": "Generic",
+          "comment": "-99%…100%"
+        }
+      ]
+    },
+    "Hue $pixelKey": {
+      "fineChannelAliases": ["Hue $pixelKey fine"],
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…360°"
+      }
+    },
+    "Saturation $pixelKey": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…100%"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "1: RGB",
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1"
+      ]
+    },
+    {
+      "name": "2: RGBW",
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Emulated White 1"
+      ]
+    },
+    {
+      "name": "3: RGBAW",
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Amber 1",
+        "Emulated White 1"
+      ]
+    },
+    {
+      "name": "4: Dim RGB",
+      "channels": [
+        "Dimmer 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1"
+      ]
+    },
+    {
+      "name": "5: Dim RGBW",
+      "channels": [
+        "Dimmer 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Emulated White 1"
+      ]
+    },
+    {
+      "name": "6: Dim RGBAW",
+      "channels": [
+        "Dimmer 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Amber 1",
+        "Emulated White 1"
+      ]
+    },
+    {
+      "name": "7: RGB CCT Dim Ind",
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Color Temperature 1",
+        "Dimmer 1",
+        "Index Colors 1"
+      ]
+    },
+    {
+      "name": "89: D CCT GM CRO RGB",
+      "channels": [
+        "Dimmer 1",
+        "Color Temperature 1",
+        "Green-Magenta Point 1",
+        "Crossfade 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1"
+      ]
+    },
+    {
+      "name": "90: D CCT GM HUE SAT",
+      "channels": [
+        "Dimmer 1",
+        "Color Temperature 1",
+        "Green-Magenta Point 1",
+        "Hue 1",
+        "Saturation 1"
+      ]
+    },
+    {
+      "name": "91: D16 CCT GM CRO RGB",
+      "channels": [
+        "Dimmer 1",
+        "Dimmer 1 fine",
+        "Color Temperature 1",
+        "Green-Magenta Point 1",
+        "Crossfade 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1"
+      ]
+    },
+    {
+      "name": "92: D16 CCT GM H SAT",
+      "channels": [
+        "Dimmer 1",
+        "Dimmer 1 fine",
+        "Color Temperature 1",
+        "Green-Magenta Point 1",
+        "Hue 1",
+        "Hue 1 fine",
+        "Saturation 1"
+      ]
+    },
+    {
+      "name": "93: D16 XY",
+      "channels": [
+        "Dimmer 1",
+        "Dimmer 1 fine",
+        "CIE x 1",
+        "CIE x 1 fine",
+        "CIE y 1",
+        "CIE y 1 fine"
+      ]
+    },
+    {
+      "name": "168: D CCT GM C XY",
+      "channels": [
+        "Dimmer 1",
+        "Color Temperature 1",
+        "Green-Magenta Point 1",
+        "Crossfade 1",
+        "CIE x 1",
+        "CIE x 1 fine",
+        "CIE y 1",
+        "CIE y 1 fine"
+      ]
+    },
+    {
+      "name": "169: D16 CCT GM C XY",
+      "channels": [
+        "Dimmer 1",
+        "Dimmer 1 fine",
+        "Color Temperature 1",
+        "Green-Magenta Point 1",
+        "Crossfade 1",
+        "CIE x 1",
+        "CIE x 1 fine",
+        "CIE y 1",
+        "CIE y 1 fine"
+      ]
+    },
+    {
+      "name": "18: 2 x RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "19: 2 x RGBW",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "20: 2 x RGBA",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Amber $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "21: 2 x Dim RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "22: 2 x Dim RGBW",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "23: 2 x Dim RGBAW",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Amber $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "24: 2 x RGB CCT Dim Ind",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Color Temperature $pixelKey",
+            "Dimmer $pixelKey",
+            "Index Colors $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "98: 2 x D CCT GM CRO RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "99: 2 x D CCT GM HUE SAT",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Hue $pixelKey",
+            "Saturation $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "100: 2 x D16 CCT GM CRO RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "101: 2 x D16 CCT GM H SAT",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Hue $pixelKey",
+            "Hue $pixelKey fine",
+            "Saturation $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "102: 2 x D16 XY",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "CIE x $pixelKey",
+            "CIE x $pixelKey fine",
+            "CIE y $pixelKey",
+            "CIE y $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "178: 2 x D CCT GM C XY",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "CIE x $pixelKey",
+            "CIE x $pixelKey fine",
+            "CIE y $pixelKey",
+            "CIE y $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "179: 2 x D16 CCT GM C XY",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "CIE x $pixelKey",
+            "CIE x $pixelKey fine",
+            "CIE y $pixelKey",
+            "CIE y $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "66: 3 x RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "67: 3 x RGBW",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "68: 3 x RGBA",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Amber $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "69: 3 x Dim RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "70: 3 x Dim RGBW",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "71: 3 x Dim RGBAW",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Amber $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "72: 3 x RGB CCT Dim Ind",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Color Temperature $pixelKey",
+            "Dimmer $pixelKey",
+            "Index Colors $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "124: 3 x D CCT GM CRO RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "125: 3 x D CCT GM HUE SAT",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Hue $pixelKey",
+            "Saturation $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "126: 3 x D16 CCT GM CRO RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "127: 3 x D16 CCT GM H SAT",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Hue $pixelKey",
+            "Hue $pixelKey fine",
+            "Saturation $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "128: 3 x D16 XY",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "CIE x $pixelKey",
+            "CIE x $pixelKey fine",
+            "CIE y $pixelKey",
+            "CIE y $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "184: 3 x D CCT GM C XY",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "CIE x $pixelKey",
+            "CIE x $pixelKey fine",
+            "CIE y $pixelKey",
+            "CIE y $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "185: 3 x D16 CCT GM C XY",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "CIE x $pixelKey",
+            "CIE x $pixelKey fine",
+            "CIE y $pixelKey",
+            "CIE y $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "42: 6 x RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "43: 6 x RGBW",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "44: 6 x RGBA",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Amber $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "45: 6 x Dim RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "46: 6 x Dim RGBW",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "47: 6 x Dim RGBAW",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Amber $pixelKey",
+            "Emulated White $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "48: 6 x RGB CCT Dim Ind",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey",
+            "Color Temperature $pixelKey",
+            "Dimmer $pixelKey",
+            "Index Colors $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "111: 6 x D CCT GM CRO RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "112: 6 x D CCT GM HUE SAT",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Hue $pixelKey",
+            "Saturation $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "113: 6 x D16 CCT GM CRO RGB",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "Red $pixelKey",
+            "Green $pixelKey",
+            "Blue $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "114: 6 x D16 CCT GM H SAT",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Hue $pixelKey",
+            "Hue $pixelKey fine",
+            "Saturation $pixelKey"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "115: 6 x D16 XY",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "CIE x $pixelKey",
+            "CIE x $pixelKey fine",
+            "CIE y $pixelKey",
+            "CIE y $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "190: 6 x D CCT GM C XY",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "CIE x $pixelKey",
+            "CIE x $pixelKey fine",
+            "CIE y $pixelKey",
+            "CIE y $pixelKey fine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "191: 6 x D16 CCT GM C XY",
+      "channels": [
+        {
+          "insert": "matrixChannels",
+          "repeatFor": ["1", "2", "3", "4", "5", "6"],
+          "channelOrder": "perPixel",
+          "templateChannels": [
+            "Dimmer $pixelKey",
+            "Dimmer $pixelKey fine",
+            "Color Temperature $pixelKey",
+            "Green-Magenta Point $pixelKey",
+            "Crossfade $pixelKey",
+            "CIE x $pixelKey",
+            "CIE x $pixelKey fine",
+            "CIE y $pixelKey",
+            "CIE y $pixelKey fine"
+          ]
+        }
+      ]
+    }
+  ]
+}
