@@ -1,0 +1,172 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "BT-Profile WW",
+  "categories": ["Other"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2026-02-24",
+    "lastModifyDate": "2026-02-24"
+  },
+  "links": {
+    "manual": [
+      "https://briteq-lighting.com/fileuploader/download/download/?d=0&file=custom%2Fupload%2FFile-1682005174.pdf"
+    ],
+    "productPage": [
+      "https://briteq-lighting.com/bt-profile-ww"
+    ]
+  },
+  "physical": {
+    "dimensions": [224, 191, 568],
+    "weight": 6.2,
+    "power": 170,
+    "DMXconnector": "5-pin"
+  },
+  "availableChannels": {
+    "Dimmer": {
+      "fineChannelAliases": ["Dimmer fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Control": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 60],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        },
+        {
+          "dmxRange": [61, 70],
+          "type": "Maintenance",
+          "comment": "Fan mode = Live"
+        },
+        {
+          "dmxRange": [71, 80],
+          "type": "Maintenance",
+          "comment": "Fan mode = Studio"
+        },
+        {
+          "dmxRange": [81, 90],
+          "type": "Maintenance",
+          "comment": "Fan mode = Power"
+        },
+        {
+          "dmxRange": [91, 100],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        },
+        {
+          "dmxRange": [101, 110],
+          "type": "Maintenance",
+          "comment": "Dimmer speed off"
+        },
+        {
+          "dmxRange": [111, 120],
+          "type": "Maintenance",
+          "comment": "Dimmer speed Dim4"
+        },
+        {
+          "dmxRange": [121, 150],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        },
+        {
+          "dmxRange": [151, 160],
+          "type": "Maintenance",
+          "comment": "PWM = 1200Hz"
+        },
+        {
+          "dmxRange": [161, 170],
+          "type": "Maintenance",
+          "comment": "PWM = 2400Hz"
+        },
+        {
+          "dmxRange": [171, 180],
+          "type": "Maintenance",
+          "comment": "PWM = 4000Hz"
+        },
+        {
+          "dmxRange": [181, 190],
+          "type": "Maintenance",
+          "comment": "PWM = 6000Hz"
+        },
+        {
+          "dmxRange": [191, 200],
+          "type": "Maintenance",
+          "comment": "PWM = 25000Hz"
+        },
+        {
+          "dmxRange": [201, 210],
+          "type": "Maintenance",
+          "comment": "All Reset"
+        },
+        {
+          "dmxRange": [211, 255],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        }
+      ]
+    },
+    "Strobe": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [10, 99],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse",
+          "speedStart": "1Hz",
+          "speedEnd": "25Hz"
+        },
+        {
+          "dmxRange": [100, 109],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [110, 179],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Lightning"
+        },
+        {
+          "dmxRange": [180, 189],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [190, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "randomTiming": true
+        }
+      ]
+    }
+  },
+  "modes": [
+    {
+      "name": "UNO",
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "DOS",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    },
+    {
+      "name": "STD.P",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Control"
+      ]
+    }
+  ]
+}

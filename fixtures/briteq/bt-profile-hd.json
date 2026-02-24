@@ -1,0 +1,766 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OpenLightingProject/open-fixture-library/master/schemas/fixture.json",
+  "name": "BT-Profile HD",
+  "categories": ["Color Changer"],
+  "meta": {
+    "authors": ["Dyami Caliri"],
+    "createDate": "2026-02-24",
+    "lastModifyDate": "2026-02-24"
+  },
+  "links": {
+    "manual": [
+      "https://briteq-lighting.com/fileuploader/download/download/?d=0&file=custom%2Fupload%2FFile-1655446309.pdf"
+    ],
+    "productPage": [
+      "https://briteq-lighting.com/bt-profile-hd"
+    ]
+  },
+  "physical": {
+    "dimensions": [224, 191, 568],
+    "weight": 6.5,
+    "power": 170,
+    "DMXconnector": "5-pin"
+  },
+  "availableChannels": {
+    "Red": {
+      "fineChannelAliases": ["Red fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Red"
+      }
+    },
+    "Green": {
+      "fineChannelAliases": ["Green fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Green"
+      }
+    },
+    "Blue": {
+      "fineChannelAliases": ["Blue fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Blue"
+      }
+    },
+    "Amber": {
+      "fineChannelAliases": ["Amber fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Amber"
+      }
+    },
+    "Lime": {
+      "fineChannelAliases": ["Lime fine"],
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Lime"
+      }
+    },
+    "Cyan": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Cyan"
+      }
+    },
+    "Magenta": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Magenta"
+      }
+    },
+    "Yellow": {
+      "capability": {
+        "type": "ColorIntensity",
+        "color": "Yellow"
+      }
+    },
+    "Hue": {
+      "fineChannelAliases": ["Hue fine"],
+      "capability": {
+        "type": "Generic",
+        "comment": "0…360°"
+      }
+    },
+    "Saturation": {
+      "defaultValue": 0,
+      "capability": {
+        "type": "Generic",
+        "comment": "0…100%"
+      }
+    },
+    "CCT": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [10, 24],
+          "type": "ColorTemperature",
+          "colorTemperature": "1800K"
+        },
+        {
+          "dmxRange": [25, 39],
+          "type": "ColorTemperature",
+          "colorTemperature": "2200K"
+        },
+        {
+          "dmxRange": [40, 54],
+          "type": "ColorTemperature",
+          "colorTemperature": "2700K"
+        },
+        {
+          "dmxRange": [55, 69],
+          "type": "ColorTemperature",
+          "colorTemperature": "3000K"
+        },
+        {
+          "dmxRange": [70, 84],
+          "type": "ColorTemperature",
+          "colorTemperature": "3200K"
+        },
+        {
+          "dmxRange": [85, 99],
+          "type": "ColorTemperature",
+          "colorTemperature": "4000K"
+        },
+        {
+          "dmxRange": [100, 114],
+          "type": "ColorTemperature",
+          "colorTemperature": "4500K"
+        },
+        {
+          "dmxRange": [115, 129],
+          "type": "ColorTemperature",
+          "colorTemperature": "5000K"
+        },
+        {
+          "dmxRange": [130, 144],
+          "type": "ColorTemperature",
+          "colorTemperature": "5600K"
+        },
+        {
+          "dmxRange": [145, 159],
+          "type": "ColorTemperature",
+          "colorTemperature": "6000K"
+        },
+        {
+          "dmxRange": [160, 174],
+          "type": "ColorTemperature",
+          "colorTemperature": "6500K"
+        },
+        {
+          "dmxRange": [175, 189],
+          "type": "ColorTemperature",
+          "colorTemperature": "7000K"
+        },
+        {
+          "dmxRange": [190, 204],
+          "type": "ColorTemperature",
+          "colorTemperature": "8000K"
+        },
+        {
+          "dmxRange": [205, 255],
+          "type": "ColorTemperature",
+          "colorTemperature": "10000K"
+        }
+      ]
+    },
+    "Color Presets": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 10],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [11, 15],
+          "type": "ColorPreset",
+          "comment": "Loving Amber (L176)",
+          "colors": ["#ff9933"]
+        },
+        {
+          "dmxRange": [16, 20],
+          "type": "ColorPreset",
+          "comment": "Light Salmon (R40)",
+          "colors": ["#ff9999"]
+        },
+        {
+          "dmxRange": [21, 25],
+          "type": "ColorPreset",
+          "comment": "Scarlet (L24)",
+          "colors": ["#ff3300"]
+        },
+        {
+          "dmxRange": [26, 30],
+          "type": "ColorPreset",
+          "comment": "Flame Red (L164)",
+          "colors": ["#ff3200"]
+        },
+        {
+          "dmxRange": [31, 35],
+          "type": "ColorPreset",
+          "comment": "Easy White (L747)",
+          "colors": ["#c7b3ff"]
+        },
+        {
+          "dmxRange": [36, 40],
+          "type": "ColorPreset",
+          "comment": "Warm Peach (R303)",
+          "colors": ["#ffe0c8"]
+        },
+        {
+          "dmxRange": [41, 45],
+          "type": "ColorPreset",
+          "comment": "Dark Salmon (L8)",
+          "colors": ["#ff722c"]
+        },
+        {
+          "dmxRange": [46, 50],
+          "type": "ColorPreset",
+          "comment": "Sunset Red (L25)",
+          "colors": ["#ff5615"]
+        },
+        {
+          "dmxRange": [51, 55],
+          "type": "ColorPreset",
+          "comment": "Medium Bastard Amber (L4)",
+          "colors": ["#ff9f4c"]
+        },
+        {
+          "dmxRange": [56, 60],
+          "type": "ColorPreset",
+          "comment": "C.I.D. (to Tungsten) (L237)",
+          "colors": ["#ff9955"]
+        },
+        {
+          "dmxRange": [61, 65],
+          "type": "ColorPreset",
+          "comment": "Soft Golden Amber (R321)",
+          "colors": ["#ff9633"]
+        },
+        {
+          "dmxRange": [66, 70],
+          "type": "ColorPreset",
+          "comment": "Urban Sodium (L652)",
+          "colors": ["#ff993a"]
+        },
+        {
+          "dmxRange": [71, 75],
+          "type": "ColorPreset",
+          "comment": "L.C.T. Yellow (Y1) (L212)",
+          "colors": ["#ffffbe"]
+        },
+        {
+          "dmxRange": [76, 80],
+          "type": "ColorPreset",
+          "comment": "Lee Yellow (L765)",
+          "colors": ["#fff566"]
+        },
+        {
+          "dmxRange": [81, 85],
+          "type": "ColorPreset",
+          "comment": "Ice and a Slice (L513)",
+          "colors": ["#ffffbe"]
+        },
+        {
+          "dmxRange": [86, 90],
+          "type": "ColorPreset",
+          "comment": "Spring Yellow (L100)",
+          "colors": ["#f5ff00"]
+        },
+        {
+          "dmxRange": [91, 95],
+          "type": "ColorPreset",
+          "comment": "LEE Plus Green (L244)",
+          "colors": ["#cfff9e"]
+        },
+        {
+          "dmxRange": [96, 100],
+          "type": "ColorPreset",
+          "comment": "Cal Color 30 Green (R4430)",
+          "colors": ["#b3ff87"]
+        },
+        {
+          "dmxRange": [101, 105],
+          "type": "ColorPreset",
+          "comment": "Fern Green (L122)",
+          "colors": ["#48ff90"]
+        },
+        {
+          "dmxRange": [106, 110],
+          "type": "ColorPreset",
+          "comment": "Dark Yellow Green (L90)",
+          "colors": ["#02ff00"]
+        },
+        {
+          "dmxRange": [111, 115],
+          "type": "ColorPreset",
+          "comment": "Lee Fluorescent 3600 Kelvin (L243)",
+          "colors": ["#aeffc7"]
+        },
+        {
+          "dmxRange": [116, 120],
+          "type": "ColorPreset",
+          "comment": "Turquoise (R92)",
+          "colors": ["#78fffe"]
+        },
+        {
+          "dmxRange": [121, 125],
+          "type": "ColorPreset",
+          "comment": "Kelly Green",
+          "colors": ["#4cbb17"]
+        },
+        {
+          "dmxRange": [126, 130],
+          "type": "ColorPreset",
+          "comment": "Forest Green (L327)",
+          "colors": ["#3d8a56"]
+        },
+        {
+          "dmxRange": [131, 135],
+          "type": "ColorPreset",
+          "comment": "Cosmetic Aqua Blue (L191)",
+          "colors": ["#6082ff"]
+        },
+        {
+          "dmxRange": [136, 140],
+          "type": "ColorPreset",
+          "comment": "Steel Green (L728)",
+          "colors": ["#4170ff"]
+        },
+        {
+          "dmxRange": [141, 145],
+          "type": "ColorPreset",
+          "comment": "Steel Blue (L117)",
+          "colors": ["#3660ff"]
+        },
+        {
+          "dmxRange": [146, 150],
+          "type": "ColorPreset",
+          "comment": "Special Steel Blue (L354)",
+          "colors": ["#6eecd7"]
+        },
+        {
+          "dmxRange": [151, 155],
+          "type": "ColorPreset",
+          "comment": "Paler Lavender (L053)",
+          "colors": ["#ffe5ca"]
+        },
+        {
+          "dmxRange": [156, 160],
+          "type": "ColorPreset",
+          "comment": "New Color Blue (L501)",
+          "colors": ["#d7ebfa"]
+        },
+        {
+          "dmxRange": [161, 165],
+          "type": "ColorPreset",
+          "comment": "Dark Steel Blue (L174)",
+          "colors": ["#abe0ff"]
+        },
+        {
+          "dmxRange": [166, 170],
+          "type": "ColorPreset",
+          "comment": "Daylight Blue (L165)",
+          "colors": ["#00c2ff"]
+        },
+        {
+          "dmxRange": [171, 175],
+          "type": "ColorPreset",
+          "comment": "Pale Lavender (L136)",
+          "colors": ["#ffd0cd"]
+        },
+        {
+          "dmxRange": [176, 180],
+          "type": "ColorPreset",
+          "comment": "Surprise Pink (L194)",
+          "colors": ["#ffc7e1"]
+        },
+        {
+          "dmxRange": [181, 185],
+          "type": "ColorPreset",
+          "comment": "Pale Violet (L142)",
+          "colors": ["#afaeff"]
+        },
+        {
+          "dmxRange": [186, 190],
+          "type": "ColorPreset",
+          "comment": "Perfect Lavender (L700)",
+          "colors": ["#e0d4f5"]
+        },
+        {
+          "dmxRange": [191, 195],
+          "type": "ColorPreset",
+          "comment": "Light Pink (R35)",
+          "colors": ["#ffb0c0"]
+        },
+        {
+          "dmxRange": [196, 200],
+          "type": "ColorPreset",
+          "comment": "Pretty 'n Pink (L794)",
+          "colors": ["#ffb3d9"]
+        },
+        {
+          "dmxRange": [201, 205],
+          "type": "ColorPreset",
+          "comment": "Follies Pink (L328)",
+          "colors": ["#f46c93"]
+        },
+        {
+          "dmxRange": [206, 210],
+          "type": "ColorPreset",
+          "comment": "Magical Magenta (L795)",
+          "colors": ["#ff66cc"]
+        },
+        {
+          "dmxRange": [211, 215],
+          "type": "ColorPreset",
+          "comment": "Pale Rose (L154)",
+          "colors": ["#ffbd92"]
+        },
+        {
+          "dmxRange": [216, 220],
+          "type": "ColorPreset",
+          "comment": "Smokey Pink (L127)",
+          "colors": ["#ff8987"]
+        },
+        {
+          "dmxRange": [221, 225],
+          "type": "ColorPreset",
+          "comment": "Flesh Pink (L192)",
+          "colors": ["#ff7487"]
+        },
+        {
+          "dmxRange": [226, 230],
+          "type": "ColorPreset",
+          "comment": "Special Rose Pink (L332)",
+          "colors": ["#ff3a89"]
+        },
+        {
+          "dmxRange": [231, 235],
+          "type": "ColorPreset",
+          "comment": "Moroccan Pink (L790)",
+          "colors": ["#ff99b3"]
+        },
+        {
+          "dmxRange": [236, 240],
+          "type": "ColorPreset",
+          "comment": "Pink (L157)",
+          "colors": ["#ff716e"]
+        },
+        {
+          "dmxRange": [241, 245],
+          "type": "ColorPreset",
+          "comment": "Cherry Rose (R332)",
+          "colors": ["#ff4060"]
+        },
+        {
+          "dmxRange": [246, 250],
+          "type": "ColorPreset",
+          "comment": "Bright Pink (L128)",
+          "colors": ["#ff2e9b"]
+        },
+        {
+          "dmxRange": [251, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Shutter": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 9],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [10, 99],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Pulse",
+          "speedStart": "1Hz",
+          "speedEnd": "25Hz"
+        },
+        {
+          "dmxRange": [100, 109],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [110, 179],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Lightning"
+        },
+        {
+          "dmxRange": [180, 189],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Open"
+        },
+        {
+          "dmxRange": [190, 255],
+          "type": "ShutterStrobe",
+          "shutterEffect": "Strobe",
+          "randomTiming": true
+        }
+      ]
+    },
+    "Dimmer": {
+      "fineChannelAliases": ["Dimmer fine"],
+      "capability": {
+        "type": "Intensity"
+      }
+    },
+    "Control": {
+      "capabilities": [
+        {
+          "dmxRange": [0, 60],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        },
+        {
+          "dmxRange": [61, 70],
+          "type": "Maintenance",
+          "comment": "Fan mode = Live"
+        },
+        {
+          "dmxRange": [71, 80],
+          "type": "Maintenance",
+          "comment": "Fan mode = Studio"
+        },
+        {
+          "dmxRange": [81, 90],
+          "type": "Maintenance",
+          "comment": "Fan mode = Power"
+        },
+        {
+          "dmxRange": [91, 100],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        },
+        {
+          "dmxRange": [101, 110],
+          "type": "Maintenance",
+          "comment": "Dimmer speed off"
+        },
+        {
+          "dmxRange": [111, 120],
+          "type": "Maintenance",
+          "comment": "Dimmer speed Dim4"
+        },
+        {
+          "dmxRange": [121, 150],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        },
+        {
+          "dmxRange": [151, 160],
+          "type": "Maintenance",
+          "comment": "PWM = 1200Hz"
+        },
+        {
+          "dmxRange": [161, 170],
+          "type": "Maintenance",
+          "comment": "PWM = 2400Hz"
+        },
+        {
+          "dmxRange": [171, 180],
+          "type": "Maintenance",
+          "comment": "PWM = 4000Hz"
+        },
+        {
+          "dmxRange": [181, 190],
+          "type": "Maintenance",
+          "comment": "PWM = 6000Hz"
+        },
+        {
+          "dmxRange": [191, 200],
+          "type": "Maintenance",
+          "comment": "PWM = 25000Hz"
+        },
+        {
+          "dmxRange": [201, 210],
+          "type": "Maintenance",
+          "comment": "All Reset"
+        },
+        {
+          "dmxRange": [211, 255],
+          "type": "NoFunction",
+          "comment": "Reserved"
+        }
+      ]
+    },
+    "Auto Programs": {
+      "defaultValue": 0,
+      "capabilities": [
+        {
+          "dmxRange": [0, 40],
+          "type": "NoFunction"
+        },
+        {
+          "dmxRange": [41, 50],
+          "type": "Generic",
+          "comment": "Auto 1"
+        },
+        {
+          "dmxRange": [51, 60],
+          "type": "Generic",
+          "comment": "Auto 2"
+        },
+        {
+          "dmxRange": [61, 70],
+          "type": "Generic",
+          "comment": "Auto 3"
+        },
+        {
+          "dmxRange": [71, 80],
+          "type": "Generic",
+          "comment": "Auto 4"
+        },
+        {
+          "dmxRange": [81, 90],
+          "type": "Generic",
+          "comment": "Auto 5"
+        },
+        {
+          "dmxRange": [91, 100],
+          "type": "Generic",
+          "comment": "Auto 6"
+        },
+        {
+          "dmxRange": [101, 110],
+          "type": "Generic",
+          "comment": "Auto 7"
+        },
+        {
+          "dmxRange": [111, 120],
+          "type": "Generic",
+          "comment": "Auto 8"
+        },
+        {
+          "dmxRange": [121, 130],
+          "type": "Generic",
+          "comment": "Auto 9"
+        },
+        {
+          "dmxRange": [131, 140],
+          "type": "Generic",
+          "comment": "Auto 10"
+        },
+        {
+          "dmxRange": [141, 150],
+          "type": "Generic",
+          "comment": "PR.01"
+        },
+        {
+          "dmxRange": [151, 160],
+          "type": "Generic",
+          "comment": "PR.02"
+        },
+        {
+          "dmxRange": [161, 255],
+          "type": "NoFunction"
+        }
+      ]
+    },
+    "Auto Speed": {
+      "capability": {
+        "type": "Generic"
+      }
+    }
+  },
+  "modes": [
+    {
+      "name": "BASIC (3ch)",
+      "shortName": "Basic",
+      "channels": [
+        "Dimmer",
+        "Color Presets",
+        "CCT"
+      ]
+    },
+    {
+      "name": "SSP (7ch)",
+      "shortName": "SSP",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime",
+        "Shutter"
+      ]
+    },
+    {
+      "name": "TOUR (12ch)",
+      "shortName": "TOUR 12",
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime",
+        "Color Presets",
+        "CCT",
+        "Auto Programs",
+        "Auto Speed",
+        "Shutter",
+        "Control"
+      ]
+    },
+    {
+      "name": "TR16 (18ch)",
+      "shortName": "TOUR 16",
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "Amber",
+        "Amber fine",
+        "Lime",
+        "Lime fine",
+        "Color Presets",
+        "CCT",
+        "Auto Programs",
+        "Auto Speed",
+        "Shutter",
+        "Control"
+      ]
+    },
+    {
+      "name": "HSIC (7ch)",
+      "shortName": "HSIC",
+      "channels": [
+        "Dimmer",
+        "Hue",
+        "Hue fine",
+        "Saturation",
+        "CCT",
+        "Shutter",
+        "Control"
+      ]
+    },
+    {
+      "name": "CMY (10ch)",
+      "shortName": "CMY",
+      "channels": [
+        "Dimmer",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Color Presets",
+        "CCT",
+        "Auto Programs",
+        "Auto Speed",
+        "Shutter",
+        "Control"
+      ]
+    }
+  ]
+}
